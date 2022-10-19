@@ -1,0 +1,10 @@
+{
+	"id": "objemoji",
+	"name": "OBJemoji",
+	"version": "1.0.1",
+	"minAppVersion": "0.12.17",
+	"description": "This Plugin enables the use of jemoji Shortcodes :smile: based on emoji Shortcodes",
+	"author": "yaleiyale",
+	"authorUrl": "https://github.com/yaleiyale",
+	"isDesktopOnly": false
+}

@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "a9296116cd528f7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "69b6c400b9c94bf8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aee24a50860e28f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "杂录/工具使用/objekyll使用/objekyll使用指南.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cb5dcd066b84c420",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfc55a5353e6dba8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47727188c62cc33a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "428f54a6e402da96",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4bd4cebc3feada72",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6d06ce581614a53c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "da32fefae9e21b69",
+    "type": "split",
+    "children": [
+      {
+        "id": "86cf1f0429c78e1a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0387cf8223fb28d0",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "be8abcc574278557",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "cd63bd8da8809dcb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4eebfca60600175f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
+              }
+            }
+          },
+          {
+            "id": "d886aa3f13f9a1a6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "杂录/工具使用/objekyll使用/objekyll使用指南.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "12e6b329a59e5d6a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "杂录/工具使用/objekyll使用/objekyll使用指南.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "aee24a50860e28f0",
+  "lastOpenFiles": [
+    "杂录/工具使用/objekyll使用/obsidian使用/obsidian插件使用存档.md",
+    "杂录/工具使用/objekyll使用/obsidian使用/Obsidian Github Uploader.md",
+    "杂录/工具使用/objekyll使用/obsidian使用/obsidian中的markdown书写范例实例.md",
+    "杂录/工具使用/objekyll使用/objekyll使用指南.md",
+    "杂录/工具使用/objekyll使用/obsidian结合jekyll.md",
+    "模板/基础模板.md",
+    "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md",
+    "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.svg",
+    "杂录/游戏杂录/EPIC值得一玩/EPIC值得一玩.md",
+    "杂录/游戏杂录/EPIC值得一玩/库/Shadow Tactics.Blades of the Shogun.md"
+  ]
+}

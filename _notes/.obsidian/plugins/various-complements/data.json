@@ -1,0 +1,135 @@
+{
+  "strategy": "chinese",
+  "matchStrategy": "prefix",
+  "maxNumberOfSuggestions": 5,
+  "maxNumberOfWordsAsPhrase": 3,
+  "minNumberOfCharactersTriggered": 0,
+  "minNumberOfWordsTriggeredPhrase": 1,
+  "complementAutomatically": true,
+  "delayMilliSeconds": 0,
+  "disableSuggestionsDuringImeOn": true,
+  "insertAfterCompletion": false,
+  "firstCharactersDisableSuggestions": ":/^@",
+  "showMatchStrategy": false,
+  "showComplementAutomatically": false,
+  "showIndexingStatus": false,
+  "descriptionOnSuggestion": "Short",
+  "selectSuggestionKeys": "Tab",
+  "additionalCycleThroughSuggestionsKeys": "None",
+  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
+  "openSourceFileKey": "None",
+  "propagateEsc": false,
+  "enableCurrentFileComplement": true,
+  "currentFileMinNumberOfCharacters": 0,
+  "onlyComplementEnglishOnCurrentFileComplement": false,
+  "enableCurrentVaultComplement": true,
+  "currentVaultMinNumberOfCharacters": 0,
+  "includeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathPrefixPatterns": "",
+  "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "enableCustomDictionaryComplement": false,
+  "customDictionaryPaths": "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt",
+  "columnDelimiter": "Tab",
+  "customDictionaryWordRegexPattern": "",
+  "delimiterToHideSuggestion": "",
+  "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
+  "caretLocationSymbolAfterComplement": "",
+  "displayedTextSuffix": " => ...",
+  "enableInternalLinkComplement": true,
+  "suggestInternalLinkWithAlias": false,
+  "excludeInternalLinkPathPrefixPatterns": "",
+  "enableFrontMatterComplement": true,
+  "frontMatterComplementMatchStrategy": "inherit",
+  "insertCommaAfterFrontMatterCompletion": false,
+  "showLogAboutPerformanceInConsole": false,
+  "selectionHistoryTree": {
+    "Waypoint": {
+      "Waypoint": {
+        "currentVault": {
+          "count": 3,
+          "lastUpdated": 1664789316825
+        }
+      }
+    },
+    "struct": {
+      "struct": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1664781337292
+        }
+      }
+    },
+    "串的基本概念与实现": {
+      "串的基本概念与实现": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1664788486621
+        }
+      }
+    },
+    "位置": {
+      "位置": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1664954395045
+        }
+      }
+    },
+    "用于": {
+      "用于": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1664956919229
+        }
+      }
+    },
+    "chart": {
+      "chart": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1665037708400
+        }
+      }
+    },
+    "subgraph": {
+      "subgraph": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1665037803777
+        }
+      }
+    },
+    "direction": {
+      "direction": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1665037820980
+        }
+      }
+    },
+    "{}": {
+      "{}": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1665041613124
+        }
+      }
+    },
+    "影子与样子": {
+      "影子与样子": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1665321301391
+        }
+      }
+    },
+    "document": {
+      "document": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1665669388234
+        }
+      }
+    }
+  }
+}

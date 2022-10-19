@@ -1,0 +1,31 @@
+name: Deploy GitHub Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.2 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: bundle exec ${BUNDLE_ARGS} jekyll build
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }} # github token
+          repository-name: yaleiyale/obsidian-jekyll-blog # target repo
+          branch: gh-pages
+          folder: _site
+          clean: true
+          commit-message: ${{ steps.date.outputs.date }}update

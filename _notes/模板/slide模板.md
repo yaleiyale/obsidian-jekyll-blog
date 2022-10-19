@@ -1,0 +1,2 @@
+<!-- .slide  -->
+<!-- .slide vertical=true -->

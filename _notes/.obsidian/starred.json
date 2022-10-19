@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "LaTeX公式书写范例",
+      "path": "杂录/工具使用/objekyll使用/obsidian使用/LaTeX公式书写范例.md"
+    },
+    {
+      "type": "file",
+      "title": "markdown书写范例实例",
+      "path": "杂录/工具使用/objekyll使用/obsidian使用/obsidian中的markdown书写范例实例.md"
+    },
+    {
+      "type": "file",
+      "title": "Mermaid书写范例实例",
+      "path": "杂录/工具使用/objekyll使用/obsidian使用/Mermaid书写范例实例.md"
+    },
+    {
+      "type": "file",
+      "title": "主动型插件使用",
+      "path": "杂录/工具使用/objekyll使用/obsidian使用/主动型插件使用.md"
+    }
+  ]
+}

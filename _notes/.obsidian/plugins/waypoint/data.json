@@ -1,0 +1,9 @@
+{
+  "waypointFlag": "%% Waypoint %%",
+  "stopScanAtFolderNotes": false,
+  "showFolderNotes": false,
+  "debugLogging": false,
+  "useWikiLinks": true,
+  "showEnclosingNote": false,
+  "folderNoteType": "INSIDE_FOLDER"
+}

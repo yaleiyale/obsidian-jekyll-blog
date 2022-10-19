@@ -1,0 +1,17 @@
+{
+    "lang": "zh-CN",
+    "name": "objekyll的小站",
+    "short_name": "objekyll",
+    "description": "样板案例",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/pwa.png",
+            "sizes": "144x144"
+        }
+    ]
+}

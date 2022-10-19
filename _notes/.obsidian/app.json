@@ -1,0 +1,19 @@
+{
+  "autoConvertHtml": true,
+  "attachmentFolderPath": "附件",
+  "newFileLocation": "current",
+  "readableLineLength": false,
+  "foldHeading": true,
+  "promptDelete": false,
+  "legacyEditor": false,
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": false,
+  "showLineNumber": false,
+  "communityPluginSortOrder": "download",
+  "communityThemeSortOrder": "download",
+  "defaultViewMode": "source",
+  "trashOption": "local",
+  "spellcheck": false,
+  "useTab": false,
+  "showInlineTitle": false
+}
