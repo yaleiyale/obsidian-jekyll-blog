@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>
+    
+    obsidian中的markdown书写范例实例 &middot; objekyll小站
+    
+  </title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="obsidian中的markdown书写范例实例" />
+<meta name="author" content="yaleiyale" />
+<meta property="og:locale" content="zh" />
+<meta name="description" content="枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法" />
+<meta property="og:description" content="枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法" />
+<link rel="canonical" href="https://lestua.eu.org/notes/2022/08/29/223916" />
+<meta property="og:url" content="https://lestua.eu.org/notes/2022/08/29/223916" />
+<meta property="og:site_name" content="objekyll小站" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-07-30T20:46:11+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="obsidian中的markdown书写范例实例" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-09T22:51:58+08:00","datePublished":"2022-07-30T20:46:11+08:00","description":"枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法","headline":"obsidian中的markdown书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.eu.org/notes/2022/08/29/223916"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45"},"name":"yaleiyale"},"url":"https://lestua.eu.org/notes/2022/08/29/223916"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  
+  <script>
+  (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+</script>
+
+  
+  <style>
+  .theme-base-07 {
+    --theme-base-color: DarkSlateblue;
+  }
+</style>
+
+  
+  <meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1"
+/>
+<meta
+  http-equiv="content-type"
+  content="text/html; charset=utf-8"
+/>
+<meta 
+  name="referrer"
+  content="no-referrer" 
+/>
+<link
+  rel="alternate"
+  href="/feed.xml"
+  title="RSS"
+  type="application/rss+xml"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+/>
+<link 
+  rel="stylesheet" 
+  href="/styles.css"
+/>
+
+  
+  <link
+  rel="apple-touch-icon-precomposed"
+  href="https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
+/>
+<link
+  rel="shortcut
+  icon"
+  href="https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
+/>
+
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+/>
+
+  
+  <style>
+  .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+    font-family:'MiSans';
+  }
+</style>
+
+  
+</head>
+
+<body
+  class="theme-base-07 layout-reverse sidebar-overlay">
+  
+  
+  
+  
+  <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"  />
+  
+  <div class="sidebar" id="sidebar">
+    
+    <div class="sidebar-item">
+      <div class="effect effect-right_to_left">
+        <img class="effect-img" src="https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=320" alt="img" />
+        <div class="effect-info">
+          <br>
+<br>
+轻阴阁小雨，
+<a href="mailto:deilookout@outlook.com">
+  <i class="fa-solid fa-envelope fa-fw"></i>
+</a>
+<br/>
+深院昼慵开。
+<a href="https://github.com/yaleiyale">
+  <i class="fa-brands fa-github fa-fw"></i>
+</a>
+<br/>
+坐看苍苔色，
+<a href="https://www.acfun.cn/u/31661560">
+  <i class="fa-solid fa-otter fa-fw"></i>
+</a>
+<br/>
+欲上人衣来。
+<a href="https://space.bilibili.com/357477198">
+  <i class="fa-brands fa-bilibili" fa-fw></i>
+</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <nav class="sidebar-nav">
+      
+      <a class="sidebar-nav-item" href="/">
+        <i class="fa-solid fa-home fa-fw"></i> 首页
+      </a>
+      
+      <a class="sidebar-nav-item" href="/comments">
+        <i class="fa-solid fa-comment fa-fw"></i> 留言
+      </a>
+      
+      <a class="sidebar-nav-item" href="/roots">
+        <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+      </a>
+      
+      <a class="sidebar-nav-item" href="/archive">
+        <i class="fa-solid fa-archive fa-fw"></i> 归档
+      </a>
+      
+      <a class="sidebar-nav-item" href="/tags">
+        <i class="fa-solid fa-tags fa-fw"></i> 标签
+      </a>
+      
+      <a class="sidebar-nav-item" href="/map">
+        <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+      </a>
+      
+      <a class="sidebar-nav-item" href="/merger">
+        <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+      </a>
+      
+    </nav>
+    <div class="sidebar-item">
+      
+      <input
+  id="sidebar-search-input"
+  placeholder="搜索博文"
+/>
+<ol
+  id="sidebar-search-results-container"
+></ol>
+<script
+  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+  async='async'
+  onload='
+    SimpleJekyllSearch({
+      json: "/assets/simple-jekyll-search/search.json",
+      searchInput: document.getElementById("sidebar-search-input"),
+      resultsContainer: document.getElementById("sidebar-search-results-container"),
+      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+      limit: 99,
+      fuzzy: true
+    })'
+></script>
+
+      
+      
+      <ol id="toc">
+  <li><a href="#%E5%87%A0%E7%BA%A7%E6%A0%87%E9%A2%98%E5%B0%B1%E6%9C%89%E5%87%A0%E4%B8%AA%E5%8F%B7--%E8%BD%AC%E4%B9%89%E6%98%BE%E7%A4%BA%E4%BA%95%E5%8F%B7%E8%80%8C%E4%B8%8D%E8%A2%AB%E8%AF%86%E5%88%AB%E4%B8%BAmarkdown%E8%AF%AD%E6%B3%95%E6%A0%87%E8%AE%B0">几级标题就有几个#号 &lt;-转义，显示井号而不被识别为markdown语法标记</a>
+    <ol>
+      <li><a href="#%E8%A1%A8%E6%A0%BC">表格</a></li>
+      <li><a href="#%E5%88%86%E5%89%B2%E7%BA%BF">分割线</a></li>
+      <li><a href="#%E5%BC%95%E7%94%A8-">引用 1</a></li>
+      <li><a href="#%E6%A0%87%E6%B3%A8">标注</a></li>
+      <li><a href="#%E6%9C%89%E5%BA%8F%E8%A1%A8-">有序表 2</a></li>
+      <li><a href="#%E6%97%A0%E5%BA%8F%E8%A1%A8-">无序表 3</a></li>
+      <li><a href="#%E7%BC%A9%E8%BF%9B%E4%B8%8E%E9%80%80%E6%A0%BC-">缩进与退格 4</a></li>
+      <li><a href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8-">任务列表 5</a></li>
+      <li><a href="#%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81">行内代码：</a></li>
+      <li><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">代码块：</a></li>
+      <li><a href="#%E5%85%AC%E5%BC%8F">公式</a></li>
+      <li><a href="#%E6%B3%A8%E9%87%8A">注释</a></li>
+      <li><a href="#%E5%B5%8C%E5%85%A5%E6%96%87%E4%BB%B6">嵌入文件：</a></li>
+      <li><a href="#%E5%A4%96%E9%83%A8%E9%93%BE%E6%8E%A5">外部链接</a></li>
+    </ol>
+  </li>
+</ol>
+      
+      
+      <script defer="defer" >
+ !function (e) {
+   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+   if (flag) {
+      var c = e.querySelector(".sidebar-toggle"),
+      r = e.querySelector("#sidebar"),
+      t = e.querySelector("#sidebar-checkbox");
+      e.addEventListener("click", function (e) {
+      var n = e.target;
+      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+    }, !1)
+  } 
+}(document);
+</script>
+
+      
+      <style>
+  #sidebar-checkbox:checked ~ .sidebar-toggle,
+  .sidebar,
+  .sidebar-toggle:active {
+    background-color: var(--theme-base-color);
+  }
+</style>
+
+      
+      <div>
+  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+  <span id="run_time_day">
+    <i class="fa-solid fa-spinner fa-pulse"></i>
+  </span>天
+  <span id="run_time_hour">
+    <i class="fa-solid fa-spinner fa-pulse"></i>
+  </span>时
+  <span id="run_time_minute">
+    <i class="fa-solid fa-spinner fa-pulse"></i>
+  </span>分
+  <span id="run_time_second">
+    <i class="fa-solid fa-spinner fa-pulse"></i>
+  </span>秒
+  <script>
+    setInterval(function (d,h,m,s,b) {
+      function setzero(i) {
+        return i < 10 ? "0" + i : i;
+      }
+      let BirthDay = new Date(b);
+      let today = new Date();
+      let timeold = (today.getTime() - BirthDay.getTime());
+      let sectimeold = timeold / 1000;
+      let secondsold = Math.floor(sectimeold);
+      let msPerDay = 24 * 60 * 60 * 1000;
+      let e_daysold = timeold / msPerDay;
+      let daysold = Math.floor(e_daysold);
+      let e_hrsold = (e_daysold - daysold) * 24;
+      let hrsold = Math.floor(e_hrsold);
+      let e_minsold = (e_hrsold - hrsold) * 60;
+      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+      let seconds = Math.floor((e_minsold - minsold) * 60);
+      d.textContent = daysold;
+      h.textContent = setzero(hrsold);
+      m.textContent = setzero(minsold);
+      s.textContent = setzero(seconds);
+    },
+    1000,
+    document.getElementById("run_time_day"),
+    document.getElementById("run_time_hour"),
+    document.getElementById("run_time_minute"),
+    document.getElementById("run_time_second"),
+    "07/23/2022 10:59:03")
+  </script>
+</div>
+
+      
+      <div>
+  <div>
+    <i class="fa-solid fa-eye fa-fw"></i>
+    <span id="busuanzi_value_page_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>次
+  </div>
+  <div>
+    <i class="fa-solid fa-paw fa-fw"></i>
+    <span id="busuanzi_value_site_pv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>枚
+  </div>
+  <div>
+    <i class="fa-solid fa-user-friends fa-fw"></i>
+    <span id="busuanzi_value_site_uv">
+      <i class="fa-solid fa-spinner fa-pulse"></i>
+    </span>人
+  </div>
+  <script
+    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+    async='async'
+  ></script>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+  <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
+    theme-ObJekyll
+  </a>
+</div>
+
+      
+      <div>
+  <i class="fa-solid fa-copyright fa-fw"></i>
+  2022 yaleiyale
+</div>
+
+      
+      
+      <div>
+        <i class="fa-solid fa-user-edit fa-fw"></i>
+        
+        
+        
+        4万
+        
+          
+        
+        字
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <div class="wrap">
+    
+    
+    
+    
+<style>
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: smaller;
+    margin-right: .5rem;
+    content: "\f292";
+  }
+</style>
+
+
+
+<div class="container content">
+  <div class="page">
+    
+    <h1 class="page-title">obsidian中的markdown书写范例实例</h1>
+    
+    <div class="wrapper">
+    <main><div class="post">
+    <span class="post-date">
+        
+        
+        <i class="fa-solid fa-calendar-plus fa-fw"></i>
+        建于：2022-07-30 20:46:11 Saturday
+        
+        
+        <i class="fa-solid fa-file-word fa-fw"></i>
+        4847字
+        
+        
+        <i class="fa-solid fa-clock fa-fw"></i>
+        17分
+        
+        
+        <br/>
+<i class="fab fa-creative-commons-by fa-fw"></i>
+<a
+  href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+  rel="license">
+  CC BY 4.0（除特别声明或转载）
+</a>
+
+        
+    </span>
+    <div id="notes-entry-container">
+        <content>
+            <p>枚举 <em>obsidian</em> 中支持的基本&amp;&amp;拓展 <em>markdown</em> 语法与特有的工具用法</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 几级标题就有几个\#号 &lt;-转义，显示井号而不被识别为markdown语法标记
+</code></pre></div></div>
+
+<h1 id="几级标题就有几个号--转义显示井号而不被识别为markdown语法标记">几级标题就有几个#号 &lt;-转义，显示井号而不被识别为markdown语法标记</h1>
+
+<h2 id="表格">表格</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|     *斜体* |   **粗体**    | ***斜粗体***   | **粗体中*包含斜体*的文字**               | *斜体中**包含粗体**的文字*                     |
+| ----------:|:-------------:|:-------------- | ---------------------------------------- | ---------------------------------------------- |
+| ~~删除线~~ | &lt;u&gt;下划线&lt;/u&gt; | 一行&lt;br&gt;另起行 | 上标：X&lt;sup&gt;2&lt;/sup&gt; 下标：H&lt;sub&gt;2&lt;/sub&gt;O | 内部链接：&lt;a class='internal-link' href='/notes/2022/08/29/223916'&gt;obsidian中的markdown书写范例实例&lt;/a&gt; |
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right"><em>斜体</em></th>
+      <th style="text-align: center"><strong>粗体</strong></th>
+      <th style="text-align: left"><strong><em>斜粗体</em></strong></th>
+      <th><strong>粗体中<em>包含斜体</em>的文字</strong></th>
+      <th><em>斜体中<strong>包含粗体</strong>的文字</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right"><del>删除线</del></td>
+      <td style="text-align: center"><u>下划线</u></td>
+      <td style="text-align: left">一行<br />另起行</td>
+      <td>上标：X<sup>2</sup> 下标：H<sub>2</sub>O</td>
+      <td>内部链接：<a class="internal-link" href="/notes/2022/08/29/223916">obsidian中的markdown书写范例实例</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="分割线">分割线</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="引用-">引用 <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 这是第一段引用文本的第 1行  
+&gt; 这是第一段引用文本的第 2行
+</code></pre></div></div>
+
+<blockquote>
+  <p>这是第一段引用文本的第 1行<br />
+这是第一段引用文本的第 2行</p>
+</blockquote>
+
+<h2 id="标注">标注</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; [!note]- 注释 点击查看类型名  
+&gt; note
+
+&gt; [!abstract]+ 摘要/总结 点击查看类型名  
+&gt; abstract, summary, tldr
+
+&gt; [!info] 信息/todo  
+&gt; info, todo
+
+&gt; [!tip] 提示/要点  
+&gt; tip, hint, important
+
+&gt; [!success] 成功/核查/完成  
+&gt; success, check, done
+
+&gt; [!question] 问题/帮助  
+&gt; question, help, faq
+
+&gt; [!warning] 警告/注意  
+&gt; warning, caution, attention
+
+&gt; [!failure] 故障  
+&gt; failure, fail, missing
+
+&gt; [!danger] 危险  
+&gt; danger, error
+
+&gt; [!bug]  
+&gt; bug
+
+&gt; [!example] 实例  
+&gt; example
+
+&gt; [!quote] 引用  
+&gt; quote, cite
+</code></pre></div></div>
+
+<blockquote>
+  <p>[!tip] 个例常用汇总<br />
+note,summary,info,tip,success,fail,question,warning,danger,bug,example,quote</p>
+</blockquote>
+
+<blockquote>
+  <p>[!note]- 注释 点击查看类型名<br />
+note</p>
+</blockquote>
+
+<blockquote>
+  <p>[!abstract]+ 摘要/总结 点击查看类型名<br />
+abstract, summary, tldr</p>
+</blockquote>
+
+<blockquote>
+  <p>[!info] 信息/todo<br />
+info, todo</p>
+</blockquote>
+
+<blockquote>
+  <p>[!tip] 提示/要点<br />
+tip, hint, important</p>
+</blockquote>
+
+<blockquote>
+  <p>[!success] 成功/核查/完成<br />
+success, check, done</p>
+</blockquote>
+
+<blockquote>
+  <p>[!question] 问题/帮助<br />
+question, help, faq</p>
+</blockquote>
+
+<blockquote>
+  <p>[!warning] 警告/注意<br />
+warning, caution, attention</p>
+</blockquote>
+
+<blockquote>
+  <p>[!failure] 故障<br />
+failure, fail, missing</p>
+</blockquote>
+
+<blockquote>
+  <p>[!danger] 危险<br />
+danger, error</p>
+</blockquote>
+
+<blockquote>
+  <p>[!bug]<br />
+bug</p>
+</blockquote>
+
+<blockquote>
+  <p>[!example] 实例<br />
+example</p>
+</blockquote>
+
+<blockquote>
+  <p>[!quote] 引用<br />
+quote, cite</p>
+</blockquote>
+
+<h2 id="有序表-">有序表 <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. 项目 1
+2. 项目 2
+3. 项目 3
+   1. 项目 3a
+   2. 项目 3b
+</code></pre></div></div>
+
+<ol>
+  <li>项目 1</li>
+  <li>项目 2</li>
+  <li>项目 3
+    <ol>
+      <li>项目 3a</li>
+      <li>项目 3b</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="无序表-">无序表 <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 项目 1
+- 项目 2
+	- 项目 2a
+	- 项目 2b
+</code></pre></div></div>
+
+<ul>
+  <li>项目 1</li>
+  <li>项目 2
+    <ul>
+      <li>项目 2a</li>
+      <li>项目 2b</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="缩进与退格-">缩进与退格 <sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></h2>
+
+<h2 id="任务列表-">任务列表 <sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] 待办任务列表 1
+- [ ] 待办任务列表 2
+- [x] 已办任务列表 1
+- [x] 已办任务列表 2
+</code></pre></div></div>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />待办任务列表 1</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />待办任务列表 2</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />已办任务列表 1</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />已办任务列表 2</li>
+</ul>
+
+<h2 id="行内代码">行内代码：</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>` 这是一段行内代码 `
+
+`&lt;table border="1" cellspacing="0" width="500" height="500"&gt;`
+
+`print("Hello, World!")`
+
+` 这是一行突出显示的文本内容 `
+
+`` 这是一段能显示 `反引号` 的行内代码 ``^code
+</code></pre></div></div>
+
+<p>` 这是一段行内代码 `</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;table border="1" cellspacing="0" width="500" height="500"&gt;</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">print("Hello, World!")</code></p>
+
+<p>` 这是一行突出显示的文本内容 `</p>
+
+<p><code class="language-plaintext highlighter-rouge">这是一段能显示 `反引号` 的行内代码</code>^code</p>
+
+<h2 id="代码块">代码块：</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```python
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+i = 2
+while(i &lt; 100):
+   j = 2
+   while(j &lt;= (i/j)):
+      if not(i%j): break
+      j = j + 1
+   if (j &gt; i/j) : print i, " 是素数"
+   i = i + 1
+ 
+print "Good bye!"
+```
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">):</span>
+   <span class="n">j</span> <span class="o">=</span> <span class="mi">2</span>
+   <span class="k">while</span><span class="p">(</span><span class="n">j</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="n">j</span><span class="p">)):</span>
+      <span class="k">if</span> <span class="ow">not</span><span class="p">(</span><span class="n">i</span><span class="o">%</span><span class="n">j</span><span class="p">):</span> <span class="k">break</span>
+      <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">j</span> <span class="o">&gt;</span> <span class="n">i</span><span class="o">/</span><span class="n">j</span><span class="p">)</span> <span class="p">:</span> <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="s">" 是素数"</span>
+   <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+ 
+<span class="k">print</span> <span class="s">"Good bye!"</span>
+</code></pre></div></div>
+
+<h2 id="公式">公式</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $E = mc^2$
+</code></pre></div></div>
+
+<p>$E = mc^2$</p>
+
+<h2 id="注释">注释</h2>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%这是一行Obsidian里的注释%%
+
+%%
+这里是
+一段
+假装有
+很多行的
+Obsidian里的
+注释
+编辑模式下注释才可见
+%%
+</code></pre></div></div>
+
+<p>%% 这是一行 Obsidian 里的注释%%</p>
+
+<p>%%
+这里是
+一段
+假装有
+很多行的
+Obsidian 里的
+注释
+编辑模式下注释才可见
+%%</p>
+
+<h2 id="嵌入文件">嵌入文件：</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!&lt;a class='internal-link' href='/notes/2022/08/29/223916#外部链接'&gt;obsidian中的markdown书写范例实例#外部链接&lt;/a&gt;  
+![logo|200](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1657596564/IMG_20220204_082019_600_pothy1.jpg " 悬浮提示文本 ")
+</code></pre></div></div>
+
+<p>!<a class="internal-link" href="/notes/2022/08/29/223916#外部链接">obsidian中的markdown书写范例实例#外部链接</a><br />
+<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1657596564/IMG_20220204_082019_600_pothy1.jpg" alt="logo|200" title=" 悬浮提示文本 " /></p>
+
+<blockquote>
+  <p>[!info] 支持格式</p>
+
+  <p>目前为止，Obsidian 支持以下格式的文件：<br />
+Markdown 文件：md;<br />
+图像文件：png, jpg, jpeg, gif, bmp, svg;<br />
+音频文件：mp3, webm, wav, m4a, ogg, 3gp, flac;<br />
+视频文件：mp4, webm, ogv;<br />
+PDF 文件：pdf.<br />
+以上类型文件都可以内嵌到笔记页面中</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>块链接：&lt;span title='no link.' class='invalid-link'&gt;  &lt;span class='invalid-link-brackets'&gt;[[&lt;/span&gt;  obsidian中的markdown书写范例实例#^code  &lt;span class='invalid-link-brackets'&gt;]]&lt;/span&gt;&lt;/span&gt;
+
+块引用：!&lt;span title='no link.' class='invalid-link'&gt;  &lt;span class='invalid-link-brackets'&gt;[[&lt;/span&gt;  obsidian中的markdown书写范例实例#^code  &lt;span class='invalid-link-brackets'&gt;]]&lt;/span&gt;&lt;/span&gt;
+
+Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&amp;file=%E6%9D%82%E5%BD%95%2F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%2Fobjekyll%E4%BD%BF%E7%94%A8%2Fobsidian%E4%BD%BF%E7%94%A8%2FMermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B)
+</code></pre></div></div>
+
+<p>块链接：<span title="no link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  obsidian中的markdown书写范例实例#^code  <span class="invalid-link-brackets">]]</span></span></p>
+
+<p>块引用：!<span title="no link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  obsidian中的markdown书写范例实例#^code  <span class="invalid-link-brackets">]]</span></span></p>
+
+<p>Obsidian URI：<a href="obsidian://open?vault=_notes&amp;file=%E6%9D%82%E5%BD%95%2F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%2Fobjekyll%E4%BD%BF%E7%94%A8%2Fobsidian%E4%BD%BF%E7%94%A8%2FMermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B">打开Mermaid书写范例</a></p>
+
+<h2 id="外部链接">外部链接</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[百度一下，你就知道](http://www.baidu.com "按住Ctrl点击跳转百度")
+
+变量形式表达：[百度一下，你就知道][度娘]；[知乎 - 有问题，就会有答案][知乎]
+
+&lt;a class='internal-link' href='/notes/2022/08/29/223916#标注'&gt;obsidian中的markdown书写范例实例#标注&lt;/a&gt;
+
+[度娘]: &lt;http://www.baidu.com&gt;
+[知乎]: &lt;https://www.zhihu.com&gt;
+</code></pre></div></div>
+
+<p><a href="http://www.baidu.com" title="按住Ctrl点击跳转百度">百度一下，你就知道</a></p>
+
+<p>变量形式表达：<a href="http://www.baidu.com">百度一下，你就知道</a>；<a href="https://www.zhihu.com">知乎 - 有问题，就会有答案</a></p>
+
+<p><a class="internal-link" href="/notes/2022/08/29/223916#标注">obsidian中的markdown书写范例实例#标注</a></p>
+
+<hr />
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[^1]: 同个引用段落内的换行直接敲击 Enter 即可；若需添加 第二个独立引用段落，连续敲击 两下 Enter 即可；后面的 &gt; 敲回车会自动补上
+
+[^2]: 输入文本内容后，敲击 Enter 自动补全格式，并进入 下个 有序列表；若需要在同个列表内，增加 换行显示 的内容 (但不进入下个列表)；敲击 Shift + Enter，即可另起一行输入文本；在有序列表的中间，插入一个新的列表，后面列表的 数字序号 会自动递进 一层；即便在源代码模式中修改了数字序号，渲染界面依然是 依照顺序 显示的
+
+[^3]: 输入文本内容后，敲击 Enter 自动补全格式，并进入 下个 无序列表；若需要在同个列表内，增加换行显示的内容 (但不进入下个列表)；敲击 Shift + Enter，即可另起一行输入文本
+
+[^4]: 在列表和引用的书写过程中，我们需要利用 缩进 与 退格，让文章肌理分明，更具层级；缩进：Tab；退格：Shift + Tab；引用的缩进和列表不同，引用需另起一行，并额外多打一个 &gt; 来完成缩进；如果要退回上一级，敲 2 下回车键即可
+
+[^5]: 任务列表也是可以缩进 + 退格的，操作跟 无序、有序列表一样
+</code></pre></div></div>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>同个引用段落内的换行直接敲击 Enter 即可；若需添加 第二个独立引用段落，连续敲击 两下 Enter 即可；后面的 &gt; 敲回车会自动补上 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>输入文本内容后，敲击 Enter 自动补全格式，并进入 下个 有序列表；若需要在同个列表内，增加 换行显示 的内容 (但不进入下个列表)；敲击 Shift + Enter，即可另起一行输入文本；在有序列表的中间，插入一个新的列表，后面列表的 数字序号 会自动递进 一层；即便在源代码模式中修改了数字序号，渲染界面依然是 依照顺序 显示的 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>输入文本内容后，敲击 Enter 自动补全格式，并进入 下个 无序列表；若需要在同个列表内，增加换行显示的内容 (但不进入下个列表)；敲击 Shift + Enter，即可另起一行输入文本 <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>在列表和引用的书写过程中，我们需要利用 缩进 与 退格，让文章肌理分明，更具层级；缩进：Tab；退格：Shift + Tab；引用的缩进和列表不同，引用需另起一行，并额外多打一个 &gt; 来完成缩进；如果要退回上一级，敲 2 下回车键即可 <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>任务列表也是可以缩进 + 退格的，操作跟 无序、有序列表一样 <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        </content>
+        <side style="font-size: 0.9em">
+            <h3 style="margin-bottom: 1em">BackLink</h3>
+            
+            <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/notes/2022/08/29/223916">obsidian中的markdown书写范例实例</a><br>
+                    <!-- <div style="font-size: 0.9em">枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/notes/2022/08/29/223927">obsidian结合jekyll</a><br>
+                    <!-- <div style="font-size: 0.9em">obsidian采用markdown
+</div> -->
+                </div>
+                
+            </div>
+            
+        </side>
+    </div>
+</div>
+<a href="/merger"> <img  src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png" alt="BuyMeACoffee" width="180"> </a>
+
+</main>
+</div>
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  var linkHistories = {};
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      if (!linkHistories[event.target.href]) {
+        iframe.src = event.target.href
+        iframe.onload = function() {
+          tooltipContentHtml = ''
+          tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+          tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+          tooltipContent.innerHTML = tooltipContentHtml
+          linkHistories[event.target.href] = tooltipContentHtml
+
+          tooltipWrapper.style.display = 'block';
+          setTimeout(function() {
+            tooltipWrapper.style.opacity = 1;
+          }, 1)
+        } 
+      } else {
+        tooltipContent.innerHTML = linkHistories[event.target.href]
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('touchend', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+    document.querySelectorAll('.internal-link').forEach(setupListeners);
+</script>
+
+<script
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
+></script>
+
+  </div>
+</div>
+
+
+
+
+
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+/>
+<style>
+  .katex-display>.katex {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+</style>
+<script
+  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+  defer="defer"
+></script>
+<script
+ src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+ defer="defer"
+ onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+   var tags = {
+    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+    '[!success]': '<i class="fa-solid fa-check"></i>',
+    '[!check]': '<i class="fa-solid fa-check"></i>',
+    '[!done]': '<i class="fa-solid fa-check"></i>',
+    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+  };
+  var blocklist = document.querySelectorAll("blockquote");
+  var blockCount = blocklist.length;
+  var blockNow;
+  for (var i = 0; i < blockCount; i++) {
+    blockNow = blocklist[i];
+    var find = false;
+    for (var key in tags) {
+      if (blockNow.innerHTML.indexOf(key) != -1) {
+        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+        find = true;
+        break;
+      }
+    }
+    if(!find){
+        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blocklist[i].innerHTML = blockNow.innerHTML;
+      }
+  }
+</script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+/>
+<style>
+  .pio-container{
+    -webkit-transition: transform .3s ease-in-out;
+               transition: transform .3s ease-in-out;
+  }
+  @media only print {
+    .pio-container {
+      display: none;
+    }
+  }
+ .layout-reverse #sidebar-checkbox:checked~.pio-container {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
+</style>
+<script
+  async="async"
+  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+  onload='
+    let pio_container = document.createElement("div");
+    pio_container.classList.add("pio-container");
+    pio_container.classList.add("right");
+    pio_container.style.bottom = "-2rem";
+    pio_container.style.zIndex = "1";
+    document.body.insertAdjacentElement("beforeend", pio_container);
+    let pio_action = document.createElement("div");
+    pio_action.classList.add("pio-action");
+    pio_container.insertAdjacentElement("beforeend", pio_action);
+    let pio_canvas = document.createElement("canvas");
+    pio_canvas.id = "pio";
+    pio_canvas.style.width = "14rem";
+    pio_canvas.width = "600";
+    pio_canvas.height = "800";
+    pio_container.insertAdjacentElement("beforeend", pio_canvas);
+    let pio = new Paul_Pio({
+      "mode": "fixed",
+      "hidden": true,
+      "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+      "content": {
+        "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+        "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+        "hidden": true,
+        "touch": ["hentai!","hentai!!","hentai!!!"],
+        "referer": "你通过 %t 来到了这里",
+        "custom": [{
+          "selector": "a",
+          "type": "link",
+        }, {
+          "selector": ".sidebar-toggle",
+          "text": "打开侧边栏叭~"
+        }, {
+          "selector": ".effect-info",
+          "text": "哇，你发现了什么！"
+        }, {
+          "selector": "#sidebar-search-input",
+          "text": "想搜索什么呢？很多干货哦！"
+        }, {
+          "selector": "#toc",
+          "text": "这是目录~"
+        }, {
+          "selector": ".page-title",
+          "text": "这是标题~"
+        }]
+      },
+      "model": [
+        "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
+        "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
+        "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/rem/model.json",
+        "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/kurumi/model.json"
+        ]
+    });'
+></script>
+
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+></script>
+<script type="text/javascript">
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
+  }
+</script>
+
+
+
+
+<script>
+  if (is_weixn_qq()) {
+   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+  }
+  function is_weixn_qq(){
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  var isQQ = !!/QQ\//i.test(ua);
+  if(isWeixin||isQQ){
+    return true;
+   }
+    return false;
+  }
+</script>
+
+
+
+
+<style>
+  pre .btn-pre-copy {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    color: hsla(0, 0%, 54.9%, .8);
+    transition: color .1s;
+  }
+</style>
+<script>
+  let preList = document.querySelectorAll("pre");
+  for (let pre of preList) {
+    let btn = document.createElement("div");
+    pre.appendChild(btn);
+    btn.className = "btn-pre-copy";
+    btn.innerHTML = "复制";
+   btn.onclick = function () {
+     btn.innerHTML = "";
+     toClip(pre.innerText);
+      btn.innerHTML = "复制成功";
+      setTimeout(() => {
+       btn.innerHTML = "复制";
+     }, 800);
+    }
+ }
+  function toClip(text) {
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        console.log("Text copied to clipboard...");
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  }
+</script>
+
+
+
+
+<script 
+  src="https://cdn.jsdelivr.net/gh/fz6m/lamu-leimu-button@1.2/dist/lamu-leimu.min.js"
+></script>
+
+
+
+    
+  </div>
+  
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+  
+  
+</body>
+
+</html>
+
