@@ -67,7 +67,7 @@ defaults:
                       disable: false # 是否不显示sidebar
                       avatar: # 侧边栏显示的头像
                           enable: true
-                          img: https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=320
+                          img: https://lestua.eu.org/pwa.png
                       nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
                           - title: <i class="fa-solid fa-home fa-fw"></i> 首页
                             href: /
@@ -237,7 +237,7 @@ defaults:
                       - | # 自定义主题色，可对应 <https://www.runoob.com/cssref/css-colornames.html> 挑选
                           <style>
                             .theme-base-07 {
-                              --theme-base-color: DarkSlateblue;
+                              --theme-base-color: Slateblue;
                             }
                           </style>
                       - | # 一些页面优化标签和样式，看不懂可跳过
@@ -270,12 +270,12 @@ defaults:
                       - | # 网站小图标，可换成你自己的图片，改href中的部分即可
                           <link
                             rel="apple-touch-icon-precomposed"
-                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
+                            href="https://lestua.eu.org/pwa.png"
                           />
                           <link
                             rel="shortcut
                             icon"
-                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
+                            href="https://lestua.eu.org/pwa.png"
                           />
                       - | # fontawesome图标
                           <link
@@ -498,15 +498,15 @@ defaults:
                                   "touch":helloword,
                                   "referer":"你通过 %t 来到了这里",
                                   "custom":[
-                                    {"selector":"a","type":"link",},
-                                    {"selector":"#coffee","text":"打赏要理性哦~"},
-                                    {"selector":"img","text":"点开看看吧~"},
-                                    {"selector":".wl-reaction","text":"我来要赞咯~"},
-                                    {"selector":".wl-comment","text":"文明发言，不然会被ban哦~"},
-                                    {"selector":".highlight","text":"代码可以复制呢~"},
-                                    {"selector":".sidebar-toggle","text":"打开侧边栏叭~"},
-                                    {"selector":".effect-info","text":"哇，你发现了什么！"},
-                                    {"selector":"#sidebar-search-input","text":"想搜索什么呢？"},
+                                    {"selector":"a","type":"link"},
+                                    {"selector":"#coffee","text":"打赏要理性哦😻~"},
+                                    {"selector":"img","text":"点开看看吧🔍~"},
+                                    {"selector":".wl-reaction","text":"我来要赞咯🌟"},
+                                    {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
+                                    {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
+                                    {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
+                                    {"selector":".effect-info","text":"哇，你发现了什么❗"},
+                                    {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
                                     {"selector":"#toc","text":"这是目录~"},
                                     {"selector":".page-title","text":"这是标题~"}]
                                     },
@@ -660,12 +660,12 @@ defaults:
                       - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
                           <link
                             rel="apple-touch-icon-precomposed"
-                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
+                            href="https://lestua.ml/pwa.png"
                           />
                           <link
                             rel="shortcut
                             icon"
-                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
+                            href="https://lestua.ml/pwa.png"
                           />
                       - |
                           <script>
@@ -770,7 +770,7 @@ sass:
     style: compressed
 readme_index: # 缺失index.md和index.html时，使用README.md代替之
     with_frontmatter: true # 支持带有yaml头的README
-logo: "https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45"
+logo: "https://lestua.eu.org/pwa.png"
 locale: zh
 timezone: Asia/Shanghai
 permalink: pretty
