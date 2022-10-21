@@ -67,7 +67,7 @@ defaults:
                       disable: false # 是否不显示sidebar
                       avatar: # 侧边栏显示的头像
                           enable: true
-                          img: https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=320
+                          img: https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=320
                       nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
                           - title: <i class="fa-solid fa-home fa-fw"></i> 首页
                             href: /
@@ -270,12 +270,12 @@ defaults:
                       - | # 网站小图标，可换成你自己的图片，改href中的部分即可
                           <link
                             rel="apple-touch-icon-precomposed"
-                            href="https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
+                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
                           />
                           <link
                             rel="shortcut
                             icon"
-                            href="https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
+                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
                           />
                       - | # fontawesome图标
                           <link
@@ -468,58 +468,54 @@ defaults:
                               async="async"
                               src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
                               onload='
-                                let pio_container = document.createElement("div");
-                                pio_container.classList.add("pio-container");
-                                pio_container.classList.add("right");
-                                pio_container.style.bottom = "-2rem";
-                                pio_container.style.zIndex = "1";
-                                document.body.insertAdjacentElement("beforeend", pio_container);
-                                let pio_action = document.createElement("div");
-                                pio_action.classList.add("pio-action");
-                                pio_container.insertAdjacentElement("beforeend", pio_action);
-                                let pio_canvas = document.createElement("canvas");
-                                pio_canvas.id = "pio";
-                                pio_canvas.style.width = "14rem";
-                                pio_canvas.width = "600";
-                                pio_canvas.height = "800";
-                                pio_container.insertAdjacentElement("beforeend", pio_canvas);
-                                let pio = new Paul_Pio({
-                                  "mode": "fixed",
-                                  "hidden": true,
-                                  "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
-                                  "content": {
-                                    "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
-                                    "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
-                                    "hidden": true,
-                                    "touch": ["hentai!","hentai!!","hentai!!!"],
-                                    "referer": "你通过 %t 来到了这里",
-                                    "custom": [{
-                                      "selector": "a",
-                                      "type": "link",
-                                    }, {
-                                      "selector": ".sidebar-toggle",
-                                      "text": "打开侧边栏叭~"
-                                    }, {
-                                      "selector": ".effect-info",
-                                      "text": "哇，你发现了什么！"
-                                    }, {
-                                      "selector": "#sidebar-search-input",
-                                      "text": "想搜索什么呢？很多干货哦！"
-                                    }, {
-                                      "selector": "#toc",
-                                      "text": "这是目录~"
-                                    }, {
-                                      "selector": ".page-title",
-                                      "text": "这是标题~"
-                                    }]
-                                  },
-                                  "model": [
-                                    "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
-                                    "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
-                                    "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/rem/model.json",
-                                    "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection/kurumi/model.json"
-                                    ]
-                                });'
+                              fetch("https://v1.hitokoto.cn")
+                              .then(response=>response.json())
+                              .then(data=>{var helloword=data.hitokoto;
+                              var pio_container=document.createElement("div");
+                              pio_container.classList.add("pio-container");
+                              pio_container.classList.add("right");
+                              pio_container.style.bottom="-2rem";
+                              pio_container.style.zIndex="1";
+                              document.body.insertAdjacentElement("beforeend",pio_container);
+                              let pio_action=document.createElement("div");
+                              pio_action.classList.add("pio-action");
+                              pio_container.insertAdjacentElement("beforeend",pio_action);
+                              let pio_canvas=document.createElement("canvas");
+                              pio_canvas.id="pio";
+                              pio_canvas.style.width="14rem";
+                              pio_canvas.width="600";
+                              pio_canvas.height="800";
+                              pio_container.insertAdjacentElement("beforeend",pio_canvas);
+                              let pio = new Paul_Pio({
+                                "mode":"fixed",
+                                "hidden":true,
+                                "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+                                "content":{
+                                  "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+                                  "skin":["要换成我的朋友吗？","让她放个假吧~"],
+                                  "hidden":true,
+                                  "welcome":helloword,
+                                  "touch":helloword,
+                                  "referer":"你通过 %t 来到了这里",
+                                  "custom":[
+                                    {"selector":"a","type":"link",},
+                                    {"selector":"#coffee","text":"打赏要理性哦~"},
+                                    {"selector":"img","text":"点开看看吧~"},
+                                    {"selector":".wl-reaction","text":"我来要赞咯~"},
+                                    {"selector":".wl-comment","text":"文明发言，不然会被ban哦~"},
+                                    {"selector":".highlight","text":"代码可以复制呢~"},
+                                    {"selector":".sidebar-toggle","text":"打开侧边栏叭~"},
+                                    {"selector":".effect-info","text":"哇，你发现了什么！"},
+                                    {"selector":"#sidebar-search-input","text":"想搜索什么呢？"},
+                                    {"selector":"#toc","text":"这是目录~"},
+                                    {"selector":".page-title","text":"这是标题~"}]
+                                    },
+                                "model":[
+                                  "https://lestua.ml/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
+                                  "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
+                                  "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
+                                  "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"]
+                                    })}).catch(console.error);'
                             ></script>
                       - smart_include:
                             enable: false
@@ -646,7 +642,7 @@ defaults:
                         CC BY 4.0（除特别声明或转载）
                       </a>
                   coffee: >-
-                      <a href="/merger"> <img 
+                      <a id = "coffee" href="/merger"> <img 
                       src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png"
                       alt="BuyMeACoffee" width="180"> </a>
               aboutgame:
@@ -664,12 +660,12 @@ defaults:
                       - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
                           <link
                             rel="apple-touch-icon-precomposed"
-                            href="https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
+                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
                           />
                           <link
                             rel="shortcut
                             icon"
-                            href="https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
+                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
                           />
                       - |
                           <script>
@@ -685,7 +681,7 @@ defaults:
                             var title = "选择你的支付方式";
                             var subtitle = "跟随进一步的指示以向" + myname + "付款";
                             var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-                            var gravatar_url = "https://gravatar.loli.net/avatar/";
+                            var gravatar_url = "https://sdn.geekzu.org/avatar/";
                           </script>
                       - |
                           <meta
@@ -774,7 +770,7 @@ sass:
     style: compressed
 readme_index: # 缺失index.md和index.html时，使用README.md代替之
     with_frontmatter: true # 支持带有yaml头的README
-logo: "https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45"
+logo: "https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45"
 locale: zh
 timezone: Asia/Shanghai
 permalink: pretty
