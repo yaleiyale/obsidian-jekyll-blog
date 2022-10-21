@@ -67,7 +67,7 @@ defaults:
                       disable: false # 是否不显示sidebar
                       avatar: # 侧边栏显示的头像
                           enable: true
-                          img: https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=320
+                          img: https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=320
                       nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
                           - title: <i class="fa-solid fa-home fa-fw"></i> 首页
                             href: /
@@ -270,12 +270,12 @@ defaults:
                       - | # 网站小图标，可换成你自己的图片，改href中的部分即可
                           <link
                             rel="apple-touch-icon-precomposed"
-                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
+                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
                           />
                           <link
                             rel="shortcut
                             icon"
-                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
+                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
                           />
                       - | # fontawesome图标
                           <link
@@ -660,12 +660,12 @@ defaults:
                       - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
                           <link
                             rel="apple-touch-icon-precomposed"
-                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
+                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=320"
                           />
                           <link
                             rel="shortcut
                             icon"
-                            href="https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
+                            href="https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45?s=32"
                           />
                       - |
                           <script>
@@ -681,7 +681,7 @@ defaults:
                             var title = "选择你的支付方式";
                             var subtitle = "跟随进一步的指示以向" + myname + "付款";
                             var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-                            var gravatar_url = "https://sdn.geekzu.org/avatar/";
+                            var gravatar_url = "https://dn-qiniu-avatar.qbox.me/avatar/";
                           </script>
                       - |
                           <meta
@@ -770,7 +770,7 @@ sass:
     style: compressed
 readme_index: # 缺失index.md和index.html时，使用README.md代替之
     with_frontmatter: true # 支持带有yaml头的README
-logo: "https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45"
+logo: "https://dn-qiniu-avatar.qbox.me/avatar/81da22ab6461e4b650e7542751d6ae45"
 locale: zh
 timezone: Asia/Shanghai
 permalink: pretty
