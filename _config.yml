@@ -237,7 +237,7 @@ defaults:
                       - | # 自定义主题色，可对应 <https://www.runoob.com/cssref/css-colornames.html> 挑选
                           <style>
                             .theme-base-07 {
-                              --theme-base-color: Slateblue;
+                              --theme-base-color: darkslateblue;
                             }
                           </style>
                       - | # 一些页面优化标签和样式，看不懂可跳过
@@ -670,7 +670,7 @@ defaults:
                       - |
                           <script>
                             var myname = "yaleiyale";
-                            var profile = "deilookout@outlook.com";
+                            var profile = "https://lestua.eu.org/pwa.png";
                             var usage = "payment";
                             var wechat = "wxp://f2f0dsQlAhlj8JhTvCFKDc06potIJmAlC6Egb5iwzbEuuVA";
                             var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ_d7U6wgYgpb1lgZCIDk4MGU5NTgxYjYwMmVmMjRhMGI4NzE2OTQzMzEzMWU0_xxx_sign&u=2373267325&n=fidget";
@@ -681,7 +681,6 @@ defaults:
                             var title = "选择你的支付方式";
                             var subtitle = "跟随进一步的指示以向" + myname + "付款";
                             var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-                            var gravatar_url = "https://dn-qiniu-avatar.qbox.me/avatar/";
                           </script>
                       - |
                           <meta
