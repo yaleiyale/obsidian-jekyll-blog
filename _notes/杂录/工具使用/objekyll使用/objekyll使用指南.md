@@ -3,7 +3,7 @@ title: objekyll使用指南
 aliases: 
 tags: objekyll 指南 rootnote
 date: 2022-08-21 21:23:33 +0800,周日
-last_modified_at: 2022-10-12 15:24:07 +0800,周三
+last_modified_at: 2022-10-29 21:55:47 +0800,周六
 from: 
 permalink: /notes/2022/08/29/223921
 ---

@@ -1,774 +1,774 @@
 title: objekyll小站 # 站点标题
 include:
-    - .nojekyll
+  - .nojekyll
 exclude:
-    - _includes/notes_graph.json
-    - _notes/模板
-    - _notes/cedict_ts.u8
+  - _includes/notes_graph.json
+  - _notes/模板
+  - _notes/cedict_ts.u8
 description: | # 头像背后的信息（html格式）
-    <br>
-    <br>
-    轻阴阁小雨，
-    <a href="mailto:deilookout@outlook.com">
-      <i class="fa-solid fa-envelope fa-fw"></i>
-    </a>
-    <br/>
-    深院昼慵开。
-    <a href="https://github.com/yaleiyale">
-      <i class="fa-brands fa-github fa-fw"></i>
-    </a>
-    <br/>
-    坐看苍苔色，
-    <a href="https://www.acfun.cn/u/31661560">
-      <i class="fa-solid fa-otter fa-fw"></i>
-    </a>
-    <br/>
-    欲上人衣来。
-    <a href="https://space.bilibili.com/357477198">
-      <i class="fa-brands fa-bilibili" fa-fw></i>
-    </a>
+  <br>
+  <br>
+  轻阴阁小雨，
+  <a href="mailto:deilookout@outlook.com">
+    <i class="fa-solid fa-envelope fa-fw"></i>
+  </a>
+  <br/>
+  深院昼慵开。
+  <a href="https://github.com/yaleiyale">
+    <i class="fa-brands fa-github fa-fw"></i>
+  </a>
+  <br/>
+  坐看苍苔色，
+  <a href="https://www.acfun.cn/u/31661560">
+    <i class="fa-solid fa-otter fa-fw"></i>
+  </a>
+  <br/>
+  欲上人衣来。
+  <a href="https://space.bilibili.com/357477198">
+    <i class="fa-brands fa-bilibili" fa-fw></i>
+  </a>
 author: yaleiyale # 作者
 url: "https://lestua.eu.org" # 默认域名或你的自定义域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 use_html_extension: false
 collections:
-    notes:
-        output: true
-        permalink: "/:path"
-    knots:
-        output: true
-        permalink: "/:path"
+  notes:
+    output: true
+    permalink: "/:path"
+  knots:
+    output: true
+    permalink: "/:path"
 defaults:
-    - scope:
-          path: _notes/**/*.md
-      values:
-          layout: post
-    - scope:
-          path: "" # 此处的空字符串表示项目中的所有文件
-      values: # 以下配置项也可以在任意页面自定义
-          jekyll-theme-ObJekyll: # 我的主题的自定义样式都在这个命名空间
-              comments: # 留言页，请先修改这里，确保使用的是你自己的repo！参照<https://utteranc.es/>，稍微不怕麻烦一点的还推荐使用Waline <https://waline.js.org/>
-                  append: |
-                      <script
-                        repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
-                        src="https://utteranc.es/client.js"
-                        issue-term="url"
-                        theme="github-light"
-                        crossorigin="anonymous"
-                        async="async"
-                      ></script>
-              default:
-                  body:
-                      theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-                      layout-reverse: true # 开启后sidebar在右边，反之左边
-                      sidebar-overlay: true # 开启后正文不随sidebar移动而移动
-                  html_lang: zh # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
-                  sidebar: # 此配置项下是一些关于侧边栏的配置
-                      disable: false # 是否不显示sidebar
-                      avatar: # 侧边栏显示的头像
-                          enable: true
-                          img: https://lestua.eu.org/pwa.png
-                      nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
-                          - title: <i class="fa-solid fa-home fa-fw"></i> 首页
-                            href: /
-                          - title: <i class="fa-solid fa-comment fa-fw"></i> 留言
-                            href: /comments
-                          - title: <i class="fa-solid fa-seedling fa-fw"></i> 聚点
-                            href: /roots
-                          - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
-                            href: /archive
-                          - title: <i class="fa-solid fa-tags fa-fw"></i> 标签
-                            href: /tags
-                          - title: <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
-                            href: /map
-                          - title: <i class="fa-solid fa-coffee fa-fw"></i> 打赏
-                            href: /merger
-                      simple_jekyll_search: # 侧边栏的全站搜索
-                          enable: true
-                          full_text_search: false # 可能导致缓慢的搜索和加载
-                          append: | # 如果看不懂就不改
-                              <input
-                                id="sidebar-search-input"
-                                placeholder="搜索博文"
-                              />
-                              <ol
-                                id="sidebar-search-results-container"
-                              ></ol>
-                              <script
-                                src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
-                                async='async'
-                                onload='
-                                  SimpleJekyllSearch({
-                                    json: "/assets/simple-jekyll-search/search.json",
-                                    searchInput: document.getElementById("sidebar-search-input"),
-                                    resultsContainer: document.getElementById("sidebar-search-results-container"),
-                                    searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
-                                    limit: 99,
-                                    fuzzy: true
-                                  })'
-                              ></script>
-                      jekyll-toc: # 侧边栏的目录插件，https://github.com/allejo/jekyll-toc
-                          enable: true
-                      append_to_sidebar:
-                          - | # 点击空白处而非按钮从而关闭侧边栏的插件，默认移动设备开启，桌面关闭，可选
-                              <script defer="defer" >
-                               !function (e) {
-                                 var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
-                                 if (flag) {
-                                    var c = e.querySelector(".sidebar-toggle"),
-                                    r = e.querySelector("#sidebar"),
-                                    t = e.querySelector("#sidebar-checkbox");
-                                    e.addEventListener("click", function (e) {
-                                    var n = e.target;
-                                    t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
-                                  }, !1)
-                                } 
-                              }(document);
-                              </script>
-                          - | # 侧边栏使用主题色
-                              <style>
-                                #sidebar-checkbox:checked ~ .sidebar-toggle,
-                                .sidebar,
-                                .sidebar-toggle:active {
-                                  background-color: var(--theme-base-color);
-                                }
-                              </style>
-                          - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
-                              <div>
-                                <i class="fa-solid fa-cog fa-spin fa-fw"></i>
-                                <span id="run_time_day">
-                                  <i class="fa-solid fa-spinner fa-pulse"></i>
-                                </span>天
-                                <span id="run_time_hour">
-                                  <i class="fa-solid fa-spinner fa-pulse"></i>
-                                </span>时
-                                <span id="run_time_minute">
-                                  <i class="fa-solid fa-spinner fa-pulse"></i>
-                                </span>分
-                                <span id="run_time_second">
-                                  <i class="fa-solid fa-spinner fa-pulse"></i>
-                                </span>秒
-                                <script>
-                                  setInterval(function (d,h,m,s,b) {
-                                    function setzero(i) {
-                                      return i < 10 ? "0" + i : i;
-                                    }
-                                    let BirthDay = new Date(b);
-                                    let today = new Date();
-                                    let timeold = (today.getTime() - BirthDay.getTime());
-                                    let sectimeold = timeold / 1000;
-                                    let secondsold = Math.floor(sectimeold);
-                                    let msPerDay = 24 * 60 * 60 * 1000;
-                                    let e_daysold = timeold / msPerDay;
-                                    let daysold = Math.floor(e_daysold);
-                                    let e_hrsold = (e_daysold - daysold) * 24;
-                                    let hrsold = Math.floor(e_hrsold);
-                                    let e_minsold = (e_hrsold - hrsold) * 60;
-                                    let minsold = Math.floor((e_hrsold - hrsold) * 60);
-                                    let seconds = Math.floor((e_minsold - minsold) * 60);
-                                    d.textContent = daysold;
-                                    h.textContent = setzero(hrsold);
-                                    m.textContent = setzero(minsold);
-                                    s.textContent = setzero(seconds);
-                                  },
-                                  1000,
-                                  document.getElementById("run_time_day"),
-                                  document.getElementById("run_time_hour"),
-                                  document.getElementById("run_time_minute"),
-                                  document.getElementById("run_time_second"),
-                                  "07/23/2022 10:59:03")
-                                </script>
-                              </div>
-                          - | # 不蒜子 页面统计，看不懂可不改
-                              <div>
-                                <div>
-                                  <i class="fa-solid fa-eye fa-fw"></i>
-                                  <span id="busuanzi_value_page_pv">
-                                    <i class="fa-solid fa-spinner fa-pulse"></i>
-                                  </span>次
-                                </div>
-                                <div>
-                                  <i class="fa-solid fa-paw fa-fw"></i>
-                                  <span id="busuanzi_value_site_pv">
-                                    <i class="fa-solid fa-spinner fa-pulse"></i>
-                                  </span>枚
-                                </div>
-                                <div>
-                                  <i class="fa-solid fa-user-friends fa-fw"></i>
-                                  <span id="busuanzi_value_site_uv">
-                                    <i class="fa-solid fa-spinner fa-pulse"></i>
-                                  </span>人
-                                </div>
-                                <script
-                                  src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
-                                  async='async'
-                                ></script>
-                              </div>
-                          - | # 觉得我的主题好用的话，让更多的人知道它吧！
-                              <div>
-                                <i class="fa-solid fa-thumbs-up fa-fw"></i>
-                                <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
-                                  theme-ObJekyll
-                                </a>
-                              </div>
-                          - | # Copyright声明
-                              <div>
-                                <i class="fa-solid fa-copyright fa-fw"></i>
-                                2022 yaleiyale
-                              </div>
-                      wordcount: # 全站字数统计 效果并不好 会将单词中的多个字母算作多个字 由于双链插件会产生文本替换 不同页面呈现字数可能会有出入
-                          enable: true # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
-                          prepend: <i class="fa-solid fa-user-edit fa-fw"></i>
-                          wan: 万
-                          kilo: 千
-                          unit: 字
-                  append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
-                      - | # jsdelivr 防cdn挂脚本，来自 https://github.com/PipecraftNet/jsdelivr-auto-fallback/blob/0.2.2/index.min.js
-                          <script>
-                            (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
-                          </script>
-                      #- | # 配置为PWA
-                      #  <link rel="manifest" href="/manifest.json">
-                      #  <script>
-                      #    if('serviceWorker' in navigator) {
-                      #    navigator.serviceWorker.register('/sw.js', { scope: '/' });
-                      #    }
-                      #  </script>
-                      - | # 自定义主题色，可对应 <https://www.runoob.com/cssref/css-colornames.html> 挑选
-                          <style>
-                            .theme-base-07 {
-                              --theme-base-color: darkslateblue;
-                            }
-                          </style>
-                      - | # 一些页面优化标签和样式，看不懂可跳过
-                          <meta
-                            name="viewport"
-                            content="width=device-width,minimum-scale=1,initial-scale=1"
-                          />
-                          <meta
-                            http-equiv="content-type"
-                            content="text/html; charset=utf-8"
-                          />
-                          <meta 
-                            name="referrer"
-                            content="no-referrer" 
-                          />
-                          <link
-                            rel="alternate"
-                            href="/feed.xml"
-                            title="RSS"
-                            type="application/rss+xml"
-                          />
-                          <link
-                            rel="stylesheet"
-                            href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
-                          />
-                          <link 
-                            rel="stylesheet" 
-                            href="/styles.css"
-                          />
-                      - | # 网站小图标，可换成你自己的图片，改href中的部分即可
-                          <link
-                            rel="apple-touch-icon-precomposed"
-                            href="https://lestua.eu.org/pwa.png"
-                          />
-                          <link
-                            rel="shortcut
-                            icon"
-                            href="https://lestua.eu.org/pwa.png"
-                          />
-                      - | # fontawesome图标
-                          <link
-                            rel="stylesheet"
-                            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
-                          />
-                      - | # 使用了小米公司的MiSans字体
-                          <style>
-                            .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
-                              font-family:'MiSans';
-                            }
-                          </style>
-              page:
-                  title: # 为每个页面自动生成一个 H1 title
-                      enable: true
-                  prepend:
-                      - | # 标题前插一个图标
-                          <style>
-                            h1::before,
-                            h2::before,
-                            h3::before,
-                            h4::before,
-                            h5::before,
-                            h6::before {
-                              font-family: "Font Awesome 6 Free";
-                              font-weight: bold;
-                              font-size: smaller;
-                              margin-right: .5rem;
-                              content: "\f292";
-                            }
-                          </style>
-                  plugin:
-                      - smart_include:
-                            enable: true
-                            key: $
-                        append: | # 对KaTeX过长公式渲染超出页面的修正
-                            <link
-                              rel="stylesheet"
-                              href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
-                            />
-                            <style>
-                              .katex-display>.katex {
-                                white-space: pre-wrap;
-                                word-wrap: break-word;
-                                word-break: break-all;
-                              }
-                            </style>
-                            <script
-                              src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
-                              defer="defer"
-                            ></script>
-                            <script
-                             src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
-                             defer="defer"
-                             onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
-                            ></script>
-                      - smart_include:
-                            enable: true
-                            key: language-vega-lite
-                        append: | # vega-lite支持
-                            <style>
-                              pre.language-vega-lite,
-                              code.language-vega-lite {
-                                display: none;
-                              }
-                            </style>
-                            <script
-                              src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
-                              async="async"
-                              onload='
-                                for(let x of document.getElementsByClassName("language-vega-lite"))
-                                  if(x.nodeName=="CODE")
-                                  {
-                                    let m = document.createElement("div");
-                                    x.parentNode.insertAdjacentElement("beforebegin", m);
-                                    vegaEmbed(m, JSON.parse(x.textContent));
-                                  }'
-                            ></script>
-                      - smart_include:
-                            enable: true
-                            key: language-mermaid
-                        append: | # mermaid支持
-                            <style>
-                              pre.language-mermaid,
-                              code.language-mermaid {
-                                display: none;
-                              }
-                              @media only screen {
-                                .mermaid {
-                                  overflow: hidden hidden;
-                                  max-width: 100%;
-                                  max-height: 66.6vh;
-                                }
-                                .mermaid {
-                                  overflow: auto auto;
-                                }
-                              }
-                            </style>
-                            <script
-                              src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
-                              async="async"
-                              onload='
-                                for(let x of document.getElementsByClassName("language-mermaid"))
-                                  if(x.nodeName=="CODE")
-                                  {
-                                    let m = document.createElement("div");
-                                    m.classList.add("mermaid");
-                                    m.textContent = x.textContent;
-                                    x.parentNode.insertAdjacentElement("beforebegin", m);
-                                  }'
-                            ></script>
-                      - smart_include:
-                            enable: false
-                        append: | # 标注支持
-                            <script type="text/javascript">
-                               var tags = {
-                                '[!note]': '<i class="fa-solid fa-pencil"></i>',
-                                '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
-                                '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
-                                '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
-                                '[!info]': '<i class="fa-solid fa-circle-info"></i>',
-                                '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
-                                '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-                                '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-                                '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
-                                '[!success]': '<i class="fa-solid fa-check"></i>',
-                                '[!check]': '<i class="fa-solid fa-check"></i>',
-                                '[!done]': '<i class="fa-solid fa-check"></i>',
-                                '[!question]': '<i class="fa-regular fa-circle-question"></i>',
-                                '[!help]': '<i class="fa-regular fa-circle-question"></i>',
-                                '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
-                                '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-                                '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-                                '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
-                                '[!failure]': '<i class="fa-solid fa-xmark"></i>',
-                                '[!fail]': '<i class="fa-solid fa-xmark"></i>',
-                                '[!missing]': '<i class="fa-solid fa-xmark"></i>',
-                                '[!danger]': '<i class="fa-solid fa-bolt"></i>',
-                                '[!error]': '<i class="fa-solid fa-bolt"></i>',
-                                '[!bug]': '<i class="fa-solid fa-bug"></i>',
-                                '[!example]': '<i class="fa-solid fa-list-ul"></i>',
-                                '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
-                                '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
-                              };
-                              var blocklist = document.querySelectorAll("blockquote");
-                              var blockCount = blocklist.length;
-                              var blockNow;
-                              for (var i = 0; i < blockCount; i++) {
-                                blockNow = blocklist[i];
-                                var find = false;
-                                for (var key in tags) {
-                                  if (blockNow.innerHTML.indexOf(key) != -1) {
-                                    blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
-                                    blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
-                                    blocklist[i].innerHTML = blockNow.innerHTML;
-                                    find = true;
-                                    break;
-                                  }
-                                }
-                                if(!find){
-                                    blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
-                                    blocklist[i].innerHTML = blockNow.innerHTML;
-                                  }
-                              }
-                            </script>
-                      - smart_include:
-                            enable: false
-                        append: | # 引入live2d看板娘！模型可在models中替换
-                            <link
-                              rel="stylesheet"
-                              href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
-                            />
-                            <style>
-                              .pio-container{
-                                -webkit-transition: transform .3s ease-in-out;
-                                           transition: transform .3s ease-in-out;
-                              }
-                              @media only print {
-                                .pio-container {
-                                  display: none;
-                                }
-                              }
-                             .layout-reverse #sidebar-checkbox:checked~.pio-container {
-                                 -webkit-transform: translateX(-14rem);
-                                    -ms-transform: translateX(-14rem);
-                                          transform: translateX(-14rem);
-                               }
-                            </style>
-                            <script
-                              async="async"
-                              src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
-                              onload='
-                              fetch("https://v1.hitokoto.cn")
-                              .then(response=>response.json())
-                              .then(data=>{var helloword=data.hitokoto;
-                              var pio_container=document.createElement("div");
-                              pio_container.classList.add("pio-container");
-                              pio_container.classList.add("right");
-                              pio_container.style.bottom="-2rem";
-                              pio_container.style.zIndex="1";
-                              document.body.insertAdjacentElement("beforeend",pio_container);
-                              let pio_action=document.createElement("div");
-                              pio_action.classList.add("pio-action");
-                              pio_container.insertAdjacentElement("beforeend",pio_action);
-                              let pio_canvas=document.createElement("canvas");
-                              pio_canvas.id="pio";
-                              pio_canvas.style.width="14rem";
-                              pio_canvas.width="600";
-                              pio_canvas.height="800";
-                              pio_container.insertAdjacentElement("beforeend",pio_canvas);
-                              let pio = new Paul_Pio({
-                                "mode":"fixed",
-                                "hidden":true,
-                                "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
-                                "content":{
-                                  "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
-                                  "skin":["要换成我的朋友吗？","让她放个假吧~"],
-                                  "hidden":true,
-                                  "welcome":helloword,
-                                  "touch":helloword,
-                                  "referer":"你通过 %t 来到了这里",
-                                  "custom":[
-                                    {"selector":"a","type":"link"},
-                                    {"selector":"#coffee","text":"打赏要理性哦😻~"},
-                                    {"selector":"img","text":"点开看看吧🔍~"},
-                                    {"selector":".wl-reaction","text":"我来要赞咯🌟"},
-                                    {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
-                                    {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
-                                    {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
-                                    {"selector":".effect-info","text":"哇，你发现了什么❗"},
-                                    {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
-                                    {"selector":"#toc","text":"这是目录~"},
-                                    {"selector":".page-title","text":"这是标题~"}]
-                                    },
-                                "model":[
-                                  "https://lestua.ml/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
-                                  "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
-                                  "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
-                                  "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"]
-                                    })}).catch(console.error);'
-                            ></script>
-                      - smart_include:
-                            enable: false
-                        append: | # 图片浮窗
-                            <link
-                              rel="stylesheet"
-                              href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
-                            />
-                            <script
-                              src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
-                            ></script>
-                            <script type="text/javascript">
-                              var content = document.querySelector(".wrapper");
-                               if (content) {
-                                 var list = content.querySelectorAll("img");
-                                 if (list) {
-                                  var imgCount = list.length;
-                                  var imgNow;
-                                  var viewer = [];
-                                  if (imgCount > 0) {
-                                     for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
-                                     {
-                                       imgNow = list[i];
-                                      //console.log(imgNow.src);
-                                      viewer[i - 1] = new Viewer(imgNow);
-                                     }
-                                  }
-                                 }
-                              }
-                            </script>
-                      - smart_include:
-                            enable: false
-                        append: | # 远离qq微信
-                            <script>
-                              if (is_weixn_qq()) {
-                               window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
-                              }
-                              function is_weixn_qq(){
-                              var ua = navigator.userAgent;
-                              var isWeixin = !!/MicroMessenger/i.test(ua);
-                              var isQQ = !!/QQ\//i.test(ua);
-                              if(isWeixin||isQQ){
-                                return true;
-                               }
-                                return false;
-                              }
-                            </script>
-                      - smart_include:
-                            enable: false
-                        append: | # codeblocks复制按钮
-                            <style>
-                              pre .btn-pre-copy {
-                                -webkit-user-select: none;
-                                -moz-user-select: none;
-                                -ms-user-select: none;
-                                -khtml-user-select: none;
-                                user-select: none;
-                                position: absolute;
-                                top: 10px;
-                                right: 12px;
-                                font-size: 12px;
-                                line-height: 1;
-                                cursor: pointer;
-                                color: hsla(0, 0%, 54.9%, .8);
-                                transition: color .1s;
-                              }
-                            </style>
-                            <script>
-                              let preList = document.querySelectorAll("pre");
-                              for (let pre of preList) {
-                                let btn = document.createElement("div");
-                                pre.appendChild(btn);
-                                btn.className = "btn-pre-copy";
-                                btn.innerHTML = "复制";
-                               btn.onclick = function () {
-                                 btn.innerHTML = "";
-                                 toClip(pre.innerText);
-                                  btn.innerHTML = "复制成功";
-                                  setTimeout(() => {
-                                   btn.innerHTML = "复制";
-                                 }, 800);
-                                }
-                             }
-                              function toClip(text) {
-                                navigator.clipboard.writeText(text)
-                                  .then(() => {
-                                    console.log("Text copied to clipboard...");
-                                  })
-                                  .catch(err => {
-                                    console.log('Something went wrong', err);
-                                  });
-                              }
-                            </script>
-                      - smart_include:
-                            enable: false
-                        append: | # 回到顶部底部
-                            <script 
-                              src="https://cdn.jsdelivr.net/gh/fz6m/lamu-leimu-button@1.2/dist/lamu-leimu.min.js"
-                            ></script>
-              post:
-                  date: # 显示博文创建时间
-                      enable: true
-                      prepend: <i class="fa-solid fa-calendar-plus fa-fw"></i>
-                  modified: # 显示博文最近修改时间
-                      enable: false
-                      prepend: <i class="fa-solid fa-calendar-day fa-fw"></i>
-                  wordcount: # 统计全文字数
-                      enable: true
-                      prepend: <i class="fa-solid fa-file-word fa-fw"></i>
-                      unit: 字
-                  readtime: # 计算文章阅读时间
-                      enable: true
-                      prepend: <i class="fa-solid fa-clock fa-fw"></i>
-                      unit: 分
-                      divided_by: 300 # 正常人的阅读速度大概每分钟三百个字
-                  tags: #显示博文标签
-                      enable: false
-                  copyright: |
-                      <br/>
-                      <i class="fab fa-creative-commons-by fa-fw"></i>
-                      <a
-                        href="https://creativecommons.org/licenses/by/4.0/deed.zh"
-                        rel="license">
-                        CC BY 4.0（除特别声明或转载）
-                      </a>
-                  coffee: >-
-                      <a id = "coffee" href="/merger"> <img 
-                      src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png"
-                      alt="BuyMeACoffee" width="180"> </a>
-              aboutgame:
-                  developer:
-                      enable: true
-                      prepend: <i class="fa-brands fa-artstation fa-fw"></i>
-                  publisher:
-                      enable: true
-                      prepend: <i class="fa-solid fa-tower-broadcast fa-fw"></i>
-                  releasedate:
-                      enable: true
-                      prepend: <i class="fa-regular fa-calendar-check fa-fw"></i>
-              merger: # 打赏页，需要配置！
-                  append_to_head:
-                      - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
-                          <link
-                            rel="apple-touch-icon-precomposed"
-                            href="https://lestua.ml/pwa.png"
-                          />
-                          <link
-                            rel="shortcut
-                            icon"
-                            href="https://lestua.ml/pwa.png"
-                          />
-                      - |
-                          <script>
-                            var myname = "yaleiyale";
-                            var profile = "https://lestua.eu.org/pwa.png";
-                            var usage = "payment";
-                            var wechat = "wxp://f2f0dsQlAhlj8JhTvCFKDc06potIJmAlC6Egb5iwzbEuuVA";
-                            var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ_d7U6wgYgpb1lgZCIDk4MGU5NTgxYjYwMmVmMjRhMGI4NzE2OTQzMzEzMWU0_xxx_sign&u=2373267325&n=fidget";
-                            var alipay = "https://qr.alipay.com/fkx15566l3ytwvk3t7bgd40";
-                            var paypal = "https://paypal.me/mismine";
-                            var multilingual = false;
-                            var branding = false;
-                            var title = "选择你的支付方式";
-                            var subtitle = "跟随进一步的指示以向" + myname + "付款";
-                            var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-                          </script>
-                      - |
-                          <meta
-                            charset="utf-8"
-                          />
-                          <meta
-                            name="viewport"
-                            content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-                          />
-                          <meta
-                            http-equiv="Content-Security-Policy"
-                            content="upgrade-insecure-requests"
-                          />
-                      - > # merger的页面样式
-                          <link rel="stylesheet"
-                          href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
+  - scope:
+      path: _notes/**/*.md
+    values:
+      layout: post
+  - scope:
+      path: "" # 此处的空字符串表示项目中的所有文件
+    values: # 以下配置项也可以在任意页面自定义
+      jekyll-theme-ObJekyll: # 我的主题的自定义样式都在这个命名空间
+        comments: # 留言页，请先修改这里，确保使用的是你自己的repo！参照<https://utteranc.es/>，稍微不怕麻烦一点的还推荐使用Waline <https://waline.js.org/>
+          append: |
+            <script
+              repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+              src="https://utteranc.es/client.js"
+              issue-term="url"
+              theme="github-light"
+              crossorigin="anonymous"
+              async="async"
+            ></script>
+        default:
+          body:
+            theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
+            layout-reverse: true # 开启后sidebar在右边，反之左边
+            sidebar-overlay: true # 开启后正文不随sidebar移动而移动
+          html_lang: zh # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
+          sidebar: # 此配置项下是一些关于侧边栏的配置
+            disable: false # 是否不显示sidebar
+            avatar: # 侧边栏显示的头像
+              enable: true
+              img: https://lestua.eu.org/pwa.png
+            nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
+              - title: <i class="fa-solid fa-home fa-fw"></i> 首页
+                href: /
+              - title: <i class="fa-solid fa-comment fa-fw"></i> 留言
+                href: /comments
+              - title: <i class="fa-solid fa-seedling fa-fw"></i> 聚点
+                href: /roots
+              - title: <i class="fa-solid fa-archive fa-fw"></i> 归档
+                href: /archive
+              - title: <i class="fa-solid fa-tags fa-fw"></i> 标签
+                href: /tags
+              - title: <i class="fa-solid fa-circle-nodes fa-fw"></i> 图谱
+                href: /map
+              - title: <i class="fa-solid fa-coffee fa-fw"></i> 打赏
+                href: /merger
+            simple_jekyll_search: # 侧边栏的全站搜索
+              enable: true
+              full_text_search: false # 可能导致缓慢的搜索和加载
+              append: | # 如果看不懂就不改
+                <input
+                  id="sidebar-search-input"
+                  placeholder="搜索博文"
+                />
+                <ol
+                  id="sidebar-search-results-container"
+                ></ol>
+                <script
+                  src='https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.9.1'
+                  async='async'
+                  onload='
+                    SimpleJekyllSearch({
+                      json: "/assets/simple-jekyll-search/search.json",
+                      searchInput: document.getElementById("sidebar-search-input"),
+                      resultsContainer: document.getElementById("sidebar-search-results-container"),
+                      searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
+                      limit: 99,
+                      fuzzy: true
+                    })'
+                ></script>
+            jekyll-toc: # 侧边栏的目录插件，https://github.com/allejo/jekyll-toc
+              enable: true
+            append_to_sidebar:
+              - | # 点击空白处而非按钮从而关闭侧边栏的插件，默认移动设备开启，桌面关闭，可选
+                <script defer="defer" >
+                 !function (e) {
+                   var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                   if (flag) {
+                      var c = e.querySelector(".sidebar-toggle"),
+                      r = e.querySelector("#sidebar"),
+                      t = e.querySelector("#sidebar-checkbox");
+                      e.addEventListener("click", function (e) {
+                      var n = e.target;
+                      t.checked && !r.contains(n) && n !== t && n !== c && (t.checked = !1)
+                    }, !1)
+                  } 
+                }(document);
+                </script>
+              - | # 侧边栏使用主题色
+                <style>
+                  #sidebar-checkbox:checked ~ .sidebar-toggle,
+                  .sidebar,
+                  .sidebar-toggle:active {
+                    background-color: var(--theme-base-color);
+                  }
+                </style>
+              - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
+                <div>
+                  <i class="fa-solid fa-cog fa-spin fa-fw"></i>
+                  <span id="run_time_day">
+                    <i class="fa-solid fa-spinner fa-pulse"></i>
+                  </span>天
+                  <span id="run_time_hour">
+                    <i class="fa-solid fa-spinner fa-pulse"></i>
+                  </span>时
+                  <span id="run_time_minute">
+                    <i class="fa-solid fa-spinner fa-pulse"></i>
+                  </span>分
+                  <span id="run_time_second">
+                    <i class="fa-solid fa-spinner fa-pulse"></i>
+                  </span>秒
+                  <script>
+                    setInterval(function (d,h,m,s,b) {
+                      function setzero(i) {
+                        return i < 10 ? "0" + i : i;
+                      }
+                      let BirthDay = new Date(b);
+                      let today = new Date();
+                      let timeold = (today.getTime() - BirthDay.getTime());
+                      let sectimeold = timeold / 1000;
+                      let secondsold = Math.floor(sectimeold);
+                      let msPerDay = 24 * 60 * 60 * 1000;
+                      let e_daysold = timeold / msPerDay;
+                      let daysold = Math.floor(e_daysold);
+                      let e_hrsold = (e_daysold - daysold) * 24;
+                      let hrsold = Math.floor(e_hrsold);
+                      let e_minsold = (e_hrsold - hrsold) * 60;
+                      let minsold = Math.floor((e_hrsold - hrsold) * 60);
+                      let seconds = Math.floor((e_minsold - minsold) * 60);
+                      d.textContent = daysold;
+                      h.textContent = setzero(hrsold);
+                      m.textContent = setzero(minsold);
+                      s.textContent = setzero(seconds);
+                    },
+                    1000,
+                    document.getElementById("run_time_day"),
+                    document.getElementById("run_time_hour"),
+                    document.getElementById("run_time_minute"),
+                    document.getElementById("run_time_second"),
+                    "07/23/2022 10:59:03")
+                  </script>
+                </div>
+              - | # 不蒜子 页面统计，看不懂可不改
+                <div>
+                  <div>
+                    <i class="fa-solid fa-eye fa-fw"></i>
+                    <span id="busuanzi_value_page_pv">
+                      <i class="fa-solid fa-spinner fa-pulse"></i>
+                    </span>次
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-paw fa-fw"></i>
+                    <span id="busuanzi_value_site_pv">
+                      <i class="fa-solid fa-spinner fa-pulse"></i>
+                    </span>枚
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-user-friends fa-fw"></i>
+                    <span id="busuanzi_value_site_uv">
+                      <i class="fa-solid fa-spinner fa-pulse"></i>
+                    </span>人
+                  </div>
+                  <script
+                    src='https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
+                    async='async'
+                  ></script>
+                </div>
+              - | # 觉得我的主题好用的话，让更多的人知道它吧！
+                <div>
+                  <i class="fa-solid fa-thumbs-up fa-fw"></i>
+                  <a href="https://github.com/yaleiyale/jekyll-theme-ObJekyll">
+                    theme-ObJekyll
+                  </a>
+                </div>
+              - | # Copyright声明
+                <div>
+                  <i class="fa-solid fa-copyright fa-fw"></i>
+                  2022 yaleiyale
+                </div>
+            wordcount: # 全站字数统计 效果并不好 会将单词中的多个字母算作多个字 由于双链插件会产生文本替换 不同页面呈现字数可能会有出入
+              enable: true # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
+              prepend: <i class="fa-solid fa-user-edit fa-fw"></i>
+              wan: 万
+              kilo: 千
+              unit: 字
+          append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
+            - | # jsdelivr 防cdn挂脚本，来自 https://github.com/PipecraftNet/jsdelivr-auto-fallback/blob/0.2.2/index.min.js
+              <script>
+                (n=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","cdn.zenless.top","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",a=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+a),m=e=>e.replace(t+a,t+r),u=window.setTimeout,v=n.querySelectorAll.bind(n),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=n.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(a+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=n.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,n.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==a||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
+              </script>
+            #- | # 配置为PWA
+            #  <link rel="manifest" href="/manifest.json">
+            #  <script>
+            #    if('serviceWorker' in navigator) {
+            #    navigator.serviceWorker.register('/sw.js', { scope: '/' });
+            #    }
+            #  </script>
+            - | # 自定义主题色，可对应 <https://www.runoob.com/cssref/css-colornames.html> 挑选
+              <style>
+                .theme-base-07 {
+                  --theme-base-color: darkslateblue;
+                }
+              </style>
+            - | # 一些页面优化标签和样式，看不懂可跳过
+              <meta
+                name="viewport"
+                content="width=device-width,minimum-scale=1,initial-scale=1"
+              />
+              <meta
+                http-equiv="content-type"
+                content="text/html; charset=utf-8"
+              />
+              <meta 
+                name="referrer"
+                content="no-referrer" 
+              />
+              <link
+                rel="alternate"
+                href="/feed.xml"
+                title="RSS"
+                type="application/rss+xml"
+              />
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/combine/gh/poole/lanyon@v1.1.0/public/css/poole.min.css,gh/poole/lanyon@v1.1.0/public/css/lanyon.min.css,gh/poole/lanyon@v1.1.0/public/css/syntax.min.css"
+              />
+              <link 
+                rel="stylesheet" 
+                href="/styles.css"
+              />
+            - | # 网站小图标，可换成你自己的图片，改href中的部分即可
+              <link
+                rel="apple-touch-icon-precomposed"
+                href="https://lestua.eu.orgl/pwa.png"
+              />
+              <link
+                rel="shortcut
+                icon"
+                href="https://lestua.eu.org/pwa.png"
+              />
+            - | # fontawesome图标
+              <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
+              />
+            - | # 使用了小米公司的MiSans字体
+              <style>
+                .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
+                  font-family:'MiSans';
+                }
+              </style>
+        page:
+          title: # 为每个页面自动生成一个 H1 title
+            enable: true
+          prepend:
+            - | # 标题前插一个图标
+              <style>
+                h1::before,
+                h2::before,
+                h3::before,
+                h4::before,
+                h5::before,
+                h6::before {
+                  font-family: "Font Awesome 6 Free";
+                  font-weight: bold;
+                  font-size: smaller;
+                  margin-right: .5rem;
+                  content: "\f292";
+                }
+              </style>
+          plugin:
+            - smart_include:
+                enable: true
+                key: $
+              append: | # 对KaTeX过长公式渲染超出页面的修正
+                <link
+                  rel="stylesheet"
+                  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
+                />
+                <style>
+                  .katex-display>.katex {
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                  }
+                </style>
+                <script
+                  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
+                  defer="defer"
+                ></script>
+                <script
+                 src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+                 defer="defer"
+                 onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
+                ></script>
+            - smart_include:
+                enable: true
+                key: language-vega-lite
+              append: | # vega-lite支持
+                <style>
+                  pre.language-vega-lite,
+                  code.language-vega-lite {
+                    display: none;
+                  }
+                </style>
+                <script
+                  src="https://cdn.jsdelivr.net/combine/npm/vega@5.22.1,npm/vega-lite@5.2.0,npm/vega-embed@6.21.0"
+                  async="async"
+                  onload='
+                    for(let x of document.getElementsByClassName("language-vega-lite"))
+                      if(x.nodeName=="CODE")
+                      {
+                        let m = document.createElement("div");
+                        x.parentNode.insertAdjacentElement("beforebegin", m);
+                        vegaEmbed(m, JSON.parse(x.textContent));
+                      }'
+                ></script>
+            - smart_include:
+                enable: true
+                key: language-mermaid
+              append: | # mermaid支持
+                <style>
+                  pre.language-mermaid,
+                  code.language-mermaid {
+                    display: none;
+                  }
+                  @media only screen {
+                    .mermaid {
+                      overflow: hidden hidden;
+                      max-width: 100%;
+                      max-height: 66.6vh;
+                    }
+                    .mermaid {
+                      overflow: auto auto;
+                    }
+                  }
+                </style>
+                <script
+                  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+                  async="async"
+                  onload='
+                    for(let x of document.getElementsByClassName("language-mermaid"))
+                      if(x.nodeName=="CODE")
+                      {
+                        let m = document.createElement("div");
+                        m.classList.add("mermaid");
+                        m.textContent = x.textContent;
+                        x.parentNode.insertAdjacentElement("beforebegin", m);
+                      }'
+                ></script>
+            - smart_include:
+                enable: false
+              append: | # 标注支持
+                <script type="text/javascript">
+                   var tags = {
+                    '[!note]': '<i class="fa-solid fa-pencil"></i>',
+                    '[!abstract]': '<i class="fa-solid fa-clipboard-list"></i>',
+                    '[!summary]': '<i class="fa-solid fa-clipboard-list"></i>',
+                    '[!tldr]': '<i class="fa-solid fa-clipboard-list"></i>',
+                    '[!info]': '<i class="fa-solid fa-circle-info"></i>',
+                    '[!todo]': '<i class="fa-solid fa-circle-info"></i>',
+                    '[!tip]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+                    '[!hint]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+                    '[!important]': '<i class="fa-solid fa-fire-flame-curved"></i>',
+                    '[!success]': '<i class="fa-solid fa-check"></i>',
+                    '[!check]': '<i class="fa-solid fa-check"></i>',
+                    '[!done]': '<i class="fa-solid fa-check"></i>',
+                    '[!question]': '<i class="fa-regular fa-circle-question"></i>',
+                    '[!help]': '<i class="fa-regular fa-circle-question"></i>',
+                    '[!faq]': '<i class="fa-regular fa-circle-question"></i>',
+                    '[!warning]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+                    '[!caution]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+                    '[!attention]': '<i class="fa-solid fa-triangle-exclamation"></i>',
+                    '[!failure]': '<i class="fa-solid fa-xmark"></i>',
+                    '[!fail]': '<i class="fa-solid fa-xmark"></i>',
+                    '[!missing]': '<i class="fa-solid fa-xmark"></i>',
+                    '[!danger]': '<i class="fa-solid fa-bolt"></i>',
+                    '[!error]': '<i class="fa-solid fa-bolt"></i>',
+                    '[!bug]': '<i class="fa-solid fa-bug"></i>',
+                    '[!example]': '<i class="fa-solid fa-list-ul"></i>',
+                    '[!quote]': '<i class="fa-solid fa-quote-right"></i>',
+                    '[!cite]': '<i class="fa-solid fa-quote-right"></i>'
+                  };
+                  var blocklist = document.querySelectorAll("blockquote");
+                  var blockCount = blocklist.length;
+                  var blockNow;
+                  for (var i = 0; i < blockCount; i++) {
+                    blockNow = blocklist[i];
+                    var find = false;
+                    for (var key in tags) {
+                      if (blockNow.innerHTML.indexOf(key) != -1) {
+                        blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
+                        blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+                        blocklist[i].innerHTML = blockNow.innerHTML;
+                        find = true;
+                        break;
+                      }
+                    }
+                    if(!find){
+                        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+                        blocklist[i].innerHTML = blockNow.innerHTML;
+                      }
+                  }
+                </script>
+            - smart_include:
+                enable: false
+              append: | # 引入live2d看板娘！模型可在models中替换
+                <link
+                  rel="stylesheet"
+                  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+                />
+                <style>
+                  .pio-container{
+                    -webkit-transition: transform .3s ease-in-out;
+                               transition: transform .3s ease-in-out;
+                  }
+                  @media only print {
+                    .pio-container {
+                      display: none;
+                    }
+                  }
+                 .layout-reverse #sidebar-checkbox:checked~.pio-container {
+                     -webkit-transform: translateX(-14rem);
+                        -ms-transform: translateX(-14rem);
+                              transform: translateX(-14rem);
+                   }
+                </style>
+                <script
+                  async="async"
+                  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+                  onload='
+                  fetch("https://v1.hitokoto.cn")
+                  .then(response=>response.json())
+                  .then(data=>{var helloword=data.hitokoto;
+                  var pio_container=document.createElement("div");
+                  pio_container.classList.add("pio-container");
+                  pio_container.classList.add("right");
+                  pio_container.style.bottom="-2rem";
+                  pio_container.style.zIndex="1";
+                  document.body.insertAdjacentElement("beforeend",pio_container);
+                  let pio_action=document.createElement("div");
+                  pio_action.classList.add("pio-action");
+                  pio_container.insertAdjacentElement("beforeend",pio_action);
+                  let pio_canvas=document.createElement("canvas");
+                  pio_canvas.id="pio";
+                  pio_canvas.style.width="14rem";
+                  pio_canvas.width="600";
+                  pio_canvas.height="800";
+                  pio_container.insertAdjacentElement("beforeend",pio_canvas);
+                  let pio = new Paul_Pio({
+                    "mode":"fixed",
+                    "hidden":true,
+                    "night":"for(let i=7;i<16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+                    "content":{
+                      "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+                      "skin":["要换成我的朋友吗？","让她放个假吧~"],
+                      "hidden":true,
+                      "welcome":helloword,
+                      "touch":helloword,
+                      "referer":"你通过 %t 来到了这里",
+                      "custom":[
+                        {"selector":"a","type":"link"},
+                        {"selector":"#coffee","text":"打赏要理性哦😻~"},
+                        {"selector":"img","text":"点下看看吧🔍~"},
+                        {"selector":".wl-reaction","text":"我来要赞咯🌟"},
+                        {"selector":".wl-comment","text":"文明发言，不然会被🚫哦~"},
+                        {"selector":".highlight","text":"代码可以一键复制呢🔖~"},
+                        {"selector":".sidebar-toggle","text":"打开侧边栏叭🗂️~"},
+                        {"selector":".effect-info","text":"哇，你发现了什么❗"},
+                        {"selector":"#sidebar-search-input","text":"想搜索什么呢❓"},
+                        {"selector":"#toc","text":"这是目录~"},
+                        {"selector":".page-title","text":"这是标题~"}]
+                        },
+                    "model":[
+                      "https://lestua.ml/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
+                      "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
+                      "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
+                      "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"]
+                        })}).catch(console.error);'
+                ></script>
+            - smart_include:
+                enable: false
+              append: | # 图片浮窗
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.css"
+                />
+                <script
+                  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+                ></script>
+                <script type="text/javascript">
+                  var content = document.querySelector(".wrapper");
+                   if (content) {
+                     var list = content.querySelectorAll("img");
+                     if (list) {
+                      var imgCount = list.length;
+                      var imgNow;
+                      var viewer = [];
+                      if (imgCount > 0) {
+                         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+                         {
+                           imgNow = list[i];
+                          //console.log(imgNow.src);
+                          viewer[i - 1] = new Viewer(imgNow);
+                         }
+                      }
+                     }
+                  }
+                </script>
+            - smart_include:
+                enable: false
+              append: | # 远离qq微信
+                <script>
+                  if (is_weixn_qq()) {
+                   window.location.href = "https://c.pc.qq.com/middle.html?pfurl="+window.location.href;
+                  }
+                  function is_weixn_qq(){
+                  var ua = navigator.userAgent;
+                  var isWeixin = !!/MicroMessenger/i.test(ua);
+                  var isQQ = !!/QQ\//i.test(ua);
+                  if(isWeixin||isQQ){
+                    return true;
+                   }
+                    return false;
+                  }
+                </script>
+            - smart_include:
+                enable: false
+              append: | # codeblocks复制按钮
+                <style>
+                  pre .btn-pre-copy {
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -khtml-user-select: none;
+                    user-select: none;
+                    position: absolute;
+                    top: 10px;
+                    right: 12px;
+                    font-size: 12px;
+                    line-height: 1;
+                    cursor: pointer;
+                    color: hsla(0, 0%, 54.9%, .8);
+                    transition: color .1s;
+                  }
+                </style>
+                <script>
+                  let preList = document.querySelectorAll("pre");
+                  for (let pre of preList) {
+                    let btn = document.createElement("div");
+                    pre.appendChild(btn);
+                    btn.className = "btn-pre-copy";
+                    btn.innerHTML = "复制";
+                   btn.onclick = function () {
+                     btn.innerHTML = "";
+                     toClip(pre.innerText);
+                      btn.innerHTML = "复制成功";
+                      setTimeout(() => {
+                       btn.innerHTML = "复制";
+                     }, 800);
+                    }
+                 }
+                  function toClip(text) {
+                    navigator.clipboard.writeText(text)
+                      .then(() => {
+                        console.log("Text copied to clipboard...");
+                      })
+                      .catch(err => {
+                        console.log('Something went wrong', err);
+                      });
+                  }
+                </script>
+            - smart_include:
+                enable: false
+              append: | # 回到顶部底部
+                <script 
+                  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button/lamu-leimu.min.js"
+                ></script>
+        post:
+          date: # 显示博文创建时间
+            enable: true
+            prepend: <i class="fa-solid fa-calendar-plus fa-fw"></i>
+          modified: # 显示博文最近修改时间
+            enable: false
+            prepend: <i class="fa-solid fa-calendar-day fa-fw"></i>
+          wordcount: # 统计全文字数
+            enable: true
+            prepend: <i class="fa-solid fa-file-word fa-fw"></i>
+            unit: 字
+          readtime: # 计算文章阅读时间
+            enable: true
+            prepend: <i class="fa-solid fa-clock fa-fw"></i>
+            unit: 分
+            divided_by: 300 # 正常人的阅读速度大概每分钟三百个字
+          tags: #显示博文标签
+            enable: false
+          copyright: |
+            <br/>
+            <i class="fab fa-creative-commons-by fa-fw"></i>
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/deed.zh"
+              rel="license">
+              CC BY 4.0（除特别声明或转载）
+            </a>
+          coffee: >-
+            <a id = "coffee" href="/merger"> <img 
+            src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png"
+            alt="BuyMeACoffee" width="180"> </a>
+        aboutgame:
+          developer:
+            enable: true
+            prepend: <i class="fa-brands fa-artstation fa-fw"></i>
+          publisher:
+            enable: true
+            prepend: <i class="fa-solid fa-tower-broadcast fa-fw"></i>
+          releasedate:
+            enable: true
+            prepend: <i class="fa-regular fa-calendar-check fa-fw"></i>
+        merger: # 打赏页，需要配置！
+          append_to_head:
+            - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
+              <link
+                rel="apple-touch-icon-precomposed"
+                href="https://lestua.ml/pwa.png"
+              />
+              <link
+                rel="shortcut
+                icon"
+                href="https://lestua.ml/pwa.png"
+              />
+            - |
+              <script>
+                var myname = "yaleiyale";
+                var profile = "https://lestua.eu.org/pwa.png";
+                var usage = "payment";
+                var wechat = "wxp://f2f0dsQlAhlj8JhTvCFKDc06potIJmAlC6Egb5iwzbEuuVA";
+                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ_d7U6wgYgpb1lgZCIDk4MGU5NTgxYjYwMmVmMjRhMGI4NzE2OTQzMzEzMWU0_xxx_sign&u=2373267325&n=fidget";
+                var alipay = "https://qr.alipay.com/fkx15566l3ytwvk3t7bgd40";
+                var paypal = "https://paypal.me/mismine";
+                var multilingual = false;
+                var branding = false;
+                var title = "选择你的支付方式";
+                var subtitle = "跟随进一步的指示以向" + myname + "付款";
+                var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
+              </script>
+            - |
+              <meta
+                charset="utf-8"
+              />
+              <meta
+                name="viewport"
+                content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+              />
+              <meta
+                http-equiv="Content-Security-Policy"
+                content="upgrade-insecure-requests"
+              />
+            - > # merger的页面样式
+              <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
 
-                          <script defer="defer"
-                          src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
+              <script defer="defer"
+              src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
 
-                          <script defer="defer"
-                          src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
-              home: # 展示页的配置可跳过，详见<https://revealjs.com/>
-                  append_to_section_tag:
-                      - key: data-markdown
-                      - key: data-separator # 水平展示页分隔符
-                        value: <!-- .slide -->
-                      - key: data-separator-vertical # 垂直展示页分隔符
-                        value: <!-- .slide vertical=true -->
-                      - key: data-background-color
-                        value: White
-                  prepend: |
-                      <link
-                        rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.css,npm/reveal.js@4.3.1/dist/theme/serif.min.css"
-                      />
-                      <style>
-                        .sidebar {
-                          line-height: 1.5;
-                        }
-                        .reveal .slides {
-                          text-align: left;
-                        }
-                        .reveal a,
-                        .reveal a:hover,
-                        .reveal a:focus {
-                          color: inherit;
-                          border-bottom: 1px solid var(--theme-base-color);
-                        }
-                      </style>
-                  append: |
-                      <script
-                        async="async"
-                        src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.js,npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js,npm/reveal.js@4.3.1/plugin/math/math.min.js"
-                        onload="
-                        for(let x of document.getElementsByClassName('wrap'))
-                          x.classList.add('reveal');
-                        Reveal.initialize({
-                          height: '100%',
-                          mouseWheel: true,
-                          navigationMode: 'linear',
-                          plugins: [ RevealMarkdown,RevealMath.KaTeX ]
-                        });
-                      "></script>
+              <script defer="defer"
+              src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
+        home: # 展示页的配置可跳过，详见<https://revealjs.com/>
+          append_to_section_tag:
+            - key: data-markdown
+            - key: data-separator # 水平展示页分隔符
+              value: <!-- .slide -->
+            - key: data-separator-vertical # 垂直展示页分隔符
+              value: <!-- .slide vertical=true -->
+            - key: data-background-color
+              value: White
+          prepend: |
+            <link
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.css,npm/reveal.js@4.3.1/dist/theme/serif.min.css"
+            />
+            <style>
+              .sidebar {
+                line-height: 1.5;
+              }
+              .reveal .slides {
+                text-align: left;
+              }
+              .reveal a,
+              .reveal a:hover,
+              .reveal a:focus {
+                color: inherit;
+                border-bottom: 1px solid var(--theme-base-color);
+              }
+            </style>
+          append: |
+            <script
+              async="async"
+              src="https://cdn.jsdelivr.net/combine/npm/reveal.js@4.3.1/dist/reveal.min.js,npm/reveal.js@4.3.1/plugin/markdown/markdown.min.js,npm/reveal.js@4.3.1/plugin/math/math.min.js"
+              onload="
+              for(let x of document.getElementsByClassName('wrap'))
+                x.classList.add('reveal');
+              Reveal.initialize({
+                height: '100%',
+                mouseWheel: true,
+                navigationMode: 'linear',
+                plugins: [ RevealMarkdown,RevealMath.KaTeX ]
+              });
+            "></script>
 compress_html: #压缩Jekyll中的HTML 不必修改
-    clippings: all
-    comments: []
-    endings: all
-    ignore:
-        envs: all
-        blanklines: false
-        profile: false
-        startings: []
+  clippings: all
+  comments: []
+  endings: all
+  ignore:
+    envs: all
+    blanklines: false
+    profile: false
+    startings: []
 plugins: # githubpage上支持的插件见<https://pages.github.com/versions/>
-    - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
-    - jekyll-default-layout # 为每个markdown自动生成layout
-    - jekyll-seo-tag # 为每个页面生成标题
-    - jekyll-sitemap # 为站点生成站点地图
-    - jekyll-feed # 为站点生成RSS源
-    - jekyll-redirect-from # 站点页面重定向
-    - jekyll-remote-theme # 使用remote_theme插件实现主题的前后分离
-    - jemoji # markdown形式emoji支持
+  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
+  - jekyll-default-layout # 为每个markdown自动生成layout
+  - jekyll-seo-tag # 为每个页面生成标题
+  - jekyll-sitemap # 为站点生成站点地图
+  - jekyll-feed # 为站点生成RSS源
+  - jekyll-redirect-from # 站点页面重定向
+  #- jekyll-remote-theme # 使用remote_theme插件实现主题的前后分离
+  - jemoji # markdown形式emoji支持
 remote_theme: "https://github.com/yaleiyale/jekyll-theme-ObJekyll"
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed
 readme_index: # 缺失index.md和index.html时，使用README.md代替之
-    with_frontmatter: true # 支持带有yaml头的README
+  with_frontmatter: true # 支持带有yaml头的README
 logo: "https://lestua.eu.org/pwa.png"
 locale: zh
 timezone: Asia/Shanghai
@@ -777,10 +777,10 @@ relative_permalinks: false
 future: true # 允许发布时间在未来的文章
 markdown: kramdown
 kramdown: # 见<https://kramdown.gettalong.org/options.html>
-    input: GFM
-    syntax_highlighter_opts: # 可见<https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
-        block:
-            disable: false
-            line_numbers: false
-        span:
-            disable: false
+  input: GFM
+  syntax_highlighter_opts: # 可见<https://kramdown.gettalong.org/syntax_highlighter/rouge.html>
+    block:
+      disable: false
+      line_numbers: false
+    span:
+      disable: false

@@ -7,14 +7,14 @@
   "minNumberOfWordsTriggeredPhrase": 1,
   "complementAutomatically": true,
   "delayMilliSeconds": 0,
-  "disableSuggestionsDuringImeOn": true,
+  "disableSuggestionsDuringImeOn": false,
   "insertAfterCompletion": false,
-  "firstCharactersDisableSuggestions": ":/^@",
+  "firstCharactersDisableSuggestions": ":/^",
   "showMatchStrategy": false,
   "showComplementAutomatically": false,
   "showIndexingStatus": false,
   "descriptionOnSuggestion": "Short",
-  "selectSuggestionKeys": "Tab",
+  "selectSuggestionKeys": "Enter",
   "additionalCycleThroughSuggestionsKeys": "None",
   "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
   "openSourceFileKey": "None",
@@ -41,93 +41,193 @@
   "enableFrontMatterComplement": true,
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
+  "intelligentSuggestionPrioritization": {
+    "maxDaysToKeepHistory": 30,
+    "maxNumberOfHistoryToKeep": 0
+  },
   "showLogAboutPerformanceInConsole": false,
   "selectionHistoryTree": {
     "Waypoint": {
       "Waypoint": {
         "currentVault": {
           "count": 3,
-          "lastUpdated": 1664789316825
+          "lastUpdated": 1667004173393
         }
       }
     },
-    "struct": {
-      "struct": {
+    "windows": {
+      "windows": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1666702042212
+        }
+      }
+    },
+    "列表": {
+      "列表": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1666704709926
+        }
+      }
+    },
+    "快捷键": {
+      "快捷键": {
         "currentFile": {
           "count": 1,
-          "lastUpdated": 1664781337292
+          "lastUpdated": 1666704735795
         }
       }
     },
-    "串的基本概念与实现": {
-      "串的基本概念与实现": {
-        "internalLink": {
+    "sgfOpVsIF8ZRehzkNUSUs": {
+      "sgfOpVsIF8ZRehzkNUSUs": {
+        "currentVault": {
           "count": 1,
-          "lastUpdated": 1664788486621
+          "lastUpdated": 1666705047390
         }
       }
     },
-    "位置": {
-      "位置": {
+    "间隙": {
+      "间隙": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1666773731133
+        }
+      }
+    },
+    "斗争": {
+      "斗争": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1666774505302
+        }
+      }
+    },
+    "遍历": {
+      "遍历": {
         "currentFile": {
-          "count": 1,
-          "lastUpdated": 1664954395045
+          "count": 3,
+          "lastUpdated": 1666880057324
         }
       }
     },
-    "用于": {
-      "用于": {
+    "转换": {
+      "转换": {
         "currentVault": {
           "count": 1,
-          "lastUpdated": 1664956919229
-        }
-      }
-    },
-    "chart": {
-      "chart": {
-        "currentVault": {
-          "count": 1,
-          "lastUpdated": 1665037708400
-        }
-      }
-    },
-    "subgraph": {
-      "subgraph": {
-        "currentVault": {
-          "count": 1,
-          "lastUpdated": 1665037803777
-        }
-      }
-    },
-    "direction": {
-      "direction": {
-        "currentVault": {
-          "count": 1,
-          "lastUpdated": 1665037820980
+          "lastUpdated": 1666878362289
         }
       }
     },
     "{}": {
       "{}": {
         "currentVault": {
-          "count": 1,
-          "lastUpdated": 1665041613124
+          "count": 5,
+          "lastUpdated": 1666879080255
         }
       }
     },
-    "影子与样子": {
-      "影子与样子": {
-        "internalLink": {
+    "过程": {
+      "过程": {
+        "currentFile": {
           "count": 1,
-          "lastUpdated": 1665321301391
+          "lastUpdated": 1666878828226
         }
       }
     },
-    "document": {
-      "document": {
+    "结点": {
+      "结点": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666878887150
+        }
+      }
+    },
+    "InitStack": {
+      "InitStack": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666879092021
+        }
+      }
+    },
+    "ree": {
+      "ree": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666879102215
+        }
+      }
+    },
+    "数值": {
+      "数值": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666880067940
+        }
+      }
+    },
+    "LR": {
+      "LR": {
         "currentVault": {
           "count": 1,
-          "lastUpdated": 1665669388234
+          "lastUpdated": 1666880308715
+        }
+      }
+    },
+    "push": {
+      "push": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666881980370
+        }
+      }
+    },
+    "元素": {
+      "元素": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1666882229033
+        }
+      }
+    },
+    "提名": {
+      "提名": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1666959247321
+        }
+      }
+    },
+    "名单": {
+      "名单": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1666960067536
+        }
+      }
+    },
+    "了解": {
+      "了解": {
+        "currentVault": {
+          "count": 2,
+          "lastUpdated": 1666960138914
+        }
+      }
+    },
+    "boom": {
+      "boom": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1666960860451
+        }
+      }
+    },
+    "course": {
+      "course": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667003861761
         }
       }
     }

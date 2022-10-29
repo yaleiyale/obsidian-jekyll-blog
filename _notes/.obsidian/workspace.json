@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "69b6c400b9c94bf8",
+        "id": "2b44fee120dd5f4c",
         "type": "tabs",
         "children": [
           {
-            "id": "aee24a50860e28f0",
+            "id": "bd8d8604abe52201",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +50,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -130,7 +130,7 @@
               "type": "backlink",
               "state": {
                 "file": "杂录/工具使用/objekyll使用/objekyll使用指南.md",
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -158,20 +158,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "aee24a50860e28f0",
+  "active": "47727188c62cc33a",
   "lastOpenFiles": [
     "杂录/工具使用/objekyll使用/obsidian使用/obsidian插件使用存档.md",
-    "杂录/工具使用/objekyll使用/obsidian使用/Obsidian Github Uploader.md",
     "杂录/工具使用/objekyll使用/obsidian使用/obsidian中的markdown书写范例实例.md",
-    "杂录/工具使用/objekyll使用/objekyll使用指南.md",
+    "杂录/工具使用/objekyll使用/obsidian使用/Obsidian Github Uploader.md",
+    "杂录/工具使用/objekyll使用/obsidian使用/Mermaid书写范例实例.md",
+    "杂录/工具使用/objekyll使用/obsidian使用/LaTeX公式书写范例.md",
+    "杂录/工具使用/objekyll使用/obsidian使用/主动型插件使用.md",
     "杂录/工具使用/objekyll使用/obsidian结合jekyll.md",
-    "模板/基础模板.md",
-    "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md",
-    "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.svg",
-    "杂录/游戏杂录/EPIC值得一玩/EPIC值得一玩.md",
-    "杂录/游戏杂录/EPIC值得一玩/库/Shadow Tactics.Blades of the Shogun.md"
+    "杂录/工具使用/objekyll使用/objekyll使用指南.md",
+    "奇怪小妙招/清除任务栏隐藏图标记录.md",
+    "奇怪小妙招/奇怪小妙招.md"
   ]
 }

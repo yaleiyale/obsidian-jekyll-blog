@@ -3,7 +3,9 @@
   "repo": "",
   "branch": "main",
   "token": "",
+  "message": "GH uploader",
   "name": "",
   "email": "",
-  "path": ""
+  "path": "",
+  "random": true
 }

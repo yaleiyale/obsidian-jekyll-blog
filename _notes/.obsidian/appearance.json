@@ -4,5 +4,10 @@
   "theme": "moonstone",
   "enabledCssSnippets": [],
   "translucency": false,
-  "accentColor": ""
+  "textFontFamily": "",
+  "interfaceFontFamily": "",
+  "monospaceFontFamily": "",
+  "accentColor": "",
+  "showViewHeader": true,
+  "nativeMenus": false
 }

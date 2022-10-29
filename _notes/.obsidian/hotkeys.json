@@ -63,5 +63,13 @@
       ],
       "key": "L"
     }
+  ],
+  "file-explorer:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
   ]
 }

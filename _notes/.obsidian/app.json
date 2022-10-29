@@ -15,5 +15,8 @@
   "trashOption": "local",
   "spellcheck": false,
   "useTab": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "userIgnoreFilters": [
+    "模板/"
+  ]
 }

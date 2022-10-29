@@ -3,12 +3,13 @@ title: obsidian中的markdown书写范例实例
 aliases: 
 tags: 教程 markdown
 date: 2022-07-30 20:46:11 +0800,周六
-last_modified_at: 2022-10-09 22:51:58 +0800,周日
+last_modified_at: 2022-10-22 21:39:19 +0800,周六
 from: 
 permalink: /notes/2022/08/29/223916
 ---
 
-枚举 *obsidian* 中支持的基本&&拓展 *markdown* 语法与特有的工具用法
+枚举 *obsidian* 中支持的基本&&一点点拓展 *markdown* 通用语法，以及一些obsidian特性关键机制。  
+特性在*obsidian*外的展现极可能不正常，将额外给出截图供参考。
 
 ```
 # 几级标题就有几个\#号 <-转义，显示井号而不被识别为markdown语法标记
@@ -195,6 +196,9 @@ permalink: /notes/2022/08/29/223916
 
 `` 这是一段能显示 `反引号` 的行内代码 ``^code
 
+> [!tip]  
+> 上文出现的`^code`为块链接标记，在后文会提及。
+
 ## 代码块：
 
 ````
@@ -239,7 +243,7 @@ print "Good bye!"
 
  $E = mc^2$
 
-## 注释
+## 注释（特性）
 
 ```md
 %%这是一行Obsidian里的注释%%
@@ -265,9 +269,11 @@ Obsidian里的
 Obsidian 里的
 注释
 编辑模式下注释才可见
-%%
+%%  
 
-## 嵌入文件：
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666445679/image_note/dxi0v9o6wqs6drridfwq.png)
+
+## 嵌入文件（特性）
 
 ```
 ![[obsidian中的markdown书写范例实例#外部链接]]  
@@ -276,6 +282,8 @@ Obsidian 里的
 
 ![[obsidian中的markdown书写范例实例#外部链接]]  
 ![logo|200](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1657596564/IMG_20220204_082019_600_pothy1.jpg " 悬浮提示文本 ")
+
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666445810/image_note/s3add601xn7cwhggfsnr.png)
 
 > [!info] 支持格式
 >
@@ -300,6 +308,8 @@ Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&file=%E6
 块引用：![[obsidian中的markdown书写范例实例#^code]]
 
 Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&file=%E6%9D%82%E5%BD%95%2F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%2Fobjekyll%E4%BD%BF%E7%94%A8%2Fobsidian%E4%BD%BF%E7%94%A8%2FMermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B)
+
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666445845/image_note/gwtuiohb6rsmlpualjeh.png)
 
 ## 外部链接
 
