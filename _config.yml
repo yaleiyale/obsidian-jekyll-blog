@@ -761,7 +761,7 @@ plugins: # githubpage上支持的插件见<https://pages.github.com/versions/>
   - jekyll-sitemap # 为站点生成站点地图
   - jekyll-feed # 为站点生成RSS源
   - jekyll-redirect-from # 站点页面重定向
-  #- jekyll-remote-theme # 使用remote_theme插件实现主题的前后分离
+  - jekyll-remote-theme # 使用remote_theme插件实现主题的前后分离
   - jemoji # markdown形式emoji支持
 remote_theme: "https://github.com/yaleiyale/jekyll-theme-ObJekyll"
 sass:
