@@ -67,7 +67,7 @@ defaults:
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
               enable: true
-              img: https://lestua.eu.org/pwa.png
+              img: https://s1.ax1x.com/2022/10/30/xIMChq.png
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: <i class="fa-solid fa-home fa-fw"></i> 首页
                 href: /
@@ -270,12 +270,12 @@ defaults:
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://lestua.eu.orgl/pwa.png"
+                href="https://s1.ax1x.com/2022/10/30/xIMChq.png"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://lestua.eu.org/pwa.png"
+                href="https://s1.ax1x.com/2022/10/30/xIMChq.png"
               />
             - | # fontawesome图标
               <link
@@ -511,10 +511,10 @@ defaults:
                         {"selector":".page-title","text":"这是标题~"}]
                         },
                     "model":[
-                      "https://lestua.ml/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
-                      "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
-                      "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
-                      "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"]
+                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/xiaomai/xiaomai.model.json",
+                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/Kobayaxi/Kobayaxi.model.json",
+                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
+                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
                         })}).catch(console.error);'
                 ></script>
             - smart_include:
@@ -643,7 +643,7 @@ defaults:
             </a>
           coffee: >-
             <a id = "coffee" href="/merger"> <img 
-            src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png"
+            src="https://s1.ax1x.com/2022/10/30/xIMoKU.png"
             alt="BuyMeACoffee" width="180"> </a>
         aboutgame:
           developer:
@@ -660,17 +660,17 @@ defaults:
             - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://lestua.ml/pwa.png"
+                href="https://s1.ax1x.com/2022/10/30/xIMChq.png"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://lestua.ml/pwa.png"
+                href="https://s1.ax1x.com/2022/10/30/xIMChq.png"
               />
             - |
               <script>
                 var myname = "yaleiyale";
-                var profile = "https://lestua.eu.org/pwa.png";
+                var profile = "https://s1.ax1x.com/2022/10/30/xIMChq.png";
                 var usage = "payment";
                 var wechat = "wxp://f2f0dsQlAhlj8JhTvCFKDc06potIJmAlC6Egb5iwzbEuuVA";
                 var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ_d7U6wgYgpb1lgZCIDk4MGU5NTgxYjYwMmVmMjRhMGI4NzE2OTQzMzEzMWU0_xxx_sign&u=2373267325&n=fidget";
@@ -769,7 +769,7 @@ sass:
   style: compressed
 readme_index: # 缺失index.md和index.html时，使用README.md代替之
   with_frontmatter: true # 支持带有yaml头的README
-logo: "https://lestua.eu.org/pwa.png"
+logo: "https://s1.ax1x.com/2022/10/30/xIMChq.png"
 locale: zh
 timezone: Asia/Shanghai
 permalink: pretty
