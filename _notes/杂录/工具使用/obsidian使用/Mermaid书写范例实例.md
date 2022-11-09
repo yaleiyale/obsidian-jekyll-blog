@@ -3,7 +3,7 @@ title: Mermaid书写范例实例
 aliases: 
 tags: 教程 mermaid
 date: 2022-07-30 20:46:10 +0800,周六
-last_modified_at: 2022-10-09 22:51:58 +0800,周日
+last_modified_at: 2022-11-09 08:49:54 +0800,周三
 from: 
 permalink: /notes/2022/08/29/223909
 ---

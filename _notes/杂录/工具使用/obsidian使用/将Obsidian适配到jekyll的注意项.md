@@ -3,7 +3,7 @@ title: 本方式将Obsidian适配到jekyll的注意项
 aliases: 
 tags: tips
 date: 2022-08-05 16:38:38 +0800,周五
-last_modified_at: 2022-10-09 22:51:57 +0800,周日
+last_modified_at: 2022-11-09 08:49:47 +0800,周三
 from: 
 permalink: /notes/2022/08/29/223857
 ---

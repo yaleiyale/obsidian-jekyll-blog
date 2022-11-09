@@ -1,19 +1,20 @@
 [
+  "emoji-shortcodes",
+  "GI-uploader",
   "table-editor-obsidian",
   "better-fn",
   "dataview",
   "obsidian-footnotes",
+  "hot-reload",
+  "obsidian-image-toolkit",
   "obsidian-linter",
+  "objemoji",
   "obsidian-charts",
-  "recent-files-obsidian",
   "remember-cursor-position",
   "tag-wrangler",
-  "waypoint",
-  "emoji-shortcodes",
-  "objemoji",
-  "obsidian-image-toolkit",
-  "GI-uploader",
   "various-complements",
+  "waypoint",
   "obsidian-excalidraw-plugin",
-  "obsidian-github-uploader"
+  "recent-files-obsidian",
+  "obsidian-emo-uploader"
 ]

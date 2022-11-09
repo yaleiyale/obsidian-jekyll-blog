@@ -3,7 +3,7 @@ title: obsidian中的markdown书写范例实例
 aliases: 
 tags: 教程 markdown
 date: 2022-07-30 20:46:11 +0800,周六
-last_modified_at: 2022-10-22 21:39:19 +0800,周六
+last_modified_at: 2022-11-09 08:50:00 +0800,周三
 from: 
 permalink: /notes/2022/08/29/223916
 ---

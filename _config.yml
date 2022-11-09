@@ -1,5 +1,5 @@
 title: objekyll小站 # 站点标题
-include:
+include: #以`.`开头的文件、文件夹默认忽略
   - .nojekyll
 exclude:
   - _includes/notes_graph.json
@@ -49,20 +49,44 @@ defaults:
       jekyll-theme-ObJekyll: # 我的主题的自定义样式都在这个命名空间
         comments: # 留言页，请先修改这里，确保使用的是你自己的repo！参照<https://utteranc.es/>，稍微不怕麻烦一点的还推荐使用Waline <https://waline.js.org/>
           append: |
+            <link
+               rel="stylesheet"
+               href="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.css"
+            />
             <script
-              repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
-              src="https://utteranc.es/client.js"
-              issue-term="url"
-              theme="github-light"
-              crossorigin="anonymous"
-              async="async"
+               src="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.js"
             ></script>
+            <style>
+              @media only screen and (min-width: 720px) {
+                #waline {
+                max-width: 66.6vw;
+              }
+              }
+            </style>
+            <div id="waline"></div>
+            <script>
+              const locale = {
+                placeholder:'但说无妨',
+                sofa: '🈚',
+                reactionTitle: 'REACTION',
+              };
+              Waline.init({
+                el: '#waline',
+                serverURL: 'https://lestua.cn.eu.org',
+                reaction: [
+                  'https://s1.ax1x.com/2022/10/30/xIM5vT.png',
+                  'https://s1.ax1x.com/2022/10/30/xIM42V.png',
+                  'https://s1.ax1x.com/2022/10/30/xIMh80.png',
+                ],
+                locale,
+              });
+            </script>
         default:
           body:
             theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
             layout-reverse: true # 开启后sidebar在右边，反之左边
             sidebar-overlay: true # 开启后正文不随sidebar移动而移动
-          html_lang: zh # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
+          html_lang: zh_hans # <https://www.w3school.com.cn/tags/html_ref_language_codes.asp>
           sidebar: # 此配置项下是一些关于侧边栏的配置
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
@@ -613,14 +637,14 @@ defaults:
                 enable: false
               append: | # 回到顶部底部
                 <script 
-                  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button/lamu-leimu.min.js"
+                  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
                 ></script>
         post:
           date: # 显示博文创建时间
             enable: true
             prepend: <i class="fa-solid fa-calendar-plus fa-fw"></i>
           modified: # 显示博文最近修改时间
-            enable: false
+            enable: true
             prepend: <i class="fa-solid fa-calendar-day fa-fw"></i>
           wordcount: # 统计全文字数
             enable: true

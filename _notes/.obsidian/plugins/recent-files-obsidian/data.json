@@ -5,52 +5,38 @@
       "path": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
     },
     {
-      "basename": "obsidian插件使用存档",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/obsidian插件使用存档.md"
-    },
-    {
-      "basename": "obsidian中的markdown书写范例实例",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/obsidian中的markdown书写范例实例.md"
-    },
-    {
-      "basename": "Obsidian Github Uploader",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/Obsidian Github Uploader.md"
-    },
-    {
-      "basename": "Mermaid书写范例实例",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/Mermaid书写范例实例.md"
-    },
-    {
-      "basename": "LaTeX公式书写范例",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/LaTeX公式书写范例.md"
-    },
-    {
-      "basename": "主动型插件使用",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/主动型插件使用.md"
-    },
-    {
       "basename": "obsidian结合jekyll",
       "path": "杂录/工具使用/objekyll使用/obsidian结合jekyll.md"
     },
     {
-      "basename": "清除任务栏隐藏图标记录",
-      "path": "奇怪小妙招/清除任务栏隐藏图标记录.md"
+      "basename": "obsidian中的markdown书写范例实例",
+      "path": "杂录/工具使用/obsidian使用/obsidian中的markdown书写范例实例.md"
     },
     {
-      "basename": "奇怪小妙招",
-      "path": "奇怪小妙招/奇怪小妙招.md"
+      "basename": "obsidian插件使用存档",
+      "path": "杂录/工具使用/obsidian使用/obsidian插件使用存档.md"
     },
     {
-      "basename": "Drawing 2022-08-21 11.32.49.excalidraw",
-      "path": "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md"
+      "basename": "Obsidian Emo Uploader",
+      "path": "杂录/工具使用/obsidian使用/Obsidian Emo Uploader.md"
     },
     {
-      "basename": "Drawing 2022-08-21 11.32.49.excalidraw",
-      "path": "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.svg"
+      "basename": "Mermaid书写范例实例",
+      "path": "杂录/工具使用/obsidian使用/Mermaid书写范例实例.md"
+    },
+    {
+      "basename": "LaTeX公式书写范例",
+      "path": "杂录/工具使用/obsidian使用/LaTeX公式书写范例.md"
+    },
+    {
+      "basename": "主动型插件使用",
+      "path": "杂录/工具使用/obsidian使用/主动型插件使用.md"
+    },
+    {
+      "basename": "将Obsidian适配到jekyll的注意项",
+      "path": "杂录/工具使用/obsidian使用/将Obsidian适配到jekyll的注意项.md"
     }
   ],
-  "omittedPaths": [
-    ""
-  ],
+  "omittedPaths": [],
   "maxLength": null
 }

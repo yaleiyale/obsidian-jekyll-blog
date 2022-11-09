@@ -50,8 +50,8 @@
     "Waypoint": {
       "Waypoint": {
         "currentVault": {
-          "count": 3,
-          "lastUpdated": 1667004173393
+          "count": 6,
+          "lastUpdated": 1667619432626
         }
       }
     },
@@ -228,6 +228,158 @@
         "currentVault": {
           "count": 1,
           "lastUpdated": 1667003861761
+        }
+      }
+    },
+    "rootnote": {
+      "rootnote": {
+        "frontMatter": {
+          "count": 3,
+          "lastUpdated": 1667619350046
+        }
+      }
+    },
+    "note": {
+      "note": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667187830761
+        }
+      }
+    },
+    "控制": {
+      "Control": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1667305594636
+        }
+      }
+    },
+    "划分": {
+      "划分": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667305617186
+        }
+      }
+    },
+    "close": {
+      "close": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667362494799
+        }
+      }
+    },
+    "test": {
+      "test": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667363158324
+        }
+      }
+    },
+    "done": {
+      "done": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667377334044
+        }
+      }
+    },
+    "Register": {
+      "Register": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667378156947
+        }
+      }
+    },
+    "position": {
+      "position": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667378343054
+        }
+      }
+    },
+    "Cloudinary": {
+      "Cloudinary": {
+        "currentVault": {
+          "count": 2,
+          "lastUpdated": 1667438663887
+        }
+      }
+    },
+    "扩展": {
+      "扩展": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667397601746
+        }
+      }
+    },
+    "完成": {
+      "完成": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667792188254
+        }
+      }
+    },
+    "script": {
+      "script": {
+        "currentVault": {
+          "count": 2,
+          "lastUpdated": 1667825721350
+        }
+      }
+    },
+    "sharing": {
+      "sharing": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667825738673
+        }
+      }
+    },
+    "config": {
+      "config": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667826038601
+        }
+      }
+    },
+    "注意": {
+      "注意": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667828703647
+        }
+      }
+    },
+    "时间": {
+      "时间": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667829424068
+        }
+      }
+    },
+    "Fbreader": {
+      "Fbreader": {
+        "currentFile": {
+          "count": 1,
+          "lastUpdated": 1667916575956
+        }
+      }
+    },
+    "书籍": {
+      "书籍": {
+        "currentVault": {
+          "count": 1,
+          "lastUpdated": 1667916601562
         }
       }
     }

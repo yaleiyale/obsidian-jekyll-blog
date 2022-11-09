@@ -3,7 +3,7 @@ title: Shadow of the Tomb Raider
 aliases: 古墓丽影：暗影
 tags: 游戏/生存 游戏/解谜 游戏/女性主角 游戏/动作 游戏/动作冒险 游戏/射击 游戏/探索 游戏/单人 游戏/冒险 游戏/黑暗 
 date: 2022-05-02 12:52:36 +0800,周一
-last_modified_at: 2022-08-21 11:37:03 +0800,周日
+last_modified_at: 2022-11-09 08:49:33 +0800,周三
 from: 
 permalink: /notes/2022/08/29/224931
 layout: aboutgame 

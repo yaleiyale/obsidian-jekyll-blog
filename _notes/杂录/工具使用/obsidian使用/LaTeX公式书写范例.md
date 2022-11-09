@@ -3,7 +3,7 @@ title: LaTeX公式书写范例
 aliases: 
 tags: 教程 LaTeX
 date: 2022-08-03 22:45:08 +0800,周三
-last_modified_at: 2022-10-09 22:51:58 +0800,周日
+last_modified_at: 2022-11-09 08:49:51 +0800,周三
 from: 
 permalink: /notes/2022/08/29/223905
 ---
