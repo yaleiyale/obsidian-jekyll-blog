@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh_hans">
 <head>
   <title>
     
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="2022-07-15记" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-08-21T09:07:56+08:00","datePublished":"2022-07-15T22:08:17+08:00","description":"![[Drawing 2022-08-21 11.32.49.excalidraw]]","headline":"2022-07-15记","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.eu.org/notes/2022/08/29/223404"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.eu.org/notes/2022/08/29/223404"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-11-09T08:49:18+08:00","datePublished":"2022-07-15T22:08:17+08:00","description":"![[Drawing 2022-08-21 11.32.49.excalidraw]]","headline":"2022-07-15记","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.eu.org/notes/2022/08/29/223404"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.eu.org/notes/2022/08/29/223404"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -314,8 +314,8 @@
         
           
         
-        3千
-        685字
+        4千
+        335字
         
       </div>
       
@@ -354,6 +354,10 @@
     <main><div class="post">
     <span class="post-date">
         
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2022-11-09 08:49:18 Wednesday
+        <br>
+        
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
         建于：2022-07-15 22:08:17 Friday
@@ -391,13 +395,6 @@
                     <a class="internal-link"
                         href="/notes/2022/08/29/223359">日记</a><br>
                     <!-- <div style="font-size: 0.9em">%% Begin Waypoint %%
-
-  可能会有日记
-    
-      [[2022-07-15]]
-    
-  
-
 </div> -->
                 </div>
                 
@@ -551,14 +548,38 @@
     document.querySelectorAll('.internal-link').forEach(setupListeners);
 </script>
 
+<link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.css"
+/>
 <script
-  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
-  src="https://utteranc.es/client.js"
-  issue-term="url"
-  theme="github-light"
-  crossorigin="anonymous"
-  async="async"
+   src="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.js"
 ></script>
+<style>
+  @media only screen and (min-width: 720px) {
+    #waline {
+    max-width: 66.6vw;
+  }
+  }
+</style>
+<div id="waline"></div>
+<script>
+  const locale = {
+    placeholder:'但说无妨',
+    sofa: '🈚',
+    reactionTitle: 'REACTION',
+  };
+  Waline.init({
+    el: '#waline',
+    serverURL: 'https://lestua.cn.eu.org',
+    reaction: [
+      'https://s1.ax1x.com/2022/10/30/xIM5vT.png',
+      'https://s1.ax1x.com/2022/10/30/xIM42V.png',
+      'https://s1.ax1x.com/2022/10/30/xIMh80.png',
+    ],
+    locale,
+  });
+</script>
 
   </div>
 </div>
@@ -805,7 +826,7 @@
 
 
 <script 
-  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button/lamu-leimu.min.js"
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
 ></script>
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh_hans">
 <head>
   <title>
     
@@ -326,8 +326,8 @@
         
           
         
-        3千
-        686字
+        4千
+        336字
         
       </div>
       
@@ -365,6 +365,10 @@
     <div class="wrapper">
     <main><div class="post">
     <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2022-10-24 21:52:01 Monday
+        <br>
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
@@ -747,14 +751,38 @@ beginAtZero: true
     document.querySelectorAll('.internal-link').forEach(setupListeners);
 </script>
 
+<link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.css"
+/>
 <script
-  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
-  src="https://utteranc.es/client.js"
-  issue-term="url"
-  theme="github-light"
-  crossorigin="anonymous"
-  async="async"
+   src="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.js"
 ></script>
+<style>
+  @media only screen and (min-width: 720px) {
+    #waline {
+    max-width: 66.6vw;
+  }
+  }
+</style>
+<div id="waline"></div>
+<script>
+  const locale = {
+    placeholder:'但说无妨',
+    sofa: '🈚',
+    reactionTitle: 'REACTION',
+  };
+  Waline.init({
+    el: '#waline',
+    serverURL: 'https://lestua.cn.eu.org',
+    reaction: [
+      'https://s1.ax1x.com/2022/10/30/xIM5vT.png',
+      'https://s1.ax1x.com/2022/10/30/xIM42V.png',
+      'https://s1.ax1x.com/2022/10/30/xIMh80.png',
+    ],
+    locale,
+  });
+</script>
 
   </div>
 </div>
@@ -1001,7 +1029,7 @@ beginAtZero: true
 
 
 <script 
-  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button/lamu-leimu.min.js"
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
 ></script>
 
 

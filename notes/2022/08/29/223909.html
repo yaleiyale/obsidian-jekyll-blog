@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh_hans">
 <head>
   <title>
     
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Mermaid书写范例实例" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-09T22:51:58+08:00","datePublished":"2022-07-30T20:46:10+08:00","description":"依赖 mermaid 支持，遵循语法进行书写可实现渲染后得到流图","headline":"Mermaid书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.eu.org/notes/2022/08/29/223909"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.eu.org/notes/2022/08/29/223909"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-11-09T08:49:54+08:00","datePublished":"2022-07-30T20:46:10+08:00","description":"依赖 mermaid 支持，遵循语法进行书写可实现渲染后得到流图","headline":"Mermaid书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.eu.org/notes/2022/08/29/223909"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.eu.org/notes/2022/08/29/223909"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -345,8 +345,8 @@
         
           
         
-        3千
-        959字
+        4千
+        609字
         
       </div>
       
@@ -384,6 +384,10 @@
     <div class="wrapper">
     <main><div class="post">
     <span class="post-date">
+        
+        <i class="fa-solid fa-calendar-day fa-fw"></i>
+        改于：2022-11-09 08:49:54 Wednesday
+        <br>
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
@@ -1031,14 +1035,38 @@ flowchart LR
     document.querySelectorAll('.internal-link').forEach(setupListeners);
 </script>
 
+<link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.css"
+/>
 <script
-  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
-  src="https://utteranc.es/client.js"
-  issue-term="url"
-  theme="github-light"
-  crossorigin="anonymous"
-  async="async"
+   src="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.js"
 ></script>
+<style>
+  @media only screen and (min-width: 720px) {
+    #waline {
+    max-width: 66.6vw;
+  }
+  }
+</style>
+<div id="waline"></div>
+<script>
+  const locale = {
+    placeholder:'但说无妨',
+    sofa: '🈚',
+    reactionTitle: 'REACTION',
+  };
+  Waline.init({
+    el: '#waline',
+    serverURL: 'https://lestua.cn.eu.org',
+    reaction: [
+      'https://s1.ax1x.com/2022/10/30/xIM5vT.png',
+      'https://s1.ax1x.com/2022/10/30/xIM42V.png',
+      'https://s1.ax1x.com/2022/10/30/xIMh80.png',
+    ],
+    locale,
+  });
+</script>
 
   </div>
 </div>
@@ -1316,7 +1344,7 @@ flowchart LR
 
 
 <script 
-  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button/lamu-leimu.min.js"
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
 ></script>
 
 
