@@ -1284,7 +1284,7 @@ var EmojiPluginSettingTab = class extends import_obsidian.PluginSettingTab {
       }));
     });
     new import_obsidian.Setting(containerEl).setName("Donate").setDesc("If you like this Plugin, consider donating to support continued development:").addButton((bt) => {
-      bt.buttonEl.outerHTML = `<a id="coffee" href="https://lestua.ml/merger"> <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png" alt="BuyMeACoffee" width="180"> </a>`;
+      bt.buttonEl.outerHTML = `<a id="coffee" href="https://lestua.ml/merger"> <img src="https://s1.ax1x.com/2022/10/30/xIMoKU.png" alt="BuyMeACoffee" width="180"> </a>`;
     });
   }
 };
