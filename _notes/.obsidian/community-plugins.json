@@ -8,7 +8,6 @@
   "hot-reload",
   "obsidian-image-toolkit",
   "obsidian-linter",
-  "objemoji",
   "obsidian-charts",
   "remember-cursor-position",
   "tag-wrangler",
@@ -16,5 +15,6 @@
   "waypoint",
   "obsidian-excalidraw-plugin",
   "recent-files-obsidian",
-  "obsidian-emo-uploader"
+  "obsidian-emo-uploader",
+  "objemoji"
 ]

@@ -5,12 +5,20 @@
       "path": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
     },
     {
-      "basename": "obsidian结合jekyll",
-      "path": "杂录/工具使用/objekyll使用/obsidian结合jekyll.md"
-    },
-    {
       "basename": "obsidian中的markdown书写范例实例",
       "path": "杂录/工具使用/obsidian使用/obsidian中的markdown书写范例实例.md"
+    },
+    {
+      "basename": "Mermaid书写范例实例",
+      "path": "杂录/工具使用/obsidian使用/Mermaid书写范例实例.md"
+    },
+    {
+      "basename": "主动型插件使用",
+      "path": "杂录/工具使用/obsidian使用/主动型插件使用.md"
+    },
+    {
+      "basename": "obsidian结合jekyll",
+      "path": "杂录/工具使用/objekyll使用/obsidian结合jekyll.md"
     },
     {
       "basename": "obsidian插件使用存档",
@@ -21,16 +29,8 @@
       "path": "杂录/工具使用/obsidian使用/Obsidian Emo Uploader.md"
     },
     {
-      "basename": "Mermaid书写范例实例",
-      "path": "杂录/工具使用/obsidian使用/Mermaid书写范例实例.md"
-    },
-    {
       "basename": "LaTeX公式书写范例",
       "path": "杂录/工具使用/obsidian使用/LaTeX公式书写范例.md"
-    },
-    {
-      "basename": "主动型插件使用",
-      "path": "杂录/工具使用/obsidian使用/主动型插件使用.md"
     },
     {
       "basename": "将Obsidian适配到jekyll的注意项",

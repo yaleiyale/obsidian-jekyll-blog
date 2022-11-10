@@ -1,9 +1,0 @@
-{
-  "id": "obsidian-github-uploader",
-  "name": "Obsidian Github Uploader",
-  "description": "This plugin uploads the files in your clipboard to Github",
-  "author": "yaleiyale",
-  "isDesktopOnly": true,
-  "minAppVersion": "0.11.0",
-  "version": "0.0.2"
-}
