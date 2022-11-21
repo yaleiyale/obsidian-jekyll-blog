@@ -1,0 +1,5 @@
+vendor
+.bundle
+Gemfile.lock
+_site
+_includes/notes_graph.json
