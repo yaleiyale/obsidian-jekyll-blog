@@ -1,1 +1,1 @@
-Sitemap: https://lestua.eu.org/sitemap.xml
+Sitemap: https://objekyll.tk/sitemap.xml
