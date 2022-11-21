@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh_hans">
+<html lang="zh">
 <head>
   <title>
     
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="本方式将Obsidian适配到jekyll的注意项" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-11-09T08:49:47+08:00","datePublished":"2022-08-05T16:38:38+08:00","description":"文件名","headline":"本方式将Obsidian适配到jekyll的注意项","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.eu.org/notes/2022/08/29/223857"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.eu.org/notes/2022/08/29/223857"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-08-05T16:38:38+08:00","datePublished":"2022-08-05T16:38:38+08:00","description":"文件名","headline":"本方式将Obsidian适配到jekyll的注意项","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.eu.org/notes/2022/08/29/223857"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.eu.org/notes/2022/08/29/223857"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -317,12 +317,12 @@
         
         
         
-        4万
+        5万
         
           
         
-        3千
-        467字
+        4千
+        428字
         
       </div>
       
@@ -362,7 +362,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2022-11-09 08:49:47 Wednesday
+        改于：
         <br>
         
         
@@ -371,11 +371,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        628字
+        506字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        3分
+        2分
         
         
         <br/>
@@ -413,16 +413,16 @@
 
 <h1 id="公式">公式</h1>
 
-<p>在obsidan中显示正常的公式在转换为html后可能不能很好的得到渲染，这可能是出于katex的一些暂时的缺陷。当本地测试<strong>行内公式</strong>无法得到渲染时可以尝试使用<strong>行间公式</strong>，如$\left{\frac{(x+y)}{[\alpha+\beta]}\right}$与\(\left\{\frac{(x+y)}{[\alpha+\beta]}\right\}\)。更多的不建议将公式用于复杂嵌套结构中，更容易导致无法渲染。</p>
+<p>在obsidan中显示正常的公式在转换为html后有一（小）部分可能不能很好的得到渲染，这出于一些我不想研究的缺陷。当本地测试<strong>行内公式</strong>无法得到渲染时可以尝试使用<strong>行间公式</strong>。</p>
 
 <h1 id="语法兼容">语法兼容</h1>
 
 <p><code class="language-plaintext highlighter-rouge">raw</code> 标记临时禁止处理其所包围的代码。如果输出的内容与 Liquid 模板语言有冲突时可以避免冲突。<br />
 输入<br />
-<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661439772/image_note/lvwme4y1x4b7vxyz506j.png" alt="" /></p>
+<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661439772/obsidian/lvwme4y1x4b7vxyz506j.png" alt="" /></p>
 
 <p>输出<br />
-<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660877372/image_note/nw7hyuooqzfk1n3ts3ua.png" alt="" /></p>
+<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660877372/obsidian/nw7hyuooqzfk1n3ts3ua.png" alt="" /></p>
 
 <hr />
 
@@ -432,7 +432,7 @@
       <p>不得为<code class="language-plaintext highlighter-rouge">2011-12-13</code>等的纯日期时间(数字)格式，网页中罗列的标题默认是title而不是文件名 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:2" role="doc-endnote">
-      <p>文件的创建时间;建议格式为<code class="language-plaintext highlighter-rouge">YYYY-MM-DD HH:mm:ss +0800,ddd</code> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>文件的创建时间;建议格式为<code class="language-plaintext highlighter-rouge">YYYY-MM-DDTHH:mm:ss+08:00d</code> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -447,6 +447,13 @@
                     <a class="internal-link"
                         href="/notes/2022/08/29/223927">obsidian结合jekyll</a><br>
                     <!-- <div style="font-size: 0.9em">obsidian采用markdown
+</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link"
+                        href="/notes/2022/11/11/210730">工具使用</a><br>
+                    <!-- <div style="font-size: 0.9em">%% Begin Waypoint %%
 </div> -->
                 </div>
                 
@@ -600,66 +607,20 @@
     document.querySelectorAll('.internal-link').forEach(setupListeners);
 </script>
 
-<link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.css"
-/>
 <script
-   src="https://cdn.jsdelivr.net/npm/@waline/client@2.13.0/dist/waline.js"
+  repo="yaleiyale/yaleiyale-comment" # 请建立你自己的评论仓库
+  src="https://utteranc.es/client.js"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async="async"
 ></script>
-<style>
-  @media only screen and (min-width: 720px) {
-    #waline {
-    max-width: 66.6vw;
-  }
-  }
-</style>
-<div id="waline"></div>
-<script>
-  const locale = {
-    placeholder:'但说无妨',
-    sofa: '🈚',
-    reactionTitle: 'REACTION',
-  };
-  Waline.init({
-    el: '#waline',
-    serverURL: 'https://lestua.cn.eu.org',
-    reaction: [
-      'https://s1.ax1x.com/2022/10/30/xIM5vT.png',
-      'https://s1.ax1x.com/2022/10/30/xIM42V.png',
-      'https://s1.ax1x.com/2022/10/30/xIMh80.png',
-    ],
-    locale,
-  });
-</script>
 
   </div>
 </div>
 
 
 
-
-
-<link
-  rel="stylesheet"
-  href="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"
-/>
-<style>
-  .katex-display>.katex {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-</style>
-<script
-  src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"
-  defer="defer"
-></script>
-<script
- src="//cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
- defer="defer"
- onload='renderMathInElement(document.querySelector(".wrapper"), { delimiters: [{left: "$$", right: "$$", display: true}, { left: "$", right: "$", display: false }, {left: "\\(", right: "\\)", display: false}, {left: "\\[", right: "\\]", display: true}]})'
-></script>
 
 
 
@@ -794,8 +755,8 @@
         {"selector":".page-title","text":"这是标题~"}]
         },
     "model":[
-      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/xiaomai/xiaomai.model.json",
-      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/Kobayaxi/Kobayaxi.model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/umaru/model.json",
+      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/koharu/model.json",
       "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
       "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
         })}).catch(console.error);'
@@ -900,7 +861,7 @@
 
 
 <script 
-  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@1.0/lamu-leimu.min.js"
 ></script>
 
 
