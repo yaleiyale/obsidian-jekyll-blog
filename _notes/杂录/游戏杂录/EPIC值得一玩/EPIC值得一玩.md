@@ -1,9 +1,9 @@
 ---
 title: EPIC值得一玩
 aliases: 
-tags: rootnote
-date: 2022-05-02 12:52:36 +0800,周一
-last_modified_at: 2022-08-21 11:30:00 +0800,周日
+tags: [rootnote]
+date: 2022-11-21T15:12:53+08:00
+lastmod: 2022-11-21T15:42:21+08:00
 from: 
 permalink: /notes/2022/08/29/224455
 ---

@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "a9296116cd528f7e",
+    "id": "67df132099a0c6a4",
     "type": "split",
     "children": [
       {
-        "id": "2b44fee120dd5f4c",
+        "id": "3b888db9b05a1c81",
         "type": "tabs",
         "children": [
           {
-            "id": "bd8d8604abe52201",
+            "id": "c71ff916f7849f47",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -26,15 +26,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "cb5dcd066b84c420",
+    "id": "4f33242c9895f3fe",
     "type": "split",
     "children": [
       {
-        "id": "dfc55a5353e6dba8",
+        "id": "20c5a787fc7322a0",
         "type": "tabs",
         "children": [
           {
-            "id": "47727188c62cc33a",
+            "id": "6eedd4380bdbcaad",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,13 +44,13 @@
             }
           },
           {
-            "id": "428f54a6e402da96",
+            "id": "2d315801fa93aa00",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -59,7 +59,15 @@
             }
           },
           {
-            "id": "4bd4cebc3feada72",
+            "id": "1abeb39123949448",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f332dff17947eff8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -67,14 +75,6 @@
                 "sortOrder": "frequency",
                 "useHierarchy": true
               }
-            }
-          },
-          {
-            "id": "6d06ce581614a53c",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
             }
           }
         ]
@@ -84,47 +84,29 @@
     "width": 300
   },
   "right": {
-    "id": "da32fefae9e21b69",
+    "id": "79eafc9561078c58",
     "type": "split",
     "children": [
       {
-        "id": "86cf1f0429c78e1a",
+        "id": "84f9e447b8a3709e",
         "type": "tabs",
         "children": [
           {
-            "id": "0387cf8223fb28d0",
+            "id": "9f1554d966f97d14",
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "be8abcc574278557",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
               "state": {}
             }
           }
         ]
       },
       {
-        "id": "cd63bd8da8809dcb",
+        "id": "e1fa9ee0fbc8b985",
         "type": "tabs",
         "children": [
           {
-            "id": "4eebfca60600175f",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
-              }
-            }
-          },
-          {
-            "id": "d886aa3f13f9a1a6",
+            "id": "553f32257aced6f3",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -141,7 +123,7 @@
             }
           },
           {
-            "id": "12e6b329a59e5d6a",
+            "id": "9a2333d54e677f25",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -151,24 +133,35 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "a6c9afc3e8cc152f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 281
   },
-  "active": "47727188c62cc33a",
+  "active": "c71ff916f7849f47",
   "lastOpenFiles": [
-    "杂录/工具使用/objekyll使用/obsidian使用/obsidian插件使用存档.md",
-    "杂录/工具使用/objekyll使用/obsidian使用/obsidian中的markdown书写范例实例.md",
-    "杂录/工具使用/objekyll使用/obsidian使用/Obsidian Github Uploader.md",
-    "杂录/工具使用/objekyll使用/obsidian使用/Mermaid书写范例实例.md",
-    "杂录/工具使用/objekyll使用/obsidian使用/LaTeX公式书写范例.md",
-    "杂录/工具使用/objekyll使用/obsidian使用/主动型插件使用.md",
-    "杂录/工具使用/objekyll使用/obsidian结合jekyll.md",
-    "杂录/工具使用/objekyll使用/objekyll使用指南.md",
-    "奇怪小妙招/清除任务栏隐藏图标记录.md",
-    "奇怪小妙招/奇怪小妙招.md"
+    "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md",
+    "杂录/游戏杂录/EPIC值得一玩/EPIC值得一玩.md",
+    "杂录/游戏杂录/EPIC值得一玩/库/Shadow Tactics.Blades of the Shogun.md",
+    "杂录/游戏杂录/EPIC值得一玩/库/Shadow of the Tomb Raider.md",
+    "杂录/游戏杂录/EPIC值得一玩/库/Red Dead Redemption 2.md",
+    "杂录/工具使用/工具使用.md",
+    "杂录/工具使用/obsidian使用/obsidian中的markdown书写范例实例.md",
+    "杂录/工具使用/obsidian使用/obsidian插件使用存档.md",
+    "杂录/工具使用/obsidian使用/Obsidian Emo Uploader.md",
+    "杂录/工具使用/obsidian使用/主动型插件使用.md"
   ]
 }

@@ -1,9 +1,9 @@
 ---
 title: objekyll使用指南
 aliases: 
-tags: objekyll 指南 rootnote
-date: 2022-08-21 21:23:33 +0800,周日
-last_modified_at: 2022-10-29 21:55:47 +0800,周六
+tags: [objekyll, 指南, rootnote]
+date: 2022-08-21T21:23:33+08:00
+lastmod: 2022-11-09T09:48:42+08:00
 from: 
 permalink: /notes/2022/08/29/223921
 ---
@@ -55,10 +55,10 @@ permalink: /notes/2022/08/29/223921
 
 1. 建立[Vercel](https://vercel.com/)账号，使用**Github**账号登录，方便后续导入。
 2. 选择你的仓库，点击*import*导入到**vercel**  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259510/image_note/zeuxgh4hgfqzo5phn4fi.png)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259536/image_note/ehp6gwsbwmuxoxnnpvuu.png)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259568/image_note/tynet8imx1xoprq6tstr.png)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259747/image_note/ayzilsxuzehr4pmropxh.png)
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259510/obsidian/zeuxgh4hgfqzo5phn4fi.png)  
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259536/obsidian/ehp6gwsbwmuxoxnnpvuu.png)  
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259568/obsidian/tynet8imx1xoprq6tstr.png)  
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259747/obsidian/ayzilsxuzehr4pmropxh.png)
 3. 设定你的项目名称（不要有中文），其余默认。
 
 ### 部署调整
@@ -72,9 +72,9 @@ permalink: /notes/2022/08/29/223921
 
 1. fork[本仓库](https://github.com/yaleiyale/obsidian-jekyll-blog)，将仓库名改为`{你的github昵称}.github.io`。
 2. 事先未准备域名，则在你的仓库中将`CNAME`删除。若有域名则将`CNAME`中的文本替换为你的域名。关于自定义域名的更多详细配置，请自行查询资料，本指南后文所提可以不要求进行自定义域名。
-3. ![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661089854/image_note/g6fxa11s5tfcnuukcwlj.png)
+3. ![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661089854/obsidian/g6fxa11s5tfcnuukcwlj.png)
 
-如图，在**Branch**中选择分支(初使用应该选为`main`和`root`)，点击 save，在**Actions**中观察到发布完成后，进入`Pages`，可观察到![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661090145/image_note/s919hgtgt8kchljyobs4.png)点击以进行访问，访问成功，那么你的博客就已经跑起来了。
+如图，在**Branch**中选择分支(初使用应该选为`main`和`root`)，点击 save，在**Actions**中观察到发布完成后，进入`Pages`，可观察到![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661090145/obsidian/s919hgtgt8kchljyobs4.png)点击以进行访问，访问成功，那么你的博客就已经跑起来了。
 
 ### 配置
 
@@ -85,7 +85,7 @@ permalink: /notes/2022/08/29/223921
 
 1. 将仓库 clone 到本地。
 2. 下载[Obsidian](https://obsidian.md/)，使用 obsidian 打开`_notes文件夹`。`_notes`就是你的文件集中存放的地方。
-3. 笔记库中已经预置了一些个人推荐的插件[^5]和参考样本，请自由探索尝试，开始你的创作。更多帮助文档，请参阅[[obsidian结合jekyll]]，或问问你的[神奇海螺](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661131544/image_note/icglvr2xcfqdtkrhfnx3.png)。
+3. 笔记库中已经预置了一些个人推荐的插件[^5]和参考样本，请自由探索尝试，开始你的创作。更多帮助文档，请参阅[[obsidian结合jekyll]]，或问问你的[神奇海螺](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661131544/obsidian/icglvr2xcfqdtkrhfnx3.png)。
 4. 在obsidian的[front matter](https://publish.obsidian.md/help-zh/%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95/YAML+front+matter)中，`tags`中如果包含`rootnote`，该篇笔记将出现在侧边栏的**聚点**中，建议在起篇的笔记/目录中加入`rootnote`，该类功能可自行增删。如果根据文件夹安排文件，且文件排布顺序不需要在目录中进行调整，可以使用`waypoint`插件自动生成上级文件夹下的文件目录。
 5. `_knots文件夹`中的文件在本仓库中作为侧边栏中的永久链接使用。在其中的`tags.md`等文件中，以`游戏标签`，提供了一个标签细分，二级导航的案例，根据你的需要，在理解了模板的意义后，尽情进行你的自由发挥。
 

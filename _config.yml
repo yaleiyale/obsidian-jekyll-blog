@@ -1,5 +1,5 @@
 title: objekyll小站 # 站点标题
-include:
+include: #以`.`开头的文件、文件夹默认忽略
   - .nojekyll
 exclude:
   - _includes/notes_graph.json
@@ -511,8 +511,8 @@ defaults:
                         {"selector":".page-title","text":"这是标题~"}]
                         },
                     "model":[
-                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/xiaomai/xiaomai.model.json",
-                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/Kobayaxi/Kobayaxi.model.json",
+                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/umaru/model.json",
+                      "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/koharu/model.json",
                       "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/rem/model.json",
                       "https://cdn.jsdelivr.net/gh/yaleiyale/web_kanbanniang_collection@main/kurumi/model.json"]
                         })}).catch(console.error);'
@@ -613,14 +613,14 @@ defaults:
                 enable: false
               append: | # 回到顶部底部
                 <script 
-                  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button/lamu-leimu.min.js"
+                  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@1.0/lamu-leimu.min.js"
                 ></script>
         post:
           date: # 显示博文创建时间
             enable: true
             prepend: <i class="fa-solid fa-calendar-plus fa-fw"></i>
           modified: # 显示博文最近修改时间
-            enable: false
+            enable: true
             prepend: <i class="fa-solid fa-calendar-day fa-fw"></i>
           wordcount: # 统计全文字数
             enable: true

@@ -5,32 +5,60 @@
       "path": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
     },
     {
-      "basename": "obsidian插件使用存档",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/obsidian插件使用存档.md"
+      "basename": "Drawing 2022-08-21 11.32.49.excalidraw",
+      "path": "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md"
+    },
+    {
+      "basename": "EPIC值得一玩",
+      "path": "杂录/游戏杂录/EPIC值得一玩/EPIC值得一玩.md"
+    },
+    {
+      "basename": "Shadow Tactics.Blades of the Shogun",
+      "path": "杂录/游戏杂录/EPIC值得一玩/库/Shadow Tactics.Blades of the Shogun.md"
+    },
+    {
+      "basename": "Shadow of the Tomb Raider",
+      "path": "杂录/游戏杂录/EPIC值得一玩/库/Shadow of the Tomb Raider.md"
+    },
+    {
+      "basename": "Red Dead Redemption 2",
+      "path": "杂录/游戏杂录/EPIC值得一玩/库/Red Dead Redemption 2.md"
+    },
+    {
+      "basename": "工具使用",
+      "path": "杂录/工具使用/工具使用.md"
     },
     {
       "basename": "obsidian中的markdown书写范例实例",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/obsidian中的markdown书写范例实例.md"
+      "path": "杂录/工具使用/obsidian使用/obsidian中的markdown书写范例实例.md"
     },
     {
-      "basename": "Obsidian Github Uploader",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/Obsidian Github Uploader.md"
+      "basename": "obsidian插件使用存档",
+      "path": "杂录/工具使用/obsidian使用/obsidian插件使用存档.md"
     },
     {
-      "basename": "Mermaid书写范例实例",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/Mermaid书写范例实例.md"
-    },
-    {
-      "basename": "LaTeX公式书写范例",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/LaTeX公式书写范例.md"
+      "basename": "Obsidian Emo Uploader",
+      "path": "杂录/工具使用/obsidian使用/Obsidian Emo Uploader.md"
     },
     {
       "basename": "主动型插件使用",
-      "path": "杂录/工具使用/objekyll使用/obsidian使用/主动型插件使用.md"
+      "path": "杂录/工具使用/obsidian使用/主动型插件使用.md"
     },
     {
-      "basename": "obsidian结合jekyll",
-      "path": "杂录/工具使用/objekyll使用/obsidian结合jekyll.md"
+      "basename": "将Obsidian适配到jekyll的注意项",
+      "path": "杂录/工具使用/obsidian使用/将Obsidian适配到jekyll的注意项.md"
+    },
+    {
+      "basename": "走向hugo",
+      "path": "杂录/工具使用/hugo使用 探索版/走向hugo.md"
+    },
+    {
+      "basename": "202208181136",
+      "path": "闪念/闪念集/202208181136.md"
+    },
+    {
+      "basename": "2022-07-15",
+      "path": "日记/可能会有日记/2022-07-15.md"
     },
     {
       "basename": "清除任务栏隐藏图标记录",
@@ -41,16 +69,50 @@
       "path": "奇怪小妙招/奇怪小妙招.md"
     },
     {
-      "basename": "Drawing 2022-08-21 11.32.49.excalidraw",
-      "path": "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md"
+      "basename": "游戏简介模板",
+      "path": "模板/游戏简介模板.md"
+    },
+    {
+      "basename": "视频模板",
+      "path": "模板/视频模板.md"
+    },
+    {
+      "basename": "闪念模板",
+      "path": "模板/闪念模板.md"
+    },
+    {
+      "basename": "日记模板",
+      "path": "模板/日记模板.md"
+    },
+    {
+      "basename": "基础模板",
+      "path": "模板/基础模板.md"
+    },
+    {
+      "basename": "绘图模板",
+      "path": "模板/绘图模板.md"
+    },
+    {
+      "basename": "slide模板",
+      "path": "模板/slide模板.md"
+    },
+    {
+      "basename": "raw块模板",
+      "path": "模板/raw块模板.md"
+    },
+    {
+      "basename": "LaTeX公式书写范例",
+      "path": "杂录/工具使用/obsidian使用/LaTeX公式书写范例.md"
+    },
+    {
+      "basename": "obsidian结合jekyll",
+      "path": "杂录/工具使用/objekyll使用/obsidian结合jekyll.md"
     },
     {
       "basename": "Drawing 2022-08-21 11.32.49.excalidraw",
       "path": "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.svg"
     }
   ],
-  "omittedPaths": [
-    ""
-  ],
+  "omittedPaths": [],
   "maxLength": null
 }

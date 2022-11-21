@@ -37,7 +37,7 @@ title: Home
 
 <!-- .slide -->
 
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661995792/image_note/tqdnz46b8sjy55nvno32.png)
+![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661995792/obsidian/tqdnz46b8sjy55nvno32.png)
 
 <!-- .slide vertical=true -->
 

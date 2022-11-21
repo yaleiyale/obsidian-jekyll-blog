@@ -1,9 +1,9 @@
 ---
 title: obsidian插件使用存档
 aliases: 
-tags: 插件
-date: 2022-08-05 17:21:40 +0800,周五
-last_modified_at: 2022-10-25 09:34:23 +0800,周二
+tags: [插件]
+date: 2022-08-05T17:21:40+08:00
+lastmod: 2022-10-25T09:34:23+08:00
 from: 
 permalink: /notes/2022/08/29/223912
 ---
@@ -22,7 +22,7 @@ permalink: /notes/2022/08/29/223912
 13. Various Complements[^13]
 14. Waypoint[^14]
 15. [OBJemoji](https://github.com/yaleiyale/OBJemoji)
-16. [[Obsidian Github Uploader]]
+16. [[Obsidian Emo Uploader]]
 
 ---
 
