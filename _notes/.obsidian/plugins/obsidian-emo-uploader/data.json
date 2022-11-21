@@ -1,0 +1,32 @@
+{
+  "choice": "Github",
+  "github_parms": {
+    "required": {
+      "owner": "",
+      "repo": "",
+      "branch": "main",
+      "token": "",
+      "message": "upload from emo-uploader·Github"
+    },
+    "path": "",
+    "random": true
+  },
+  "smms_parms": {
+    "required": {
+      "token": ""
+    }
+  },
+  "imgurl_parms": {
+    "required": {
+      "uid": "",
+      "token": ""
+    }
+  },
+  "cloudinary_parms": {
+    "required": {
+      "name": "",
+      "present": ""
+    },
+    "folder": ""
+  }
+}
