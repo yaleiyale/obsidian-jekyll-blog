@@ -72,7 +72,7 @@ permalink: /notes/2022/10/16/172318
 
 [SM.MS](https://smms.app/) ，[ImgURL](https://www.imgurl.org/)是图床，可以让你上传**图片**到存储账号。对于生活在中国的用户来说，这个网站比Github和Cloudinary更容易访问到。 注册一个帐户，并生成您的令牌。只要把你的参数填入正确的位置上，然后你就可以像上面的视频里那样使用它了。  
 关于Cloudinary，请参考[obsidian-cloudinar-uploader/README.md](https://github.com/jordanhandy/obsidian-cloudinary-uploader/blob/main/README.md)，当然本插件也支持Cloudinary。如果你发现Cloudinary已经足够满足你的需求，你可以直接使用它。不过我的脚本体积更小 :flushed:  
-[Imgur](https://imgur.com/)很好。但在我的网络环境中，它不容易访问和测试。我参考一些帖子只是实现了匿名上传。使用imgur时，deletehash将以`![deletehash](url)`的形式出现，用于防止您后悔上传错误的图片。您可以在[此处](https://lestua.ml/imgurdeleteimage)删除它们或在插件中进行删除。  
+[Imgur](https://imgur.com/)很好。但在我的网络环境中，它不容易访问和测试。我参考一些帖子只是实现了匿名上传。使用imgur时，deletehash将以`![deletehash](url)`的形式出现，用于防止您后悔上传错误的图片。您可以在[此处](https://lestua.eu.org/imgurdeleteimage)删除它们或在插件中进行删除。  
 :warning: 图像在托管平台上是公开可访问的。不要上传违禁文件！请自行检查服务限制。
 
 ## 如何扩展

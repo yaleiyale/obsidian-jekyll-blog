@@ -1,7 +1,7 @@
 ---
 title: Home
 ---
-# [罗盘在此 Click it](https://lestua.ml/notes/2022/08/29/223921)<br>开始使用
+# [罗盘在此 Click it](https://lestua.eu.org/notes/2022/08/29/223921)<br>开始使用
 
 <!-- .slide -->
 
