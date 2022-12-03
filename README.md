@@ -1,6 +1,6 @@
 ---
 title: Home
-tip: 当前项目已停止维护，将转向obsidian+hugo的结合方式。（生成速度上hugo>>jekyll）可以在我的[博客](https://lestua.eu.org/)查看当前施工状况。待完善，待开源。
+tip: 当前项目已停止维护，将转向obsidian+hugo的结合方式。（生成速度上hugo>>jekyll）可以在我的[博客](https://lestua.eu.org/) 查看当前施工状况。待完善，待开源。
 ---
 # [罗盘在此 Click it](https://lestua.eu.org/notes/2022/08/29/223921)<br>开始使用
 
