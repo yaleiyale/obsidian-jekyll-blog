@@ -4,9 +4,6 @@
   "theme": "system",
   "enabledCssSnippets": [],
   "translucency": true,
-  "textFontFamily": "MiSans",
-  "interfaceFontFamily": "MiSans",
-  "monospaceFontFamily": "MiSans",
   "accentColor": "",
   "showViewHeader": true,
   "nativeMenus": false

@@ -278,12 +278,6 @@ defaults:
                 rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"
               />
-            - | # 使用了小米公司的MiSans字体
-              <style>
-                .sidebar, html, h1, h2, h3, h4, h5, h6, code, pre {
-                  font-family:'MiSans';
-                }
-              </style>
         page:
           title: # 为每个页面自动生成一个 H1 title
             enable: true
