@@ -609,7 +609,7 @@ defaults:
                 enable: false
               append: | # 回到顶部底部
                 <script 
-                  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@main/lamu-leimu.min.js"
+                  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"
                 ></script>
         post:
           date: # 显示博文创建时间
