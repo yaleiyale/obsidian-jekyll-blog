@@ -3,18 +3,14 @@
   "GI-uploader",
   "table-editor-obsidian",
   "better-fn",
-  "dataview",
   "obsidian-footnotes",
   "hot-reload",
-  "obsidian-image-toolkit",
   "obsidian-linter",
-  "obsidian-charts",
   "remember-cursor-position",
   "tag-wrangler",
   "various-complements",
-  "waypoint",
   "obsidian-excalidraw-plugin",
   "recent-files-obsidian",
-  "objemoji",
-  "emo-uploader"
+  "emo-uploader",
+  "obsidian-style-settings"
 ]

@@ -1,17 +1,15 @@
 ---
 title: Mermaid书写范例实例
-aliases: 
+aliases: []
 tags: [教程, mermaid]
 date: 2022-07-30T20:46:10+08:00
-lastmod: 2022-11-10T14:55:22+08:00
+lastmod: 2022-11-21T22:02:47+08:00
 from: 
-permalink: /notes/2022/08/29/223909
+url: /notes/2022/08/29/223909
 ---
 
 依赖 mermaid 支持，**遵循语法进行书写可实现渲染出图**
-依赖 mermaid 支持，**遵循语法进行书写可实现渲染出图**
 
-# 流程图
 # 流程图
 
 - 关键字
@@ -24,7 +22,7 @@ permalink: /notes/2022/08/29/223909
 
 Mermaid 语句的结束，有两种方式:**在结尾加分号**；**换行**
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	a-->b
@@ -42,7 +40,7 @@ flowchart LR
 
 ### 线种类
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	A---实线; %% AB之间，以一条实线连接
@@ -65,7 +63,7 @@ flowchart LR
 	A==>箭头粗实线; %% AB之间，以一条箭头粗实线连接
 ```
 
-````
+````markdown
 ```mermaid
 flowchart RL
 	反向实线箭头-->A; %% 这是一条从B到A的反向实线箭头
@@ -79,7 +77,7 @@ flowchart RL
 
 ### 箭头类型
 
-````
+````markdown
 ```mermaid
 flowchart LR 
 	A --o 实线o;  %% 实线o
@@ -106,7 +104,7 @@ flowchart LR
 
 有三种: 使用首尾相同的 o 或 x，或者一对 < >; 不能使用 o--x 这样首尾不同的
 
-````
+````markdown
 ```mermaid
 flowchart LR 
 	%% 实线
@@ -144,7 +142,7 @@ flowchart LR
 
 #### 嵌入式
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	A--嵌入式:实线间的文本-->B; %% AB之间以实线连接，且有一段连线文本
@@ -162,7 +160,7 @@ flowchart LR
 
 #### 外部式
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	A-->|实线间文本|B;
@@ -180,7 +178,7 @@ flowchart LR
 
 ### 连线形式
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	A-->B-->C-->D-->直向连线;
@@ -203,7 +201,7 @@ flowchart LR
 
 线条可以增加长度，默认为**1 级**，可加至**3 级**
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	%% 实线
@@ -247,7 +245,7 @@ flowchart LR
 	f1==>f2===>f3====>f4;
 ```
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	%% 实线
@@ -287,7 +285,7 @@ flowchart LR
 
 ### 节点间的多条连线
 
-````
+````markdown
 ```mermaid
 flowchart TB
 	得出答案A-->确定么?-->|确定|好吧;
@@ -307,7 +305,7 @@ flowchart TB
 
 不使用容器，复杂的文本如英文词组中的空格会报错。
 
-````
+````markdown
 ```mermaid
 flowchart BT
 	id1[我]-->id2[父亲]
@@ -335,7 +333,7 @@ flowchart BT
 
 ### 节点形状
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	id1[矩形]-->id2((圆形))-->id3{菱形}-->id4(圆角矩形)
@@ -365,7 +363,7 @@ flowchart LR
 
 ### 子图创建
 
-````
+````markdown
 ```mermaid
 flowchart TB
     subgraph sub1[one 子图1]
@@ -422,7 +420,7 @@ flowchart TB
 
 ### 子图嵌套
 
-````
+````markdown
 ```mermaid
 flowchart LR
 	subgraph 子图

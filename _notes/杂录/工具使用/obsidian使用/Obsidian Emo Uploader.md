@@ -1,37 +1,50 @@
 ---
 title: Obsidian Emo Uploader
-aliases: 
+aliases: []
 tags: []
 date: 2022-10-16T17:23:05+08:00
-lastmod: 2022-11-19T12:19:23+08:00
+lastmod: 2022-12-13T22:33:25+08:00
 from: 
-permalink: /notes/2022/10/16/172318
+url: /notes/2022/10/16/172318
 ---
 
 [[Obsidian Emo Uploader#Github设置相关]] [[Obsidian Emo Uploader#English]]
 
-# Obsidian Emo Uploader
+嵌入markdown在线文件/图像链接。 这个插件用于在Obsidian中上传图片到图床或者上传文件到Github（现在支持更多平台如Catbox）。  
 
-嵌入markdown在线文件/图像链接。 这个插件用于在Obsidian中上传图片到图床或者上传文件到Github。
+**图床聚合 & 文件上传器** : _Imgur SM.MS Github Cloudinary Catbox ……_
 
-支持列表
+# 它是如何工作的
 
-- [GitHub](https://github.com/)
-- [Imgur](https://imgur.com/)
-- [SM.MS](https://smms.app/)
-- [ImgURL](https://www.imgurl.org/)
-- [Clouinary](https://cloudinary.com/)
-- [imgbb](https://imgbb.com/)
+<video src="https://user-images.githubusercontent.com/55282569/200258839-0979aa8c-7e5b-4254-bbe3-b9eeff458a40.mp4" controls="controls"></video>
 
-## 它是如何工作的
+# 当前状态
 
-![](https://fastly.jsdelivr.net/gh/yaleiyale/yahosting@main/obsidian/1667809410000sjue9m.gif)
+- 支持列表
+    - 文件托管
+        - [GitHub](https://github.com/)
+        - [Clouinary](https://cloudinary.com/)
+        - [Catbox](https://catbox.moe/)
+    - 图床
+        - [Imgur](https://imgur.com/)
+        - [SM.MS](https://smms.app/)
+        - [ImgURL](https://www.imgurl.org/)
+        - [imgbb](https://imgbb.com/)
+- 配置页面多语言支持
+    - 简体中文
+    - 繁體中文 [@emisjerry](https://github.com/emisjerry)
+    - English
 
-## 配置
+<p class = "stickies">注册catbox时要记得用户名，登录时候要用 🤨</p>
+
+>[!check]  
+>从2.6版本开始，支持剪贴板和拖拽文件;非图像文件嵌入markdown后，默认以开头不带“!”的链接形式出现。
+
+# 配置
 
 1. 禁用obsidian安全模式
 2. 安装该插件
-   - ~~从obsidian社区插件标签中安装~~ (等待代码审查)
+   - 从obsidian插件社区中安装
    - 从Release中获取
       - 从最新版本的release中下载 **main.js manifest.json**
       - 将它们放入一个文件夹，再将该文件夹放到你的obsidian库配置文件的插件文件夹中
@@ -40,44 +53,47 @@ permalink: /notes/2022/10/16/172318
       - 用`yarn`或`npm`安装依赖项，如`npm install`。
       - `npm run dev`将开始编译
 3. 启用该插件
-4. 配置设置 :point_right: [[Obsidian Emo Uploader#Github设置相关]]
-5. 享受便利 :star2:
+4. 配置设置 👉 [[Obsidian Emo Uploader#Github设置相关]]
+5. 享受便利🌟
 
-## 关于上传到github
+# 关于上传到github
 
 对于来自代码世界之外的不熟悉的访问者，Github是一个著名的互联网托管服务，用于软件开发和使用Git的版本控制。  
-如果您需要有关托管图像的更多帮助，请查看[本插件的其他部分](https://github.com/yaleiyale/obsidian-emo-uploader#about-the-other).
+如果你需要有关托管**图像**的更多帮助，请查看[本插件的其他部分](https://github.com/yaleiyale/obsidian-emo-uploader#about-the-other).
 
-### 它是什么？
+## 它是什么？
 
 这个插件可以让你自动上传粘贴到Obsidian的**文件**，直接进入你的github仓库（而不是存储在本地）。当你想在笔记中提到一个你认为很适合共享的文件时，比如脚本、配置文件或任何东西，这很有用。  
 当然，它也可以是一个简单的图片上传器。它能很好地将图片嵌入到markdown文件中。  
 但不仅仅是一个图片上传器，你可以上传**各种类型的文件**，只要github接受它们。  
-文件链接是否能在Obsidian中呈现，取决于obsidian本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。 :lollipop: 只要去掉开头的感叹号就可以了。
+文件链接是否能在Obsidian中呈现，取决于obsidian本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。🍭只要去掉开头的感叹号就可以了。
 
-### 关于Github与jsdelivr的用户协议
+## 关于Github与jsdelivr的用户协议
 
 [GitHub terms-of-service](https://docs.github.com/cn/site-policy/github-terms/github-terms-of-service)  
 [jsdelivr Use Policy](https://www.jsdelivr.com/terms/acceptable-use-policy-jsdelivr-net)  
 
-:warning: 注意，
+⚠️注意，
 
-1. github目标仓库必须为public，这意味着上传的所有文件都是公开。github也更应该是为乐于共享者而服务的。请确保对你来说分享你上传的文件是无害的。我个人更期待着有一天你的某次上传就是为了无私共享。:sunflower:
+1. github目标仓库必须为public，这意味着上传的所有文件都是公开。github也更应该是为乐于共享者而服务的。请确保对你来说分享你上传的文件是无害的。我个人更期待着有一天你的某次上传就是为了无私共享。🌻
 2. 不要上传空文件。在这里是没有意义的，是错误的。
 3. 建议勾选面板中的随机文件名。重复的文件名会引起错误。随机文件名将大大避免重复的文件名。
 4. 一般来说，Github足够慷慨。但你需要掌握分寸，不要太滥用Github的服务。放轻松，正常使用，比如在Github pages中使用，当然是可以接受的。但如果你需要大量使用图片，请使用专业的图床服务（现在该项服务已经集成到了本插件中）超出正常范围（如在单个资源库中存储超过1GB的文件），滥用Github，上传不良文件，造成不良影响，可能会导致你的Github库甚至账户受到影响。
-5. 5.我在这里使用到了[jsdelivr](https://www.jsdelivr.com/)。它是免费的。就像上面一样，不要滥用它。就像我在视频中所做的一样，在传输大型视频时使用jsdelivr是不好的，我已经删除了它。*我的案例是一个小尺寸视频* :smirk_cat:
+5. 5.我在这里使用到了[jsdelivr](https://www.jsdelivr.com/)。它是免费的。就像上面关于GitHub的一样，不要滥用它。就像我在视频中所做的一样，在传输大型视频时使用jsdelivr是不好的，我已经删除了它。*我的案例是一个很小很小尺寸的视频* 😼
 
 ## 关于其他平台
 
-[SM.MS](https://smms.app/) ，[ImgURL](https://www.imgurl.org/)是图床，可以让你上传**图片**到存储账号。对于生活在中国的用户来说，这个网站比Github和Cloudinary更容易访问到。 注册一个帐户，并生成您的令牌。只要把你的参数填入正确的位置上，然后你就可以像上面的视频里那样使用它了。  
-关于Cloudinary，请参考[obsidian-cloudinar-uploader/README.md](https://github.com/jordanhandy/obsidian-cloudinary-uploader/blob/main/README.md)，当然本插件也支持Cloudinary。如果你发现Cloudinary已经足够满足你的需求，你可以直接使用它。不过我的脚本体积更小 :flushed:  
-[Imgur](https://imgur.com/)很好。但在我的网络环境中，它不容易访问和测试。我参考一些帖子只是实现了匿名上传。使用imgur时，deletehash将以`![deletehash](url)`的形式出现，用于防止您后悔上传错误的图片。您可以在[此处](https://lestua.eu.org/imgurdeleteimage)删除它们或在插件中进行删除。  
-:warning: 图像在托管平台上是公开可访问的。不要上传违禁文件！请自行检查服务限制。
+除了github，这里的所有其他平台都是纯托管平台。注册帐户并查找所需的参数。只需将参数写到正确的位置，然后你就可以像视频中那样使用托管服务了。  
+[SM.MS](https://smms.app/) ，[ImgURL](https://www.imgurl.org/)是图床，可以让你上传**图片**到存储账号。对于生活在中国大陆的用户来说，这个网站比Github和Cloudinary更容易访问到。  
+关于Cloudinary，请参考[obsidian-cloudinar-uploader/README.md](https://github.com/jordanhandy/obsidian-cloudinary-uploader/blob/main/README.md)，当然本插件也支持Cloudinary。如果你发现Cloudinary已经足够满足你的需求，你可以直接使用它。不过我的脚本体积更小😳  
+如果图片需要在中国大陆访及，不建议使用imgbb。我发现上传到这个平台的图片在中国大陆无法轻易访问，它们通常以缩略图的形式呈现。  
+使用imgur匿名上传时，deletehash将以`![deletehash](url)`的形式出现，用于防止你后悔上传错误的图片。你可以在[此处](https://lestua.eu.org/imgurdeleteimage)删除它们或在插件中进行删除。  
+Catbox本来是支持匿名上传的。但我没有发现删除匿名上传的文件的办法。为了避免意外，这里不提供catbox的匿名上传。  
+⚠️ 文件在这些托管平台上是公开可访问的。不要上传违禁文件！请自行检查服务限制。
 
 ## 如何扩展
 
-想要支持更多平台？如果不想费太大力气，可以通过以下方式扩展。
+想要支持更多平台？如果不想费太大力气看老代码，可以通过以下方式扩展。
 
 - 参考现有文件，将你的*uploader*所需要的参数添加到`src/Parms`，完成一个*parms*类型
 - 使用你的`parms`，在`config.ts`中, 添加关于*uploader*的参数配置作为可选目标平台与运行时的参数配置
@@ -91,26 +107,31 @@ permalink: /notes/2022/10/16/172318
 ## 注意
 
 由于不同平台支持的文件范围不同，在这个插件中对你粘贴的文件类型没有限制。这将导致不支持的类型在没有正确响应的情况下上传失败。幸运的是，在文档中嵌入奇怪文件类型的情况并不多。(不会很多吧？)  
-如果您需要将文件作为附件嵌入，请暂时关闭插件。  
-一般来说，Github支持任何文件类型，Cloudinary支持图像(png)、视频(mp4)和音频(mp3)等媒体类型文件，SM.MS、ImgURL支持常见的图像类型。试图上传一个平台不支持或者体积过大的文件将会产生一个类似`![](undefined)` 的字符串
+如果你需要将文件作为附件嵌入，请暂时关闭插件。  
+大致上，Github、Cloudinary、Catbox支持任何文件类型，SM.MS，ImgURL支持常见的图像类型。  
+试图上传一个平台不支持或者体积过大的文件将会产生一个类似`![](undefined)` 的字符串
 
 ## Github设置相关
 
 第一次安装启用插件后的设置面板会是这样：
 
-![](https://s2.loli.net/2022/11/07/gvuDH8nPjbftRze.png)
+![Imgur](https://i.imgur.com/2LbBMvv.png)
 
 ### Github配置（给非技术人员）
 
 - 注册登录你的github，github昵称将用来填到owner [GitHub注册页](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666052490/obsidian/pgpnnho3etykjb0zbh8v.png)
+![Imgur](https://i.imgur.com/ZuIbkTe.png)
+
 - 在登录后的主页右上角，新建仓库，仓库名将填入*repo*
 - 默认分支为*main*，如果要更换分支，请先在github上创建分支  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053392/obsidian/zq8tovjkzvhflpc3iadw.png)![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053455/obsidian/oksudjsujv74kocprmd9.png)  
+![Imgur](https://i.imgur.com/buurIQl.png)  
+![Imgur](https://i.imgur.com/PbonBno.png)  
 并将分支名填入*branch*
 - 在登录状态下进入[Personal Access Tokens](https://github.com/settings/tokens)，生成*Personal Access Tokens*，并确保它有repo权限。  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053826/obsidian/ifocyea2afwkxzuyzx00.png)  
+![Imgur](https://i.imgur.com/GBMuS4x.png)
+
 请及时保存该字符串，它只会可见一次，遗落后无法找回，需要重新生成新的。将该字符串填入*token*
+
 - *message*是你文件上传时附带的解释性信息，可以填入你的相关注解，用途备忘等
 - *path*是文件被上传到repo中的路径，结合hint与[[Obsidian Emo Uploader#注意项]]理解后填入
 
@@ -132,18 +153,17 @@ permalink: /notes/2022/10/16/172318
 
 The settings panel after installing and enabling the plugin for the first time will look like this：
 
-![](https://s2.loli.net/2022/11/07/gvuDH8nPjbftRze.png)
+![Imgur](https://i.imgur.com/2LbBMvv.png)
 
 #### Github Configuration(for non-technologists)
 
 - Register and login to your github, Github nickname will be used to fill in owner. [GitHub registration page](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666052490/obsidian/pgpnnho3etykjb0zbh8v.png)
+![Imgur](https://i.imgur.com/ZuIbkTe.png)
 - In the top right corner of the home page after login, create a new repository, the repository name will be used to fill in *repo*
-- The default branch is *main*, if you want to change the branch, please create a branch on github first  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053392/obsidian/zq8tovjkzvhflpc3iadw.png) ![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053455/obsidian/oksudjsujv74kocprmd9.png)  
+- The default branch is *main*, if you want to change the branch, please create a branch on github first ![Imgur](https://i.imgur.com/buurIQl.png)![Imgur](https://i.imgur.com/PbonBno.png)  
 and fill *branch* with the branch name
 - Go to [Personal Access Tokens](https://github.com/settings/tokens) while logged in, generate *Personal Access Tokens*, and make sure it has repo permissions.  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053826/obsidian/ifocyea2afwkxzuyzx00.png)  
+![Imgur](https://i.imgur.com/GBMuS4x.png)  
 Please save the string in time, it will only be visible once and cannot be retrieved after being lost, you need to regenerate it. Fill *token* with this string.
 - *message* is the explanatory message that comes with your upload, you can fill it with your relevant comments, usage notes, etc.
 - *path* is the path where the file was uploaded to the repo, combined with hint and [[Obsidian Emo Uploader#Note]] to understand and fill in.

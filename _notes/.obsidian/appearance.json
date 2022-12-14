@@ -1,9 +1,9 @@
 {
   "baseFontSize": 16,
-  "cssTheme": "Shimmering Focus",
-  "theme": "moonstone",
+  "cssTheme": "Blue Topaz",
+  "theme": "system",
   "enabledCssSnippets": [],
-  "translucency": false,
+  "translucency": true,
   "textFontFamily": "MiSans",
   "interfaceFontFamily": "MiSans",
   "monospaceFontFamily": "MiSans",

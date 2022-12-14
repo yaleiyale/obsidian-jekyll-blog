@@ -1,11 +1,11 @@
 ---
 title: obsidian结合jekyll
-aliases: 
+aliases: []
 tags: []
 date: 2022-08-05T17:33:27+08:00
-lastmod: 2022-11-07T21:56:17+08:00
+lastmod: 2022-11-21T22:02:47+08:00
 from: 
-permalink: /notes/2022/08/29/223927
+url: /notes/2022/08/29/223927
 ---
 
 obsidian采用markdown  

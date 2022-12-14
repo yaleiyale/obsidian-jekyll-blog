@@ -1,11 +1,11 @@
 ---
-title: 本方式将Obsidian适配到jekyll的注意项
-aliases: 
+title: 将Obsidian适配到jekyll的注意项
+aliases: []
 tags: [tips]
 date: 2022-08-05T16:38:38+08:00
-lastmod: 2022-10-09T22:51:57+08:00
+lastmod: 2022-12-13T22:26:29+08:00
 from: 
-permalink: /notes/2022/08/29/223857
+url: /notes/2022/08/29/223857
 ---
 
 # 文件名
@@ -35,12 +35,9 @@ obsidian中使用的形如`[文件名|尺寸]`的形式暂未得到处理，大�
 
 `raw` 标记临时禁止处理其所包围的代码。如果输出的内容与 Liquid 模板语言有冲突时可以避免冲突。  
 输入  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661439772/obsidian/lvwme4y1x4b7vxyz506j.png)
-
+![Imgur](https://i.imgur.com/HpaX4zG.png)  
 输出  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660877372/obsidian/nw7hyuooqzfk1n3ts3ua.png)
-
----
+![Imgur](https://i.imgur.com/WU1LnDp.png)
 
 [^1]: 不得为`2011-12-13`等的纯日期时间(数字)格式，网页中罗列的标题默认是title而不是文件名
 

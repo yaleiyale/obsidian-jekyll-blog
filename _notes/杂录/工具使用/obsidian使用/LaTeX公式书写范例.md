@@ -1,13 +1,12 @@
 ---
 title: LaTeX公式书写范例
-aliases: 
+aliases: []
 tags: [教程, LaTeX]
 date: 2022-08-03T22:45:08+08:00
-lastmod: 2022-10-09T22:51:58+08:00
+lastmod: 2022-11-21T22:02:47+08:00
 from: 
-permalink: /notes/2022/08/29/223905
+url: /notes/2022/08/29/223905
 ---
-
 # 行内公式与行间公式
 
 ```markdown
@@ -141,7 +140,6 @@ $x^{y_z}$ $x^y_z$
 
  $(…)$ $[…]$ $\{…\}$ $\langle…\rangle$ $\vert…\vert$ $\Vert…\Vert$
 
-
 # 常用公式
 
 ## 特殊符号
@@ -241,7 +239,7 @@ $\cdots$ 横省略号 $\vdots$ 竖省略号 $\ddots$斜省略号
 # 方程组
 
 ```
-$$\begin{cases} a_1x+b_1y+c_1z=d_1\newline a_2x+b_2y+c_2z=d_2\newline a_3x+b_3y+c_3z=d_3\newline \end{cases} $$
+$$\begin{cases} a_1x+b_1y+c_1z=d_1\newline a_2x+b_2y+c_2z=d_2\newline a_3x+b_3y+c_3z=d_3 \end{cases} $$
 ```
 
-$$\begin{cases} a_1x+b_1y+c_1z=d_1\newline a_2x+b_2y+c_2z=d_2\newline a_3x+b_3y+c_3z=d_3\newline \end{cases} $$
+$$\begin{cases} a_1x+b_1y+c_1z=d_1\newline a_2x+b_2y+c_2z=d_2\newline a_3x+b_3y+c_3z=d_3 \end{cases} $$

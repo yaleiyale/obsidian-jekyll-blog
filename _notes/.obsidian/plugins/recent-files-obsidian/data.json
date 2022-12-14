@@ -1,74 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "objekyll使用指南",
-      "path": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
-    },
-    {
-      "basename": "2022-07-15",
-      "path": "日记/可能会有日记/2022-07-15.md"
-    },
-    {
-      "basename": "Drawing 2022-08-21 11.32.49.excalidraw",
-      "path": "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md"
-    },
-    {
-      "basename": "绘图模板",
-      "path": "模板/绘图模板.md"
-    },
-    {
-      "basename": "给我的笔电画个圈 要做自己的大圣",
-      "path": "杂录/影子与样子/给我的笔电画个圈 要做自己的大圣.md"
-    },
-    {
-      "basename": "骚性",
-      "path": "杂录/影子与样子/骚性.md"
-    },
-    {
-      "basename": "Obsidian Emo Uploader",
-      "path": "杂录/工具使用/obsidian使用/Obsidian Emo Uploader.md"
-    },
-    {
-      "basename": "将Obsidian适配到jekyll的注意项",
-      "path": "杂录/工具使用/obsidian使用/将Obsidian适配到jekyll的注意项.md"
-    },
-    {
-      "basename": "主动型插件使用",
-      "path": "杂录/工具使用/obsidian使用/主动型插件使用.md"
-    },
-    {
-      "basename": "LaTeX公式书写范例",
-      "path": "杂录/工具使用/obsidian使用/LaTeX公式书写范例.md"
-    },
-    {
-      "basename": "Mermaid书写范例实例",
-      "path": "杂录/工具使用/obsidian使用/Mermaid书写范例实例.md"
-    },
-    {
-      "basename": "obsidian插件使用存档",
-      "path": "杂录/工具使用/obsidian使用/obsidian插件使用存档.md"
-    },
-    {
-      "basename": "obsidian中的markdown书写范例实例",
-      "path": "杂录/工具使用/obsidian使用/obsidian中的markdown书写范例实例.md"
-    },
-    {
-      "basename": "工具使用",
-      "path": "杂录/工具使用/工具使用.md"
-    },
-    {
-      "basename": "MAUI基本项目认识",
-      "path": "开发框架基础/MAUI/MAUI基本项目认识.md"
-    },
-    {
-      "basename": "MAUI-模型与视图",
-      "path": "开发框架基础/MAUI/MAUI-模型与视图.md"
-    },
-    {
-      "basename": "树的性质",
-      "path": "学研笔记/数据结构/树与二叉树/树的性质.md"
-    },
-    {
       "basename": "raw块模板",
       "path": "模板/raw块模板.md"
     },
@@ -91,6 +23,102 @@
     {
       "basename": "基础模板",
       "path": "模板/基础模板.md"
+    },
+    {
+      "basename": "绘图模板",
+      "path": "模板/绘图模板.md"
+    },
+    {
+      "basename": "闪念",
+      "path": "闪念/闪念.md"
+    },
+    {
+      "basename": "日记",
+      "path": "日记/日记.md"
+    },
+    {
+      "basename": "奇怪小妙招",
+      "path": "奇怪小妙招/奇怪小妙招.md"
+    },
+    {
+      "basename": "清除任务栏隐藏图标记录",
+      "path": "奇怪小妙招/清除任务栏隐藏图标记录.md"
+    },
+    {
+      "basename": "obsidian结合jekyll",
+      "path": "杂录/工具使用/objekyll使用/obsidian结合jekyll.md"
+    },
+    {
+      "basename": "obsidian中的markdown书写范例实例",
+      "path": "杂录/工具使用/obsidian使用/obsidian中的markdown书写范例实例.md"
+    },
+    {
+      "basename": "obsidian插件使用存档",
+      "path": "杂录/工具使用/obsidian使用/obsidian插件使用存档.md"
+    },
+    {
+      "basename": "Obsidian Emo Uploader",
+      "path": "杂录/工具使用/obsidian使用/Obsidian Emo Uploader.md"
+    },
+    {
+      "basename": "Mermaid书写范例实例",
+      "path": "杂录/工具使用/obsidian使用/Mermaid书写范例实例.md"
+    },
+    {
+      "basename": "LaTeX公式书写范例",
+      "path": "杂录/工具使用/obsidian使用/LaTeX公式书写范例.md"
+    },
+    {
+      "basename": "主动型插件使用",
+      "path": "杂录/工具使用/obsidian使用/主动型插件使用.md"
+    },
+    {
+      "basename": "将Obsidian适配到jekyll的注意项",
+      "path": "杂录/工具使用/objekyll使用/将Obsidian适配到jekyll的注意项.md"
+    },
+    {
+      "basename": "objekyll使用指南",
+      "path": "杂录/工具使用/objekyll使用/objekyll使用指南.md"
+    },
+    {
+      "basename": "EPIC值得一玩",
+      "path": "杂录/游戏杂录/EPIC值得一玩/EPIC值得一玩.md"
+    },
+    {
+      "basename": "Shadow Tactics.Blades of the Shogun",
+      "path": "杂录/游戏杂录/EPIC值得一玩/库/Shadow Tactics.Blades of the Shogun.md"
+    },
+    {
+      "basename": "Shadow of the Tomb Raider",
+      "path": "杂录/游戏杂录/EPIC值得一玩/库/Shadow of the Tomb Raider.md"
+    },
+    {
+      "basename": "Red Dead Redemption 2",
+      "path": "杂录/游戏杂录/EPIC值得一玩/库/Red Dead Redemption 2.md"
+    },
+    {
+      "basename": "Drawing 2022-08-21 11.32.49.excalidraw",
+      "path": "Excalidraw/Drawing 2022-08-21 11.32.49.excalidraw.md"
+    },
+    {
+      "basename": "给我的笔电画个圈 要做自己的大圣",
+      "path": "杂录/影子与样子/给我的笔电画个圈 要做自己的大圣.md"
+    },
+    {
+      "basename": "骚性",
+      "path": "杂录/影子与样子/骚性.md"
+    },
+    {
+      "basename": "MAUI基本项目认识",
+      "path": "开发框架基础/MAUI/MAUI基本项目认识.md"
+    },
+    {
+      "basename": "MAUI-模型与视图",
+      "path": "开发框架基础/MAUI/MAUI-模型与视图.md"
+    },
+    {
+      "basename": "树的性质",
+      "path": "学研笔记/数据结构/树与二叉树/树的性质.md"
     },
     {
       "basename": "Drawing 2022-07-15 21.28.23.excalidraw",
@@ -163,44 +191,9 @@
     {
       "basename": "树的定义与基本术语",
       "path": "学研笔记/数据结构/树与二叉树/树的定义与基本术语.md"
-    },
-    {
-      "basename": "二叉树的性质",
-      "path": "学研笔记/数据结构/树与二叉树/二叉树的性质.md"
-    },
-    {
-      "basename": "黑暗之魂3小本本",
-      "path": "杂录/游戏杂录/图鉴攻略/黑暗之魂3/黑暗之魂3小本本.md"
-    },
-    {
-      "basename": "走向hugo",
-      "path": "杂录/工具使用/hugo使用 探索版/走向hugo.md"
-    },
-    {
-      "basename": "2022-07-18",
-      "path": "日记/可能会有日记/2022-07-18.md"
-    },
-    {
-      "basename": "2022-08-11",
-      "path": "日记/可能会有日记/2022-08-11.md"
-    },
-    {
-      "basename": "2022-10-20",
-      "path": "日记/可能会有日记/2022-10-20.md"
-    },
-    {
-      "basename": "2022-08-29",
-      "path": "日记/可能会有日记/2022-08-29.md"
-    },
-    {
-      "basename": "日记",
-      "path": "日记/日记.md"
-    },
-    {
-      "basename": "pada",
-      "path": "杂录/现在是幻想时间/pada.md"
     }
   ],
   "omittedPaths": [],
-  "maxLength": null
+  "maxLength": null,
+  "openType": "tab"
 }

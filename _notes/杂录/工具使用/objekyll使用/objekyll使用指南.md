@@ -1,11 +1,11 @@
 ---
 title: objekyll使用指南
-aliases: 
-tags: [objekyll, 指南, rootnote]
+aliases: []
+tags: [objekyll, 指南]
 date: 2022-08-21T21:23:33+08:00
-lastmod: 2022-11-09T09:48:42+08:00
+lastmod: 2022-12-13T22:28:29+08:00
 from: 
-permalink: /notes/2022/08/29/223921
+url: /notes/2022/08/29/223921
 ---
 
 # 介绍
@@ -13,7 +13,7 @@ permalink: /notes/2022/08/29/223921
 [本仓库](https://github.com/yaleiyale/obsidian-jekyll-blog)的实践目的是将 obsidian 与 jekyll 相结合，本地记录，随处查看[^1]。虽然两者的上手都有一定门槛，但希望使用本仓库能够实现**难度 1+1<2，效率 1+1>=2**。本仓库中已经提供了基本的 obsidian 样例笔记库，可以开箱即用，其目录为`_notes文件夹`。样例中提供了一些样板文件和基础教程文件，可以参阅。熟手敬请自行引入你的 workflow。同时本仓库以插件的方式提供了双向链接，文件外部链接、excalidraw 绘图插入、标签、图谱等功能。创作时，参考 obsidian 样例仓库的笔记方法进行书写，无需更多配置即可方便地进行使用。本地使用 obsidian，安心书写，_A second brain, for you, forever._ 发布后，更可以自由渗透那个独立的*The second brain*。
 
 > [!bug]  
-> 发现一直有人在clone我的博客仓库，为了让**真正的小白**不要clone错了仓库，在此特别贴心提醒：*github.com/yaleiyale/yaleiyale.github.io* 为我个人的博客，*github.com/yaleiyale/obsidian-jekyll-blog* 才是博客生成工具仓库 :scream_cat:
+> 发现一直有人在clone我的博客仓库，为了让**真正的小白**不要clone错了仓库，在此特别贴心提醒：*github.com/yaleiyale/yaleiyale.github.io* 为我个人的博客，*github.com/yaleiyale/obsidian-jekyll-blog* 才是博客生成工具仓库🙀
 
 # 特性
 
@@ -55,10 +55,11 @@ permalink: /notes/2022/08/29/223921
 
 1. 建立[Vercel](https://vercel.com/)账号，使用**Github**账号登录，方便后续导入。
 2. 选择你的仓库，点击*import*导入到**vercel**  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259510/obsidian/zeuxgh4hgfqzo5phn4fi.png)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259536/obsidian/ehp6gwsbwmuxoxnnpvuu.png)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259568/obsidian/tynet8imx1xoprq6tstr.png)  
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661259747/obsidian/ayzilsxuzehr4pmropxh.png)
+![Imgur](https://i.imgur.com/W6f2NE5.png)  
+![Imgur](https://i.imgur.com/5LjxG0e.png)  
+![Imgur](https://i.imgur.com/UgMzIms.png)  
+![Imgur](https://i.imgur.com/lLeRv81.png)
+
 3. 设定你的项目名称（不要有中文），其余默认。
 
 ### 部署调整
@@ -72,9 +73,9 @@ permalink: /notes/2022/08/29/223921
 
 1. fork[本仓库](https://github.com/yaleiyale/obsidian-jekyll-blog)，将仓库名改为`{你的github昵称}.github.io`。
 2. 事先未准备域名，则在你的仓库中将`CNAME`删除。若有域名则将`CNAME`中的文本替换为你的域名。关于自定义域名的更多详细配置，请自行查询资料，本指南后文所提可以不要求进行自定义域名。
-3. ![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661089854/obsidian/g6fxa11s5tfcnuukcwlj.png)
+3. ![Imgur](https://i.imgur.com/DWjrgeF.png)
 
-如图，在**Branch**中选择分支(初使用应该选为`main`和`root`)，点击 save，在**Actions**中观察到发布完成后，进入`Pages`，可观察到![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661090145/obsidian/s919hgtgt8kchljyobs4.png)点击以进行访问，访问成功，那么你的博客就已经跑起来了。
+如图，在**Branch**中选择分支(初使用应该选为`main`和`root`)，点击 save，在**Actions**中观察到发布完成后，进入`Pages`，可观察到![Imgur](https://i.imgur.com/KfJ3YXB.png)点击以进行访问，访问成功，那么你的博客就已经跑起来了。
 
 ### 配置
 
@@ -93,8 +94,6 @@ permalink: /notes/2022/08/29/223921
 
 1. 创作告一阶段后，将仓库 push 到 github，**Github Actions**或**Vercel Build**将自动进行发布。当上述所有的步骤都完成后，基础博客所具有的功能都将得到展现。**github pages 发布**方式，在完成[[objekyll使用指南#配置]]中的第 2 条后，包括标签、图谱也都将可用。
 2. 更进一步的功能需求实现，需要你自己的进一步开发。由于本库作者的个人能力有限，这个样板仓库**AS IS**。有有价值的功能或优美的实现，如果可以，请让作者也瞅瞅。
-
----
 
 [^1]: 还可以将本仓库放在你的 onedrive 中,将 obsidian 库使用[OneSync](https://play.google.com/store/apps/details?id=com.ttxapps.onesyncv2&hl=zh&gl=US)同步到你的移动设备上，在 obsidian 移动端中编辑查看同步。
 
