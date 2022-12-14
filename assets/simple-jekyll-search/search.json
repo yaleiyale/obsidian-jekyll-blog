@@ -8,7 +8,7 @@
       "date"     : "2022-07-30 20:46:10 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223909"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/Mermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B"
       
     } ,
   
@@ -19,7 +19,7 @@
       "date"     : "2022-07-30 20:46:11 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223916"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/obsidian%E4%B8%AD%E7%9A%84markdown%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B"
       
     } ,
   
@@ -30,7 +30,7 @@
       "date"     : "2022-07-30 20:46:11 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223901"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/%E4%B8%BB%E5%8A%A8%E5%9E%8B%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8"
       
     } ,
   
@@ -41,18 +41,18 @@
       "date"     : "2022-08-03 22:45:08 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223905"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/LaTeX%E5%85%AC%E5%BC%8F%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B"
       
     } ,
   
     {
-      "title"    : "本方式将Obsidian适配到jekyll的注意项",
+      "title"    : "将Obsidian适配到jekyll的注意项",
       "category" : "",
       "tags"     : "tips",
       "date"     : "2022-08-05 16:38:38 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223857"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/objekyll%E4%BD%BF%E7%94%A8/%E5%B0%86Obsidian%E9%80%82%E9%85%8D%E5%88%B0jekyll%E7%9A%84%E6%B3%A8%E6%84%8F%E9%A1%B9"
       
     } ,
   
@@ -63,7 +63,7 @@
       "date"     : "2022-08-05 17:21:40 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223912"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/obsidian%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8%E5%AD%98%E6%A1%A3"
       
     } ,
   
@@ -74,40 +74,18 @@
       "date"     : "2022-08-05 17:33:27 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223927"
-      
-    } ,
-  
-    {
-      "title"    : "日记",
-      "category" : "",
-      "tags"     : "rootnote",
-      "date"     : "2022-08-08 10:21:48 +0800",
-      
-      
-      "url"      : "/notes/2022/08/29/223359"
-      
-    } ,
-  
-    {
-      "title"    : "闪念",
-      "category" : "",
-      "tags"     : "rootnote",
-      "date"     : "2022-08-18 11:53:24 +0800",
-      
-      
-      "url"      : "/notes/2022/08/29/223521"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/objekyll%E4%BD%BF%E7%94%A8/obsidian%E7%BB%93%E5%90%88jekyll"
       
     } ,
   
     {
       "title"    : "objekyll使用指南",
       "category" : "",
-      "tags"     : "objekyll, 指南, rootnote",
+      "tags"     : "objekyll, 指南",
       "date"     : "2022-08-21 21:23:33 +0800",
       
       
-      "url"      : "/notes/2022/08/29/223921"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/objekyll%E4%BD%BF%E7%94%A8/objekyll%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97"
       
     } ,
   
@@ -118,18 +96,7 @@
       "date"     : "2022-10-16 17:23:05 +0800",
       
       
-      "url"      : "/notes/2022/10/16/172318"
-      
-    } ,
-  
-    {
-      "title"    : "走向hugo",
-      "category" : "",
-      "tags"     : "",
-      "date"     : "2022-11-11 20:53:29 +0800",
-      
-      
-      "url"      : "/notes/2022/11/11/205404"
+      "url"      : "/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/Obsidian%20Emo%20Uploader"
       
     } ,
   
@@ -240,6 +207,28 @@
       
       
       "url"      : "/Excalidraw/Drawing%202022-08-21%2011.32.49.excalidraw"
+      
+    } ,
+  
+    {
+      "title"    : "日记",
+      "category" : "",
+      "tags"     : "rootnote",
+      "date"     : "2022-12-14 09:18:11 +0800",
+      
+      
+      "url"      : "/notes/2022/08/29/223359"
+      
+    } ,
+  
+    {
+      "title"    : "闪念",
+      "category" : "",
+      "tags"     : "rootnote",
+      "date"     : "2022-12-14 09:18:14 +0800",
+      
+      
+      "url"      : "/notes/2022/08/29/223521"
       
     } 
   

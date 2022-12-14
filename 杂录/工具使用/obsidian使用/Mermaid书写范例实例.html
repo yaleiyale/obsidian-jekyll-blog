@@ -3,26 +3,26 @@
 <head>
   <title>
     
-    obsidian结合jekyll &middot; objekyll小站
+    Mermaid书写范例实例 &middot; objekyll小站
     
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="obsidian结合jekyll" />
+<meta property="og:title" content="Mermaid书写范例实例" />
 <meta name="author" content="yaleiyale" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="obsidian采用markdown" />
-<meta property="og:description" content="obsidian采用markdown" />
-<link rel="canonical" href="https://objekyll.tk/notes/2022/08/29/223927" />
-<meta property="og:url" content="https://objekyll.tk/notes/2022/08/29/223927" />
+<meta name="description" content="依赖 mermaid 支持，遵循语法进行书写可实现渲染出图" />
+<meta property="og:description" content="依赖 mermaid 支持，遵循语法进行书写可实现渲染出图" />
+<link rel="canonical" href="https://objekyll.tk/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/Mermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B" />
+<meta property="og:url" content="https://objekyll.tk/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/Mermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B" />
 <meta property="og:site_name" content="objekyll小站" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-05T17:33:27+08:00" />
+<meta property="article:published_time" content="2022-07-30T20:46:10+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="obsidian结合jekyll" />
+<meta property="twitter:title" content="Mermaid书写范例实例" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-08-05T17:33:27+08:00","datePublished":"2022-08-05T17:33:27+08:00","description":"obsidian采用markdown","headline":"obsidian结合jekyll","mainEntityOfPage":{"@type":"WebPage","@id":"https://objekyll.tk/notes/2022/08/29/223927"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://objekyll.tk/notes/2022/08/29/223927"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-07-30T20:46:10+08:00","datePublished":"2022-07-30T20:46:10+08:00","description":"依赖 mermaid 支持，遵循语法进行书写可实现渲染出图","headline":"Mermaid书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://objekyll.tk/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/Mermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://i.imgur.com/8hUUTzl.png"},"name":"yaleiyale"},"url":"https://objekyll.tk/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/obsidian%E4%BD%BF%E7%94%A8/Mermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -69,12 +69,12 @@
   
   <link
   rel="apple-touch-icon-precomposed"
-  href="https://s1.ax1x.com/2022/10/30/xIMChq.png"
+  href="https://i.imgur.com/8hUUTzl.png"
 />
 <link
   rel="shortcut
   icon"
-  href="https://s1.ax1x.com/2022/10/30/xIMChq.png"
+  href="https://i.imgur.com/8hUUTzl.png"
 />
 
   
@@ -105,7 +105,7 @@
     
     <div class="sidebar-item">
       <div class="effect effect-right_to_left">
-        <img class="effect-img" src="https://s1.ax1x.com/2022/10/30/xIMChq.png" alt="img" />
+        <img class="effect-img" src="https://i.imgur.com/8hUUTzl.png" alt="img" />
         <div class="effect-info">
           <br>
 <br>
@@ -189,7 +189,42 @@
 
       
       
-      
+      <ol id="toc">
+  <li><a href="#%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a>
+    <ol>
+      <li><a href="#%E8%BF%9E%E7%BA%BF">连线</a>
+        <ol>
+          <li><a href="#%E7%BA%BF%E7%A7%8D%E7%B1%BB">线种类</a></li>
+          <li><a href="#%E7%AE%AD%E5%A4%B4%E7%B1%BB%E5%9E%8B">箭头类型</a></li>
+          <li><a href="#%E5%A4%9A%E5%90%91%E7%AE%AD%E5%A4%B4">多向箭头</a></li>
+          <li><a href="#%E8%BF%9E%E7%BA%BF%E6%96%87%E6%9C%AC">连线文本</a>
+            <ol>
+              <li><a href="#%E5%B5%8C%E5%85%A5%E5%BC%8F">嵌入式</a></li>
+              <li><a href="#%E5%A4%96%E9%83%A8%E5%BC%8F">外部式</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E8%BF%9E%E7%BA%BF%E5%BD%A2%E5%BC%8F">连线形式</a></li>
+          <li><a href="#%E7%BA%BF%E6%9D%A1%E9%95%BF%E5%BA%A6">线条长度</a></li>
+          <li><a href="#%E8%8A%82%E7%82%B9%E9%97%B4%E7%9A%84%E5%A4%9A%E6%9D%A1%E8%BF%9E%E7%BA%BF">节点间的多条连线</a></li>
+        </ol>
+      </li>
+      <li><a href="#%E8%8A%82%E7%82%B9">节点</a>
+        <ol>
+          <li><a href="#%E8%8A%82%E7%82%B9%E7%9A%84%E5%AE%B9%E5%99%A8-%E5%90%8D">节点的容器 (名)</a></li>
+          <li><a href="#%E8%8A%82%E7%82%B9%E5%BD%A2%E7%8A%B6">节点形状</a></li>
+          <li><a href="#%E4%BC%9A%E6%8A%A5%E9%94%99%E7%9A%84%E6%96%87%E6%9C%AC">会报错的文本</a></li>
+        </ol>
+      </li>
+      <li><a href="#%E5%AD%90%E5%9B%BE">子图</a>
+        <ol>
+          <li><a href="#%E5%AD%90%E5%9B%BE%E5%88%9B%E5%BB%BA">子图创建</a></li>
+          <li><a href="#%E5%AD%90%E5%9B%BE%E5%B5%8C%E5%A5%97">子图嵌套</a></li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li><a href="#%E6%97%B6%E5%BA%8F%E5%9B%BE">时序图</a></li>
+</ol>
       
       
       <script defer="defer" >
@@ -310,8 +345,8 @@
         
           
         
-        4千
-        332字
+        1千
+        561字
         
       </div>
       
@@ -344,27 +379,27 @@
 <div class="container content">
   <div class="page">
     
-    <h1 class="page-title">obsidian结合jekyll</h1>
+    <h1 class="page-title">Mermaid书写范例实例</h1>
     
     <div class="wrapper">
     <main><div class="post">
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2022-11-07 21:56:17 Monday
+        改于：2022-11-21 22:02:47 Monday
         <br>
         
         
         <i class="fa-solid fa-calendar-plus fa-fw"></i>
-        建于：2022-08-05 17:33:27 Friday
+        建于：2022-07-30 20:46:10 Saturday
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        155字
+        5222字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        1分
+        18分
         
         
         <br/>
@@ -379,25 +414,450 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <p>obsidian采用markdown</p>
+            <p>依赖 mermaid 支持，<strong>遵循语法进行书写可实现渲染出图</strong></p>
 
-<p>markdown记法相关的备忘案例：</p>
+<h1 id="流程图">流程图</h1>
 
-<ol>
-  <li><a class="internal-link" href="/notes/2022/08/29/223916">obsidian中的markdown书写范例实例</a></li>
-  <li><a class="internal-link" href="/notes/2022/08/29/223909">Mermaid书写范例实例</a></li>
-  <li><a class="internal-link" href="/notes/2022/08/29/223905">LaTeX公式书写范例</a></li>
-</ol>
+<ul>
+  <li>关键字
+    <ul>
+      <li>flowchart</li>
+    </ul>
+  </li>
+  <li>方向
+    <ul>
+      <li>TB(top to bottom)</li>
+      <li>BT(bottom to top)</li>
+      <li>LR(left to right)</li>
+      <li>RL(right to left)</li>
+    </ul>
+  </li>
+</ul>
 
-<p>插件相关：</p>
+<p>Mermaid 语句的结束，有两种方式:<strong>在结尾加分号</strong>；<strong>换行</strong></p>
 
-<ol>
-  <li><a class="internal-link" href="/notes/2022/08/29/223901">主动型插件使用</a></li>
-  <li><a class="internal-link" href="/notes/2022/08/29/223912">obsidian插件使用存档</a></li>
-  <li><a class="internal-link" href="/notes/2022/10/16/172318">Obsidian Emo Uploader</a></li>
-</ol>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	a--&gt;b
+	c--&gt;d</span>
+<span class="p">```</span>
+</code></pre></div></div>
 
-<p>注意点：<a class="internal-link" href="/notes/2022/08/29/223857">将Obsidian适配到jekyll的注意项</a></p>
+<pre><code class="language-mermaid">flowchart LR
+	a--&gt;b
+	c--&gt;d
+</code></pre>
+
+<h2 id="连线">连线</h2>
+
+<h3 id="线种类">线种类</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	A---实线; %% AB之间，以一条实线连接
+	A-.-虚线; %% AB之间，以一条虚线连接
+	A===粗实线; %% AB之间，以一条粗实线连接
+	A--&gt;箭头实线; %% AB之间，以一条箭头实线连接
+	A-.-&gt;箭头虚线; %% AB之间，以一条箭头虚线连接
+	A==&gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+	A~~~不可见 %%可用于节点定位</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	A---实线; %% AB之间，以一条实线连接
+	A-.-虚线; %% AB之间，以一条虚线连接
+	A===粗实线; %% AB之间，以一条粗实线连接
+	A--&gt;箭头实线; %% AB之间，以一条箭头实线连接
+	A-.-&gt;箭头虚线; %% AB之间，以一条箭头虚线连接
+	A==&gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+</code></pre>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart RL
+	反向实线箭头--&gt;A; %% 这是一条从B到A的反向实线箭头</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart RL
+	反向实线箭头--&gt;A; %% 这是一条从B到A的反向实线箭头
+</code></pre>
+
+<h3 id="箭头类型">箭头类型</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR 
+	A --o 实线o;  %% 实线o
+	A --x 实线x;  %% 实线x
+	A -.-o 虚线o; %% 虚线o
+	A -.-x 虚线x; %% 虚线x
+	A ==o 粗实线o;  %% 粗实线o
+	A ==x 粗实线x;  %% 粗实线x</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR 
+%% 使用flowchart关键字
+	A --o 实线o;  %% 实线o
+	A --x 实线x;  %% 实线x
+	A -.-o 虚线o; %% 虚线o
+	A -.-x 虚线x; %% 虚线x
+	A ==o 粗实线o;  %% 粗实线o
+	A ==x 粗实线x;  %% 粗实线x
+</code></pre>
+
+<h3 id="多向箭头">多向箭头</h3>
+
+<p>有三种: 使用首尾相同的 o 或 x，或者一对 &lt; &gt;; 不能使用 o–x 这样首尾不同的</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR 
+	%% 实线
+	A o--o B; %% 多向实线o
+	C &lt;--&gt; D; %% 多向实线箭头
+	E x--x F; %% 多向实线x
+	%% 虚线
+	G o-.-o H; %% 多向虚线o
+	I &lt;-.-&gt; J; %% 多向虚线箭头
+	K x-.-x L; %% 多向虚线x
+	%% 粗实线
+	M o==o N; %% 多向粗实线o
+	O &lt;==&gt; P; %% 多向粗实线箭头
+	R x==x S; %% 多向粗实线x</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR 
+	%% 实线
+	A o--o B; %% 多向实线o
+	C &lt;--&gt; D; %% 多向实线箭头
+	E x--x F; %% 多向实线x
+	%% 虚线
+	G o-.-o H; %% 多向虚线o
+	I &lt;-.-&gt; J; %% 多向虚线箭头
+	K x-.-x L; %% 多向虚线x
+	%% 粗实线
+	M o==o N; %% 多向粗实线o
+	O &lt;==&gt; P; %% 多向粗实线箭头
+	R x==x S; %% 多向粗实线x
+</code></pre>
+
+<h3 id="连线文本">连线文本</h3>
+
+<h4 id="嵌入式">嵌入式</h4>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	A--嵌入式:实线间的文本--&gt;B; %% AB之间以实线连接，且有一段连线文本
+	A-.嵌入式:虚线间的文本.-&gt;B; %% AB之间以虚线连接，且有一段连线文本
+	A==嵌入式:粗实线间的文本==&gt;B; %% AB之间以粗实线连接，且有一段连线文本</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	A--嵌入式:实线间的文本--&gt;B; %% AB之间以实线连接，且有一段连线文本
+	A-.嵌入式:虚线间的文本.-&gt;B; %% AB之间以虚线连接，且有一段连线文本
+	A==嵌入式:粗实线间的文本==&gt;B; %% AB之间以粗实线连接，且有一段连线文本
+</code></pre>
+
+<h4 id="外部式">外部式</h4>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	A--&gt;|实线间文本|B;
+	A-.-&gt;|虚线间文本|B;
+	A==&gt;|粗实线间文本|B;</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	A--&gt;|实线间文本|B;
+	A-.-&gt;|虚线间文本|B;
+	A==&gt;|粗实线间文本|B;
+</code></pre>
+
+<h3 id="连线形式">连线形式</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	A--&gt;B--&gt;C--&gt;D--&gt;直向连线;
+
+   a--&gt;b &amp; c--&gt;d &amp; e--&gt;多重连线; </span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	A--&gt;B--&gt;C--&gt;D--&gt;直向连线;
+
+   a--&gt;b &amp; c--&gt;d &amp; e--&gt;多重连线; 
+</code></pre>
+
+<blockquote>
+  <p>[!note]<br />
+多重连线中的&amp;表示与关系，如a–&gt;b &amp; c–&gt;d，表示a连接到b与c，b与c连接到d</p>
+</blockquote>
+
+<h3 id="线条长度">线条长度</h3>
+
+<p>线条可以增加长度，默认为<strong>1 级</strong>，可加至<strong>3 级</strong></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	%% 实线
+	a1---a2----a3-----a4;
+
+	%% 虚线
+	b1-.-b2-..-b3-...-b4;
+
+	%% 粗实线
+	c1===c2====c3=====c4;
+
+	%% 箭头实线
+	d1--&gt;d2---&gt;d3----&gt;d4;
+
+	%% 箭头虚线 
+	e1-.-&gt;e2-..-&gt;e3-...-&gt;e4;
+
+	%% 箭头粗实线
+	f1==&gt;f2===&gt;f3====&gt;f4;</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	%% 实线
+	a1---a2----a3-----a4;
+
+	%% 虚线
+	b1-.-b2-..-b3-...-b4;
+
+	%% 粗实线
+	c1===c2====c3=====c4;
+
+	%% 箭头实线
+	d1--&gt;d2---&gt;d3----&gt;d4;
+
+	%% 箭头虚线 
+	e1-.-&gt;e2-..-&gt;e3-...-&gt;e4;
+
+	%% 箭头粗实线
+	f1==&gt;f2===&gt;f3====&gt;f4;
+</code></pre>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	%% 实线
+	a1 o--o a2 o---o a3 o----o a4; %% 多向实线o
+	b1 &lt;--&gt; b2 &lt;---&gt; b3 &lt;----&gt; b4; %% 多向实线箭头
+	c1 x--x c2 x---x c3 x----x c4; %% 多向实线x
+	
+	%% 虚线
+	d1 o-.-o d2 o-..-o d3 o-...-o d4; %% 多向虚线o
+	e1 &lt;-.-&gt; e2 &lt;-..-&gt; e3 &lt;-...-&gt; e4; %% 多向虚线箭头
+	f1 x-.-x f2  x-..-x f3 x-...-x f4; %% 多向虚线x
+	
+	%% 粗实线
+	g1 o==o g2 o===o g3 o====o g4; %% 多向粗实线o
+	h1 &lt;==&gt; h2 &lt;===&gt; h3 &lt;====&gt; h4; %% 多向粗实线
+	i1 x==x i2 x===x i3 x====x i4; %% 多向粗实线x</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	%% 实线
+	a1 o--o a2 o---o a3 o----o a4; %% 多向实线o
+	b1 &lt;--&gt; b2 &lt;---&gt; b3 &lt;----&gt; b4; %% 多向实线箭头
+	c1 x--x c2 x---x c3 x----x c4; %% 多向实线x
+	
+	%% 虚线
+	d1 o-.-o d2 o-..-o d3 o-...-o d4; %% 多向虚线o
+	e1 &lt;-.-&gt; e2 &lt;-..-&gt; e3 &lt;-...-&gt; e4; %% 多向虚线箭头
+	f1 x-.-x f2  x-..-x f3 x-...-x f4; %% 多向虚线x
+	
+	%% 粗实线
+	g1 o==o g2 o===o g3 o====o g4; %% 多向粗实线o
+	h1 &lt;==&gt; h2 &lt;===&gt; h3 &lt;====&gt; h4; %% 多向粗实线
+	i1 x==x i2 x===x i3 x====x i4; %% 多向粗实线x
+</code></pre>
+
+<h3 id="节点间的多条连线">节点间的多条连线</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart TB
+	得出答案A--&gt;确定么?--&gt;|确定|好吧;
+	好吧--&gt;再想一想--&gt;|不对劲|确定么?----&gt;|恍然大悟|修正为答案B;</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart TB
+	得出答案A--&gt;确定么?--&gt;|确定|好吧;
+	好吧--&gt;再想一想--&gt;|不对劲|确定么?----&gt;|恍然大悟|修正为答案B;
+</code></pre>
+
+<h2 id="节点">节点</h2>
+
+<h3 id="节点的容器-名">节点的容器 (名)</h3>
+
+<p>不使用容器，复杂的文本如英文词组中的空格会报错。</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart BT
+	id1[我]--&gt;id2[父亲]
+	id1--&gt;id3[母亲]
+	
+	id2--妈妈--&gt;id4[奶奶]
+	id2--爸爸--&gt;id5[爷爷]
+	
+	id3--妈妈--&gt;id6[外婆]
+	id3--爸爸--&gt;id7[外公]</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart BT
+	id1[我]--&gt;id2[父亲]
+	id1--&gt;id3[母亲]
+	
+	id2--妈妈--&gt;id4[奶奶]
+	id2--爸爸--&gt;id5[爷爷]
+	
+	id3--妈妈--&gt;id6[外婆]
+	id3--爸爸--&gt;id7[外公]
+</code></pre>
+
+<h3 id="节点形状">节点形状</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	id1[矩形]--&gt;id2((圆形))--&gt;id3{菱形}--&gt;id4(圆角矩形)
+	id5([跑道形])--&gt;id6[/平行四边形/]--&gt;id7[\反向平行四边形\]--&gt;id8[/梯形\]
+	id9[\倒立梯形/]--&gt;id10&gt;燕尾型]--&gt;id11[(圆柱形)]</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	id1[矩形]--&gt;id2((圆形))--&gt;id3{菱形}--&gt;id4(圆角矩形)
+	id5([跑道形])--&gt;id6[/平行四边形/]--&gt;id7[\反向平行四边形\]--&gt;id8[/梯形\]
+	id9[\倒立梯形/]--&gt;id10&gt;燕尾型]--&gt;id11[(圆柱形)]
+</code></pre>
+
+<h3 id="会报错的文本">会报错的文本</h3>
+
+<p>容器命名时 end 会报错，文本中不会</p>
+
+<p>在文本内容输入 <code class="language-plaintext highlighter-rouge">[ ] { } ( )</code>，会报错；<code class="language-plaintext highlighter-rouge">&gt; \ /</code> 可以用，不会报错；一些生僻的汉字、部首，也会报错</p>
+
+<p>那么，要怎样才能 在文本内容中 显示这些会报错的字符呢？可以使用，双引号 <code class="language-plaintext highlighter-rouge">" "</code></p>
+
+<p>使用 双引号 “ “ 包裹，可以让破坏语法的字符，合法地进入节点，不会报错</p>
+
+<h2 id="子图">子图</h2>
+
+<h3 id="子图创建">子图创建</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart TB
+    subgraph sub1[one 子图1]
+    a1--&gt;a2;
+    end;
+	
+    subgraph sub2[two 子图2]
+    b1--&gt;b2;
+    end;
+	
+    subgraph sub3[three 子图3]
+    c1--&gt;c2;
+    end;
+	
+	%% 节点与节点的连接
+	c1--&gt;a2;
+	
+	%% 子图与子图的连接
+    sub1--&gt;sub2;
+    sub3--&gt;sub2;
+	
+	%% 子图与节点的连接
+    sub2--&gt;c2;</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart TB
+    subgraph sub1[one 子图1]
+    a1--&gt;a2;
+    end;
+	
+    subgraph sub2[two 子图2]
+    b1--&gt;b2;
+    end;
+	
+    subgraph sub3[three 子图3]
+    c1--&gt;c2;
+    end;
+	
+	%% 节点与节点的连接
+	c1--&gt;a2;
+	
+	%% 子图与子图的连接
+    sub1--&gt;sub2;
+    sub3--&gt;sub2;
+	
+	%% 子图与节点的连接
+    sub2--&gt;c2;
+</code></pre>
+
+<blockquote>
+  <p>[!warning]<br />
+ 子图容器必须用中括号 [ ]，其他不行，容器名 [子图名文本]</p>
+</blockquote>
+
+<h3 id="子图嵌套">子图嵌套</h3>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">mermaid
+</span><span class="sb">flowchart LR
+	subgraph 子图
+	%% 声明子图
+	direction TB  %% 子图方向
+		subgraph 子图1
+        direction RL %% 子图1方向
+        i1--&gt;f1
+		end
+		
+    	subgraph 子图2
+        direction BT %% 子图2方向
+        i2--&gt;f2
+		end
+	end
+  
+  %% 主图
+  A--&gt;子图--&gt;B
+  子图1--&gt;子图2</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<pre><code class="language-mermaid">flowchart LR
+	subgraph 子图
+	%% 声明子图
+	direction TB  %% 子图方向
+		subgraph 子图1
+        direction RL %% 子图1方向
+        i1--&gt;f1
+		end
+		
+    	subgraph 子图2
+        direction BT %% 子图2方向
+        i2--&gt;f2
+		end
+	end
+  
+  %% 主图
+  A--&gt;子图--&gt;B
+  子图1--&gt;子图2
+</code></pre>
+
+<h1 id="时序图">时序图</h1>
+
+<pre><code class="language-mermaid">sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!
+</code></pre>
 
         </content>
         <side style="font-size: 0.9em">
@@ -407,8 +867,8 @@
                 
                 <div class="backlink-box">
                     <a class="internal-link"
-                        href="/notes/2022/08/29/223921">objekyll使用指南</a><br>
-                    <!-- <div style="font-size: 0.9em">介绍
+                        href="/%E6%9D%82%E5%BD%95/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/objekyll%E4%BD%BF%E7%94%A8/obsidian%E7%BB%93%E5%90%88jekyll">obsidian结合jekyll</a><br>
+                    <!-- <div style="font-size: 0.9em">obsidian采用markdown
 </div> -->
                 </div>
                 
@@ -591,6 +1051,37 @@
 
 
 
+
+
+<style>
+  pre.language-mermaid,
+  code.language-mermaid {
+    display: none;
+  }
+  @media only screen {
+    .mermaid {
+      overflow: hidden hidden;
+      max-width: 100%;
+      max-height: 66.6vh;
+    }
+    .mermaid {
+      overflow: auto auto;
+    }
+  }
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"
+  async="async"
+  onload='
+    for(let x of document.getElementsByClassName("language-mermaid"))
+      if(x.nodeName=="CODE")
+      {
+        let m = document.createElement("div");
+        m.classList.add("mermaid");
+        m.textContent = x.textContent;
+        x.parentNode.insertAdjacentElement("beforebegin", m);
+      }'
+></script>
 
 
 
@@ -823,7 +1314,7 @@
 
 
 <script 
-  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@1.0/lamu-leimu.min.js"
+  src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@main/lamu-leimu.min.js"
 ></script>
 
 
