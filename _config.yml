@@ -28,7 +28,7 @@ description: | # 头像背后的信息（html格式）
     <i class="fa-brands fa-bilibili" fa-fw></i>
   </a>
 author: yaleiyale # 作者
-url: "https://objekyll.tk" # 默认域名或你的自定义域名
+url: "http://lestua.eu.org/obsidian-jekyll-blog" # 默认域名或你的自定义域名
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 use_html_extension: false
 collections:
