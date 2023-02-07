@@ -261,7 +261,7 @@ defaults:
               />
               <link 
                 rel="stylesheet" 
-                href="/styles.css"
+                href="/obsidian-jekyll-blog/styles.css"
               />
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
