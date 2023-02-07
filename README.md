@@ -35,11 +35,7 @@
 
 <!-- .slide -->
 
-![](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1661995792/obsidian/tqdnz46b8sjy55nvno32.png)
-
-<!-- .slide vertical=true -->
-
 ![image](https://user-images.githubusercontent.com/55282569/190904137-5fd59092-0a22-43aa-989a-5593c8c485b2.png)
 
-<!-- .slide -->
+<!-- .slide vertical=true -->
 [默认主题](https://github.com/yaleiyale/jekyll-theme-ObJekyll)自定义替换,主题模板来自[wu-kan](https://github.com/wu-kan/jekyll-theme-WuK),<br>obsidian双链支持相关来自[maximevaillancourt](https://github.com/maximevaillancourt/digital-garden-jekyll-template)
