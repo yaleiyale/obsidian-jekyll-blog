@@ -28,8 +28,8 @@ description: | # 头像背后的信息（html格式）
     <i class="fa-brands fa-bilibili" fa-fw></i>
   </a>
 author: yaleiyale # 作者
-url: "http://lestua.eu.org" # 默认域名或你的自定义域名
-baseurl: "obsidian-jekyll-blog" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
+url: "https://objekyll.netlify.app" # 默认域名或你的自定义域名
+baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 use_html_extension: false
 collections:
   notes:
@@ -99,7 +99,7 @@ defaults:
                   async='async'
                   onload='
                     SimpleJekyllSearch({
-                      json: "/obsidian-jekyll-blog/assets/simple-jekyll-search/search.json",
+                      json: "/assets/simple-jekyll-search/search.json",
                       searchInput: document.getElementById("sidebar-search-input"),
                       resultsContainer: document.getElementById("sidebar-search-results-container"),
                       searchResultTemplate: `<li><a href="{url}">{title}</a></li>`,
@@ -261,7 +261,7 @@ defaults:
               />
               <link 
                 rel="stylesheet" 
-                href="/obsidian-jekyll-blog/styles.css"
+                href="/styles.css"
               />
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
