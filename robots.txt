@@ -1,1 +1,1 @@
-Sitemap: http://lestua.eu.org/obsidian-jekyll-blog/sitemap.xml
+Sitemap: https://objekyll.netlify.app/sitemap.xml
