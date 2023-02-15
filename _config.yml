@@ -67,7 +67,7 @@ defaults:
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
               enable: true
-              img: https://i.imgur.com/Sx5vDKz.png
+              img: https://i.imgur.com/lcWB87r.png
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: <i class="fa-solid fa-home fa-fw"></i> 首页
                 href: /
@@ -266,12 +266,12 @@ defaults:
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://i.imgur.com/Sx5vDKz.png"
+                href="https://i.imgur.com/lcWB87r.png"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://i.imgur.com/Sx5vDKz.png"
+                href="https://i.imgur.com/lcWB87r.png"
               />
             - | # fontawesome图标
               <link
@@ -656,17 +656,17 @@ defaults:
             - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://i.imgur.com/Sx5vDKz.png"
+                href="https://i.imgur.com/lcWB87r.png"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://i.imgur.com/Sx5vDKz.png"
+                href="https://i.imgur.com/lcWB87r.png"
               />
             - |
               <script>
                 var myname = "yaleiyale";
-                var profile = "https://i.imgur.com/Sx5vDKz.png";
+                var profile = "https://i.imgur.com/lcWB87r.png";
                 var usage = "payment";
                 var wechat = "wxp://f2f0dsQlAhlj8JhTvCFKDc06potIJmAlC6Egb5iwzbEuuVA";
                 var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ_d7U6wgYgpb1lgZCIDk4MGU5NTgxYjYwMmVmMjRhMGI4NzE2OTQzMzEzMWU0_xxx_sign&u=2373267325&n=fidget";
@@ -765,7 +765,7 @@ sass:
   style: compressed
 readme_index: # 缺失index.md和index.html时，使用README.md代替之
   with_frontmatter: true # 支持带有yaml头的README
-logo: "https://i.imgur.com/Sx5vDKz.png"
+logo: "https://i.imgur.com/lcWB87r.png"
 locale: zh
 timezone: Asia/Shanghai
 permalink: pretty
