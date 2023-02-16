@@ -3,7 +3,7 @@ title: objekyll使用指南
 aliases: []
 tags: [objekyll, 指南]
 date: 2022-08-21T21:23:33+08:00
-lastmod: 2022-12-13T22:28:29+08:00
+lastmod: 2023-02-16T16:43:35+08:00
 from: 
 url: /notes/2022/08/29/223921
 ---
@@ -73,14 +73,15 @@ url: /notes/2022/08/29/223921
 
 1. fork[本仓库](https://github.com/yaleiyale/obsidian-jekyll-blog)，将仓库名改为`{你的github昵称}.github.io`。
 2. 事先未准备域名，则在你的仓库中将`CNAME`删除。若有域名则将`CNAME`中的文本替换为你的域名。关于自定义域名的更多详细配置，请自行查询资料，本指南后文所提可以不要求进行自定义域名。
-3. ![Imgur](https://i.imgur.com/DWjrgeF.png)
+3. 使用Github内置jekyll时，要先删除根目录下的`.nojekyll`。可先将其重命名，以实现删除并占位的效果，配置时需要再次使用到它。
+4. ![Imgur](https://i.imgur.com/DWjrgeF.png)
 
 如图，在**Branch**中选择分支(初使用应该选为`main`和`root`)，点击 save，在**Actions**中观察到发布完成后，进入`Pages`，可观察到![Imgur](https://i.imgur.com/KfJ3YXB.png)点击以进行访问，访问成功，那么你的博客就已经跑起来了。
 
 ### 配置
 
 1. 配置`_config.yml`。该部分完成后，理论上就已经完整搭建了你的独立专属个人博客。
-2. 仅完成上述步骤后的博客，所采用的构建方法为 Github 内置的后台 jekyll 生成，不能任意使用第三方插件。如果需要将 obsidian 的双向链接等结合到博客中，需要进一步配置。请打开`main.yml`，根据注释进行配置。在完成配置后，你的博客构建方法将采用自定义的**Github Actions**[^4]进行构建,此时请将`Pages`使用的分支改为`Actions`中所指定的分支。这种构建方式将能够借助`_plugins文件夹`中的插件实现自定义功能。在当前版本中，部署后可发现在样板博客中的双链、excalidraw 绘图展示等功能已经可用。
+2. 仅完成上述步骤后的博客，所采用的构建方法为 Github 内置的后台 jekyll 生成，不能任意使用第三方插件。如果需要将 obsidian 的双向链接等结合到博客中，需要进一步配置。在根目录下加回上方删除的，名为`.nojekyll`的空白文件。请打开`main.yml`，根据注释进行配置。在完成配置后，你的博客构建方法将采用自定义的**Github Actions**[^4]进行构建,此时请将`Pages`使用的分支改为`Actions`中所指定的分支。这种构建方式将能够借助`_plugins文件夹`中的插件实现自定义功能。在当前版本中，部署后可发现在样板博客中的双链、excalidraw 绘图展示等功能已经可用。
 
 # 记录/创作
 
