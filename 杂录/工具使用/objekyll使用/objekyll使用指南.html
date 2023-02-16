@@ -372,7 +372,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2022-12-13 22:28:29 Tuesday
+        改于：2023-02-16 16:43:35 Thursday
         <br>
         
         
@@ -381,11 +381,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        2687字
+        2786字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        9分
+        10分
         
         
         <br/>
@@ -486,6 +486,7 @@
 <ol>
   <li>fork<a href="https://github.com/yaleiyale/obsidian-jekyll-blog">本仓库</a>，将仓库名改为<code class="language-plaintext highlighter-rouge">{你的github昵称}.github.io</code>。</li>
   <li>事先未准备域名，则在你的仓库中将<code class="language-plaintext highlighter-rouge">CNAME</code>删除。若有域名则将<code class="language-plaintext highlighter-rouge">CNAME</code>中的文本替换为你的域名。关于自定义域名的更多详细配置，请自行查询资料，本指南后文所提可以不要求进行自定义域名。</li>
+  <li>使用Github内置jekyll时，要先删除根目录下的<code class="language-plaintext highlighter-rouge">.nojekyll</code>。可先将其重命名，以实现删除并占位的效果，配置时需要再次使用到它。</li>
   <li><img src="https://i.imgur.com/DWjrgeF.png" alt="Imgur" /></li>
 </ol>
 
@@ -495,7 +496,7 @@
 
 <ol>
   <li>配置<code class="language-plaintext highlighter-rouge">_config.yml</code>。该部分完成后，理论上就已经完整搭建了你的独立专属个人博客。</li>
-  <li>仅完成上述步骤后的博客，所采用的构建方法为 Github 内置的后台 jekyll 生成，不能任意使用第三方插件。如果需要将 obsidian 的双向链接等结合到博客中，需要进一步配置。请打开<code class="language-plaintext highlighter-rouge">main.yml</code>，根据注释进行配置。在完成配置后，你的博客构建方法将采用自定义的<strong>Github Actions</strong><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>进行构建,此时请将<code class="language-plaintext highlighter-rouge">Pages</code>使用的分支改为<code class="language-plaintext highlighter-rouge">Actions</code>中所指定的分支。这种构建方式将能够借助<code class="language-plaintext highlighter-rouge">_plugins文件夹</code>中的插件实现自定义功能。在当前版本中，部署后可发现在样板博客中的双链、excalidraw 绘图展示等功能已经可用。</li>
+  <li>仅完成上述步骤后的博客，所采用的构建方法为 Github 内置的后台 jekyll 生成，不能任意使用第三方插件。如果需要将 obsidian 的双向链接等结合到博客中，需要进一步配置。在根目录下加回上方删除的，名为<code class="language-plaintext highlighter-rouge">.nojekyll</code>的空白文件。请打开<code class="language-plaintext highlighter-rouge">main.yml</code>，根据注释进行配置。在完成配置后，你的博客构建方法将采用自定义的<strong>Github Actions</strong><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>进行构建,此时请将<code class="language-plaintext highlighter-rouge">Pages</code>使用的分支改为<code class="language-plaintext highlighter-rouge">Actions</code>中所指定的分支。这种构建方式将能够借助<code class="language-plaintext highlighter-rouge">_plugins文件夹</code>中的插件实现自定义功能。在当前版本中，部署后可发现在样板博客中的双链、excalidraw 绘图展示等功能已经可用。</li>
 </ol>
 
 <h1 id="记录创作">记录/创作</h1>
